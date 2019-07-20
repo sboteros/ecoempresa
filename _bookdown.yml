@@ -1,12 +1,24 @@
-book_filename: bookdown
-repo: https://github.com/rstudio/bookdown/
+book_filename: ecoempresa
+repo: https://github.com/sboteros/ecoempresa/
 output_dir: _book
-clean: [packages.bib, bookdown.bbl]
+clean: [packages.bib, ecoempresa.bib]
 delete_merged_file: true
 language:
   label:
-    fig: "FIGURE "
-    tab: "TABLE "
+    fig: "Figura "
+    tab: "Tabla "
+    eq: "Ecuación "
+    thm: "Teorema "
+    lem: "Lema "
+    cor: "Corolario "
+    prp: "Proposición "
+    cnj: "Conjetura "
+    def: "Definición "
+    exm: "Ejemplo "
+    exr: "Problema "
+    proof: "Demostración "
+    remark: "Observación "
+    solution: "Respuesta "
   ui:
-    edit: "Edit"
-    chapter_name: "Chapter "
+    edit: "Editar"
+    chapter_name: "Capítulo "
