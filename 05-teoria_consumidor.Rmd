@@ -1,0 +1,3 @@
+# (PART) El consumidor {-}
+
+# Teoría del consumidor {#consumidor}

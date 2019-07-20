@@ -1,0 +1,19 @@
+# Oferta y demanda {#ofertademanda}
+
+Al mismo tiempo, no habrá más de un precio en el mercado porque como todos los
+vendedores y los consumidores interactúan en él, los vendedores que quieran
+vender más caro no encontrarán clientes, pues ellos se irán a los más baratos. 
+Asimismo, los compradores que estén dispuestos a pagar mucho por los bienes no
+querrán pagar de más, sino que se irán con el vendedor más barato. 
+
+Suponga que hay un precio muy barato en el mercado, entonces pocos vendedores
+querrán vender pero muchos compradores querrán comprar. En ese caso, algunos
+compradores intentarán convencer a los vendedores para que les den el producto a
+ellos y no a los demás, ofreciéndoles más dinero; entonces harán que el precio
+suba. Por el contrario, si el precio es muy caro, muchos vendedores querrán
+vender y pocos compradores querrán comprar; entonces algunos vendedores 
+intentarán convencer a más personas para que compren ofreciéndoles un precio
+menor. Al final del día, habrá un precio que permita que tanto los compradores
+como los vendedores estén satisfechos con los intercambios: ningún vendedor 
+estará dispuesto a vender más barato, porque perdería dinero... A este precio,
+le llamaremos precio de equilibrio. 

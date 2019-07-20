@@ -1,0 +1,265 @@
+\mainmatter
+
+# (PART) Introducción {-}
+
+# Introducción a la economía {#intro}
+
+```{block2, type = 'rmdnote'}
+Este capítulo introductorio comienza proponiendo una definición de la economía
+que nos lleva a los conceptos de escasez y eficiencia (que analizaremos en la
+sección \@ref(escasez)). Después, analizaremos las diferencias que
+hay entre la economía positiva y la economía normativa, y explicaremos por qué
+estudiaremos la economía desde un enfoque positivista (sección 
+\@ref(ecopositiva)). Finalmente, veremos cuáles son las preguntas básicas que 
+toda sociedad se  responde mediante algún sistema económico y veremos tres 
+posibles sistemas: de mercado, autoritario y mixto (sección 
+\@ref(interrogantes)). 
+
+El contenido de este capítulo está basado principalmente en las secciones 1.A y
+1.B de @samuelson.
+```
+
+La economía es una ciencia de la decisión que nos ayuda a entender cómo se
+relacionan las personas entre sí y cómo toman decisiones importantes para ellas.
+Estas decisiones tienen que ver con adquirir los bienes y servicios con los
+que vivimos, cómo interactuar con otros (compradores y vendedores, empleados y
+empleadores, miembros de la familia, etc.), cómo interactuar con nuestro medio
+ambiente natural, etc.; y cómo cambian estas cosas a lo largo del tiempo 
+[@economy, sec. 1.11].
+
+@samuelson[p. 4] la define como:
+
+```{definition, economia, name = 'Economía'}
+La economía es el estudio de la manera en que las sociedades utilizan
+*recursos escasos* para *producir* mercancías valiosas y *distribuirlas* entre
+los distintos individuos [@samuelson, p. 4].
+```
+
+De la definición anterior, podemos ver que el estudio de la economía se preocupa
+por tres asuntos clave: la escasez, la producción y la distribución. A lo largo
+de este curso veremos cómo afectan estos conceptos a nuestro campo de estudio.
+
+## Escasez y eficiencia {#escasez}
+
+En la definición \@ref(def:economia) resalta, en primer lugar, que los recursos
+son *escasos*. Esto quiere decir que no existen suficientes cosas en el mundo
+que puedan satisfacer la totalidad de nuestros deseos: por una parte, los 
+recursos naturales de los que disponemos son finitos para producir lo que 
+quisiéramos[^Sobreexplotacion]; por otra parte, nuestros deseos de consumir
+cosas son infinitos en comparación con las cosas que podemos adquirir.
+
+La escasez hace que las cosas sean *bienes económicos*; es decir, que exigen que
+tomemos decisiones sobre la mejor forma de satisfacer nuestros deseos con
+objetos que no son abundantes [@samuelson, p. a]. Tomar decisiones implica que
+para ganar algo que queremos debemos renunciar a otra cosa: estudiar una carrera
+significa no recibir salarios durante un periodo de tiempo, estudiar para un
+examen significa no poder utilizar ese tiempo para el ocio, comer en un
+restaurante significa no poder comer en otro al mismo tiempo, etc. Esto nos
+llevará al concepto de *costos de oportunidad* que veremos más adelante en el
+curso.
+
+Como los recursos son escasos, es importante para la sociedad hacer el mejor
+uso posible de ellos. Esto nos lleva al concepto de la *eficiencia*, que 
+significa que la sociedad debe utilizar los recursos disponibles para lograr
+el mayor bienestar de la población. De acuerdo con @samuelson, la
+*eficiencia económica* es:
+
+```{proposition, label = "eficiencia", name = "Eficiencia económica"}
+La **eficiencia económica** exige que una exonomía *produzca* la combinación
+más elevada de cantidad y calidad de productos y servicios dada su tecnología
+y sus escasos recursos. Una economía produce con eficiencia cuando *no puede
+mejorar el bienestar económico de una persona sin afectar negativamente el 
+de otra* [@samuelson, p. 4].
+```
+
+En ese texto que acabamos de ver de @samuelson, se esconden varios conceptos que
+intentaremos ver a detalle durante el curso:
+
++ La **eficiencia productiva** es la primera oración. Tiene que ver con qué
+decide producir la sociedad, teniendo en cuenta su *tecnología* (concepto que
+analizaremos en la sección \@ref(fpp)) y los recursos productivos que tiene; 
+cuando una sociedad produce menos de lo que puede, entonces está utilizando de
+forma ineficiente sus recursos.
++ La **eficiencia en el sentido de Paretto** es la segunda oración. Tiene que
+ver con la *asignación* de los recursos. Cuando una sociedad puede hacer más
+feliz a alguien sin hacer más infeliz a otro, entonces no está asignando de 
+forma eficiente sus recursos.
+
+También hay otro concepto denominado **eficiencia distributiva**, que tiene que
+ver con lo que la sociedad considera *justo* o *deseable*. El mismo autor nos
+dice que
+
+> La sociedad debe encontrar el equilibrio adecuado entre la disciplina del
+mercado y la compasión de los programas sociales del gobierno. Si las mentes
+permanecen frías para informar a los corazones ardientes, la ciencia económica
+puede hacer lo que le toca para asegurar una sociedad próspera y justa
+[@samuelson, p. 7].
+
+La **eficiencia en el sentido de Paretto** puede parecernos muy injusta; por
+ejemplo, si repartimos $100 entre dos personas y le damos $99 a una y $1 a otra,
+no hay una manera de darle más a una sin quitarle a la otra, entonces tenemos
+una asignación eficiente; sin embargo, por algún motivo puede no gustarnos esa
+asignación y podríamos preferir otra que también fuera pareto eficiente (por 
+ejemplo, dale $50 a cada una). Sin embargo, esto requiere hacer un 
+*juicio de valor* sobre lo que debería ser, en lugar de describir detalladamente
+lo que es.
+
+## Economía positiva y normativa {#ecopositiva}
+
+Esta pregunta entre lo que *es* y lo que *debería ser* nos lleva a dos 
+posiblidades de ver la economía: como una *ciencia positiva* o como una 
+*ciencia normativa*. La economía como *ciencia positiva* nos permite responder a
+preguntas que pueden sustentarse en el análisis y la evidencia 
+empírica,[^positiva] nos ayuda a describir cómo es el mundo; en cambio, la
+economía como una *ciencia positiva* no tiene respuestas buenas o malas porque
+se fundamenta en nuestras ideas de justicia y ética.[^normativa] Por esta razón,
+en este curso veremos aspectos positivos de la economía, que pueden explicar e
+informar sobre nuestras ideas de lo que debería ser, pero que escapan al campo
+meramente económico (porque son preguntas políticas y éticas).
+
+```{block2, type = 'rmdtip'}
+Puedes leer cosas sobre la justicia y cómo la interpretan diferentes 
+concepciones filosóficas en @sandel. Una forma que los economistas gustamos de
+evaluar la justicia es *situarse bajo el velo de la ignorancia* 
+[@sandel, cap. 6]
+```
+
+## Los interrogantes básicos de un sistema económico {#interrogantes}
+
+Note que lo que decíamos en la sección \@ref(escasez) sobre la eficiencia tiene
+que ver con qué mercancías se producen (qué satisfará los deseos de la
+sociedad), cómo producirlas (la *eficiencia productiva*) y para quién 
+producirlas (la *eficiencia asignativa*). Estas son las tres preguntas básicas
+que debe responder toda sociedad.
+
+```{block2, type = 'rmdnote'}
+Las tres preguntas básicas de cualquier sociedad son:
+  
+  - ¿Qué producir?
+  - ¿Cómo producirlo?
+  - ¿Para quién producir?
+
+  
+```
+
+Para responder a estar preguntas pueden haber muchos sistemas posibles. Por 
+ejemplo, podría definirse el *qué* o  *para quién* mediante:
+
++ La suerte (una lotería determina qué cosas se le dan a cada quién).
++ El mandato de alguien con el poder de mandar (por ejemplo, en una *economía
+medieval* el rey podía mandar, o en una *economía centralizada* podía hacerlo el
+Partido en el poder).
++ La fuerza (por ejemplo, el robo de los bienes a alguien).
++ Intercambios voluntarios (por ejemplo, usted hoy puede decidir qué cosas de
+la producción desea y adquirirlas comprándolas con el dinero que tiene).
+
+En general, puede haber dos formas de responder a estas preguntas: las economías
+de mercado o las economías autoritarias.
+
+```{definition, name = 'Economía de mercado'}
+Es aquella en la cual *los individuos y empresas privadas toman las decisiones*
+más importantes acerca de la producción y el consumo. Un *sistema de precios*, 
+de mercados, de pérdidas y ganancias, de incentivos y recompensas determina el 
+*qué*, el *cómo* y el *para quién* [@samuelson, p. 8]:
+  
++ Las empresas producen las mercancías que generan las máximas utilidades 
+(el *qué*) con las técnicas de producción que resulten menos costosas (el
+*cómo*¨).
++ El consumo está determinado por las decisiones de los individuos respecto a 
+cómo gastar los salarios y los ingresos sobre la propiedad que generan su 
+trabajo y sus propiedades (el *para quién*).
+
+
+```
+
+El caso extremo de una economía de mercado se denomina *laissez-faire* (que
+significa dejar pasar), en donde el Estado no interviene para nada en lo que
+hacen los individuos.
+
+```{block2, type = 'rmdtip', echo = TRUE}
+La corriente política que propone eliminar al Estado y dejar que los individuos
+hagan lo que quieran se llama *libertarianismo*. Puedes leer más en
+@sandel[cap. 3.].
+```
+
+En el otro extremo, se encuentra una economía autoritaria.
+
+```{definition, name = 'Economía autoritaria'}
+Es aquella en la que el gobierno toma todas la decisiones importantes acerca
+de la producción y la distribución, mediante la propiedad de recursos y su
+poder para imponer decisiones. Por ejemplo, los estados socialistas funcionaron
+como economías centralmente planificadas [@samuelson, p. 8].
+```
+
+En algún punto intermedio se encuentran las economías modernas, en donde los
+individuos toman casi todas las decisiones importantes; pero el Estado vigila
+que no haya abusos por parte de los individuos y provee algunos bienes y 
+servicios a la sociedad.
+
+```{definition, name = 'Economía mixta'}
+La vida económica se organiza a través de una autoridad jerárquica o de mercados
+voluntarios descentralizados. La mayor parte de las decisiones se toman en el
+mercado; pero el gobierno desempeña un papel importante en la supervisión de su
+funcionamiento, aprueba las leyes que regulan la vida económica, produce 
+servicios educativos y controla la contaminación, entre otras cosas 
+[@samuelson, p. 8].[^Estado]
+```
+
+## Ejercicios
+
+```{exercise, name = "Discurso sobre la edad de oro"}
+Don Quijote de la Mancha pronunció un discurso a unos cabreros, en los 
+siguientes términos:
+  
+> Dichosa edad y siglos dichosos aquellos a quien los antiguos pusieron nombre
+de dorados, y no porque en ellos el oro, que en esta nuestra edad de hierro
+tanto se estima, se alcanzase en aquella venturosa sin fatiga alguna, sino
+porque entonces los que en ella vivían ignoraban estas dos palabras de *tuyo* y
+*mío*. Eran en aquella santa edad todas las cosas comunes: a nadie le era
+necesario para alcanzar su ordinario sustento tomar otro trabajo que alzar la
+mano y alcanzarle de las robustas encinas, que liberalmente les estaban
+convidando con su dulce y sazonado fruto. Las claras fuentes y corrientes ríos,
+en magnífica abundancia, sabrosas y transparentes aguas les ofrecían. En las
+quiebras de las peñas y en lo hueco de los árboles formaban su república las
+solícitas y discretas abejas, ofreciendo a cualquiera mano, sin interés alguno,
+la fértil cosecha de su dulcísimo trabajo. Los valientes alcornoques despedían
+de sí, sin otro artificio que el de su cortesía, sus anchas y livianas cortezas,
+con que se comenzaron a cubrir las casas, sobre rústicas estacas sustentadas, no
+más que para defensa de las inclemencias del cielo. Todo era paz entonces, todo
+amistad, todo concordia: aún no se había atrevido la pesada reja del corvo arado
+a abrir ni visitar las entrañas piadosas de nuestra primera madre; que ella sin
+ser forzada ofrecía, por todas las partes de su fértil y espacioso seno, lo que
+pudiese hartar, sustentar y deleitar a los hijos que entonces la poseían (...)
+[@quijote, cap. XI].
+
+¿Los bienes en la edad dorada de la que hablaba nuestro ingenioso hidalgo, ¿eran
+*bienes económicos*?
+
+```
+
+```{exercise, name = "Licitación desierta para la refinería de Dos Bocas"}
+Lea el artículo de prensa 
+[Decisión sobre Dos Bocas, nuevo error del gobierno: Citibanamex][refdosbocas].
+Con base en ese artículo, ¿la estimación de tiempo y costo del gobierno sobre
+la refinería de Dos Bocas describe lo que debería ser (quisiera que sea) o lo
+que es? ¿Es una estimación *normativa* o *positiva*?
+```
+
+[refdosbocas]: https://www.jornada.com.mx/ultimas/2019/05/09/decision-sobre-dos-bocas-nuevo-error-del-gobierno-citibanamex-7901.html
+
+[^Sobreexplotacion]: Un problema que tenemos actualmente es la capacidad de
+utilizar los recursos de la naturaleza más allá de lo que ellos pueden 
+regenerarse. Esto hace que, incluso cosas que parecen abundantes, como el
+agua o el aire limpio, sean recursos limitados: podemos utilizarlos nosotros,
+pero a costa de dejar a las generaciones futuras sin ellos.
+
+[^positiva]: Por ejemplo: ¿Por qué unas personas ganan más que otras?, 
+¿cuál es el impacto de un programa social para reducir el desempleo?.
+
+[^normativa]: Por ejemplo: ¿Debe elevarse el desempleo para asegurar que la 
+inflación de los precios no se dé con demasiada rápidez? (la relación entre
+empleo e inflación se ve en la materia de *macroeconomía*).
+
+[^Estado]: En la sección \@ref(estado) veremos algunos de los elementos por los
+que los economistas veríamos justificada la intervención del Estado en la
+economía.

@@ -1,0 +1,3 @@
+# (PART) Estructuras de mercado {-}
+
+# Competencia perfecta y eficiencia {#competencia}

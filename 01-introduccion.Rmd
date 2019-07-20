@@ -1,0 +1,296 @@
+# Introducción
+
+La asignatura *Economía de la Empresa* ([EC1008][desc_ecoemp]) es ofrecida por
+la Escuela de Ciencias Sociales y Gobierno y está asociada con el Departamento
+de Economía. Un prerequisito del curso es que el estudiante haya aprobado o
+se encuentre cursando la asignatura de *Matemáticas I* (MA1015 o MA1016);
+durante el curso utilizaremos elementos de matemáticas básicas tales como 
+graficar funciones, resolver ecuaciones, problemas de maximización (derivadas),
+etc.
+
+## Objetivos
+
+A lo largo del curso se analizará el modelo básico mediante el cual los
+consumidores y las firmas toman decisiones, suponiendo que actúan de forma
+*racional*. Estas decisiones que toman los consumidores y las firmas tienen en
+cuenta las actuaciones del gobierno, así como sus intereses y deseos. En el
+modelo más sencillo, la información que más afecta las decisiones de estos
+*agentes económicos* es el nivel de *precios*; a la sensibilidad con respecto al
+precio se le llama *elasticidad-precio* (aunque también pueden ser sensibles a
+otras variables, para las cuales también se pueden estimar elasticidades).
+Estos elementos permitirán que, al finalizar el curso, serás capaz de:
+
+```{block2, type = 'rmdimportant'}
+  **Objetivo 1.** Comprender el funcionamiento del mercado analizando la forma
+  en que los consumidores y productores realizan sus decisiones tomando en
+  cuenta el impacto de la elasticidad y la intervención del gobierno en los
+  mercados.
+```
+
+Una vez que analicemos cómo toman las decisiones los agentes económicos, 
+estaremos en posibilidad de determinar los *equilibrios* que estas decisiones
+generan entre ellos. Dichos equilibrios dependen de las *estructuras de mercado*
+que prevalezcan; nosotros analizaremos algunas de ellas, tales como competencia
+perfecta, monopolio y oligopolio. La competencia perfecta es el ideal al que 
+quisiéramos llegar y analizaremos qué tanto se alejan de ese ideal las otras
+dos estructuras de mercado. Así, al finalizar el curso, serás capaz de:
+
+```{block2, type = 'rmdimportant'}
+  **Objetivo 2.** Percibir cómo se determina el precio y el nivel óptimo de
+  producción en las diferentes estructuras de mercado.
+```
+
+## Contenido
+
+En la primera parte del curso se desarrolla una introducción al tema de estudio
+así como a algunas de sus conclusiones más generales. Al principio, veremos qué
+es la economía (como ciencia) y cuáles son sus principales áreas de estudio y
+estilos de pensamiento (capítulo \@ref(intro)). Después, analizaremos cuáles es
+el problema que hace necesario que tengamos un área de estudio como la nuestra
+(el problema económico, capítulo \@ref(problema)). Continuaremos con el análisis
+general y los principales resultados de cómo interactúan los agentes económicos
+en los mercados para dar respuesta a dicho problema, a través de la *demanda* y
+la *oferta* de bienes y servicios en la economía; en esta parte, si bien
+encontraremos una solución, tendremos que suponer muchas cosas que analizaremos
+en detalle más adelante (capítulo \@ref(ofertademanda)).
+
+En la segunda parte del curso analizaremos en detalle cómo se determina la 
+función de *demanda* que utilizamos en la primera parte. Para ello, analizaremos
+a profundidad qué decisiones toman los consumidores para determinar qué 
+cantidades comprar de cada bien que pueden elegir (capítulo \@ref(consumidor)).
+Después, analizaremos la sensibilidad de los consumidores ante cambios en los
+factores que afectan esas decisiones de consumo (precio, ingreso, etc.) y
+veremos algunos casos prácticos (capítulo \@ref(elasticidad)).
+
+Continuaremos con el análisis del otro lado de los mercados, que es el lado de 
+quienes ofrecen productos y servicios en el mercado y cómo toman la decisión de
+qué cantidades ofrecer; para ello, analizaremos la producción, los insumos que
+se necesitan y los costos de producir cada cantidad de bienes y servicios. 
+Este análisis se desarrolla en el capítulo \@ref(firma).
+
+Una vez hemos analizado los dos lados de los mercados (demandantes y oferentes),
+volveremos a analizar la solución a la que llegan los mercados y analizaremos
+diferentes posibilidades. Veremos por qué la mejor solución para la sociedad es
+la de tener mercados perfectamente competitivos (capítulo \@ref(competencia)) y
+comprenderemos por qué es indeseable la situación en la que sólo un oferente
+domina todo el mercado (capítulo \@ref(monopolio)). Entre ambos extremos,
+veremos diferentes equilibrios que se pueden acercar a uno u otro cuando pocas
+firmas (oferentes) participan en el mercado (capítulo \@ref(oligopolio)).
+
+Finalmente, veremos cómo estos conceptos se aplican a mercados particulares,
+tales como el del trabajo y el capital, que se denominan 
+*factores de producción* y los habremos visto antes como *insumos* de las firmas
+(capítulo \@ref(factores)).
+
+En la introducción de cada uno de los capítulos, se encuentra desarrollado el
+contenido particular de ellos. Espero que disfruten de este curso. 
+
+## Bibliografía
+
+Al finalizar de cada capítulo de estas notas, se encuentra la bibliografía que
+se utiliza para el desarrollo de cada sección. Estas notas de clase deberían ser
+suficientes para que usted adquiera un conocimiento básico del contenido de la
+asignatura. Sin embargo, se espera que usted lea el texto "Microeconomía con
+aplicaciones a Latinoamérica" [@samuelson], en el que se basa el desarrollo de
+la clase. Asimismo, se recomienda mucho complementar el contenido con la lectura
+del libro "The Economy" [@economy]; este me gusta mucho porque tiene un enfoque
+de estudio muy amplio sobre lo que hacemos los economistas y presenta el
+contenido con una estructura muy diferente al primero, es un material excelente.
+
+```{block2, type = 'rmdimportant'}
+  El libro guía del curso es "Microeconomía con aplicaciones a Latinoamérica"
+  [@samuelson].
+```
+
+También utilizaremos otras fuentes, tales como estudios de caso, noticias de
+prensa, etcétera, que se irán presentando en el desarrollo de estas notas de 
+clase.
+
+## Evaluación {#calificaciones}
+
+El curso se calificará con base en seis actividades de aprendizaje cuyas fechas
+de entrega y ponderación en la calificación final se encuentran disponibles en
+la tabla \@ref(tab:ponderacion).[^ponderacion] Cada una de las actividades de
+aprendizaje tendrá una calificación entre 0 y 100.
+
+```{r ponderacion, echo = FALSE}
+  actividad <- c("Primer parcial", "Segundo parcial", "Examen final", 
+                 "Trabajo final", "Actividades de aprendizaje", "Asistencia")
+  calificacion <- c(20, 20, 25, 15, 10, 10)
+  fecha <- ""
+  tibble(numero = 1:6, actividad = actividad, calificacion = calificacion, 
+         fecha = fecha) %>%
+    knitr::kable(col.names = c("Número de actividad", "Actividad", "Porcentaje", 
+                               "Fecha de entrega"),
+                 caption = "Ponderación de la calificación final del curso")
+  rm(list = c("actividad", "calificacion", "fecha"))
+```
+
++ **Actividades de aprendizaje**: A lo largo del semestre se desarrollarán
+actividades de aprendizaje diversas, tales como ensayos, solución de ejercicios
+de práctica y lecturas. La calificación final por este concepto es el promedio
+simple de todas las actividades de aprendizaje; aunque si se detecta
+deshonestidad académica (ver la sección \@ref(plagio)) en cualquiera de ellas,
+la calificación final de este concepto será de cero (0).[^plagio]
++ **Exámenes parciales**: Habrá tres exámenes a lo largo del semestre, la 
+calificación de cada uno de ellos dependerá de los porcentajes de cada una de 
+las preguntas, que se especificarán en el examen mismo. Si se detecta
+deshonestidad académica (ver la sección \@ref(plagio)) en cualquiera de las
+preguntas de un examen, la calificación de ese examen será de cero (0).
++ **Trabajo final**: Al final del curso el estudiante presentará un trabajo
+original sobre algún tema relativo al contenido analizado durante el semestre, 
+cuyas especificaciones se darán tres semanas antes de finalizar el curso. Si se
+detecta deshonestidad académica (ver la sección \@ref(plagio)) en cualquier
+parte del trabajo, la calificación final será de cero (0).
++ **Asistencia**: El curso no tiene una asistencia mínima necesaria para ser
+aprobado, por lo que la asistencia es voluntaria. Sin embargo, la asistencia a 
+clase tiene una aportación en la calificación final. La calificación obtenida
+por este concepto será igual al porcentaje de sesiones a las que el estudiante
+haya asistido en relación con el total de sesiones de clase; no hay tolerancia
+al respecto. La calificación se calculará de acuerdo con la fórmula 
+\@ref(eq:asistencia).
+
+\begin{equation}
+  x_{\text{asistencia}} = \frac{\text{Sesiones de asistencia}}
+    {\text{Sesiones totales}} \cdot 100.
+  (\#eq:asistencia)
+\end{equation}
+
+```{block2, type = 'rmdcaution'}
+  ¡Si faltas una vez a clase, automáticamente esta parte de la calificación 
+  será menor a 10!
+```
+
+
+## Integridad académica {#plagio}
+
+### ¿Qué es la integridad académica?
+
+La integridad académica se entiende como un actuar de las personas que es 
+respetuoso de su proceso de aprendizaje y da crédito a los demás por su trabajo;
+pues implica que no se toman las ideas ajenas como propias para ganar un 
+beneficio por ello. En este curso, así como en toda la formación en el Tec de
+Monterrey, habrá un cuidado permanente por impulsar y promover la integridad
+académica, así como una denuncia adecuada de cualquier falta contra ella.
+
+De acuerdo con el @reglamento, 
+
+> **Artículo 9.1**
+Se entiende por Integridad Académica el *actuar honesto, comprometido, confiable,
+responsable, justo y respetuoso* en el aprendizaje, la investigación y la
+difusión de la cultura.
+>
+Son faltas a la integridad académica todas aquellas acciones individuales o
+colectivas de los alumnos que se cometan dentro o fuera del salón de clases y
+que atenten contra dichos principios.
+>
+Algunos ejemplos de este tipo de acciones indebidas son la *copia o tentativa de
+copia* en cualquier tipo de examen o actividad de aprendizaje; el *plagio*
+parcial o total; *facilitar alguna actividad o material para que sea copiada y/o
+presentada como propia*; la *suplantación* de identidad; acceder y/o manipular,
+sin autorización expresa, *cuentas de correo electrónico o sistemas*
+institucionales; *falsear* información; *alterar* documentos académicos; *vender
+o comprar exámenes* o distribuirlos mediante cualquier modalidad; *hurtar
+información* o *intentar sobornar a un profesor* o cualquier colaborador de la
+Institución; y la alteración indebida de expedientes clínicos, entre otras
+acciones más. [énfasis añadido]
+
+De acuerdo con @plagio, William L. Kibler define la deshonestidad académica como
+formas de trampa o plagio que involucran a estudiantes dando o recibiendo ayuda
+no autorizada en un ejercicio académico o recibiendo crédito por un trabajo que
+no es suyo. El mismo autor reconoce que Pavela y Burke identifican cuatro 
+conductas que caen en este supuesto:
+
++ *Trampa.* Usar intencionalmente o intentar usar materiales, información o
+ayudas de estudio no autorizadas en cualquier ejercicio académico.
++ *Fabricación*. Falsificación o invención intencional y no autorizada de
+cualquier información o cita en un ejercicio académico.
++ *Facilitamiento de deshonestidad académica*. Ayudar intencionalmente o a 
+sabiendas, o intentar ayudar a otro, a cometer un acto de deshonestidad
+académica.
++ *Plagio*. Intencionalmente o a sabiendas presentar la palabra de otro como si
+fuera la propia en cualquier ejercicio académico.
+
+### ¿Cuáles son las consecuencias de una falta a la integridad académica?
+
+A cualquier estudiante que sea sorprendido en una falta a la integridad 
+académica, tanto dentro como fuera del salón de clases, se le reprobará la 
+actividad correspondiente y se le denunciará ante el
+*Comité de Integridad Académica de Campus*, conforme al procedimiento 
+establecido en el Capítulo IX del reglamento [@reglamento]. Conforme a lo 
+enunciado en la sección \@ref(calificaciones), la calificación reprobatoria
+puede abarcar una única actividad (examen o trabajo final) o todo el conjunto
+de ellas (actividades de aprendizaje).
+
+En el reglamento [@reglamento] se establecen diversas sanciones para quienes
+sean encontrados responsables de una falta grave a la integridad académica, 
+tales como:
+
++ Adquirir el estatus de *Condicionamiento por Faltas a la Integridad Académica*
+o *Baja por Faltas a la Integridad Académica* (artículos 8.1 y 8.5).
++ No podrán ser readmitidos en el Tecnológico de Monterrey aquellos que hayan
+sido dados de baja por faltas a la integridad académica (artículo 1.9).
++ Se pierde el derecho al examen de regularización (artículo 5.12).
++ Se pierde la posibilidad de obtener mención honorífica o mención honorífica
+de excelencia (artículo 7.2).
+
+Además de las sanciones que acarrea el cometer faltas a la integridad académica,
+el reglamento establece que todos tenemos la obligación de denunciarlas, así:
+
+> **Artículo 9.4** *Cualquier alumno, miembro del personal académico*, autoridad
+institucional, integrante de la comunidad educativa o de entidades externas
+vinculadas al proceso académico que tengan conocimiento de algún acto que pueda
+constituir una falta a la integridad académica, *deberá comunicarlo por escrito
+al Comité de Integridad Académica de Campus*, incluyendo las evidencias que
+demuestren el hecho. De considerarlo pertinente, el coordinador del Comité de
+Integridad Académica de Campus convocará a este Comité para evaluar el caso,
+notificando al alumno de la necesidad de que acuda a una audiencia para aportar
+las pruebas que considere convenientes, y el Comité de Integridad Académica de
+Campus pueda emitir la resolución correspondiente. 
+[@reglamento, énfasis añadido]
+
+### Algunas sugerencias para evitar el plagio
+
+Cada quien debe ser responsable por su propio proceso de aprendizaje y llevarlo
+a cabo de forma íntegra. A veces puede ser difícil saber cuando uno está 
+utilizando ideas de otra persona y puede no dar los créditos apropiados por su
+trabajo. Por ello, entre las recomendaciones que podemos seguir para siempre
+dar el crédito apropiado a los demás, se encuentran:
+
++ En la parte donde utilice información de la fuente sin copiarla textualmente,
+deje claro que la información provino de ella. Para ello, debe utilizar algún
+formato de referencias bibliográficas.[^referencias]
++ Las citas textuales, además de lo anterior, deberán estar entrecomilladas.
++ Al final de cada documento deberá haber una sección de referencias 
+bibliográficas, en donde estén todas las referencias de las fuentes que utilizó
+en el documento.
+
+### Conoce más
+
+Para conocer más sobre el compromiso con la integridad académica al que nos
+comprometemos todos en el Tec de Monterrey, te invito a visitar la página del
+[Programa para el Fortalecimiento de la Integridad Académica][intaca]
+
+[desc_ecoemp]: https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=EC1008&lang=ES
+
+[APA]: https://apastyle.apa.org/
+
+[intaca]: http://sitios.itesm.mx/dfds/ssc/Alumnos/contenido/index.html
+
+[^ponderacion]: Es decir, cada actividad de aprendizaje aportará 
+$\frac{x_i \cdot p_i}{100}$ a la calificación final de la materia, en donde
+$x_i$ es la calificación obtenida en la actividad de número 
+$i \in \{ `r 1:6` \}$, $p_i$ es el porcentaje que la actividad aporta a la
+calificación final. Por lo tanto, la calificación final de la asignatura está
+data por $c = \sum_{i=1}^6 \frac{x_i \cdot p_i}{100}$.
+
+[^plagio]: Cuando un estudiante "(...) [c]ometa una falta a la integridad
+académica, en los términos definidos en el capítulo IX de este reglamento, en
+cuyo caso el profesor podrá asignar *una calificación reprobatoria a la
+actividad, examen, periodo parcial o final* (...)" [@reglamento, artículo 5.9,
+énfasis añadido].
+
+[^referencias]: Si bien no es requerido ningún formato en particular para 
+presentar sus trabajos, pues usted puede elegir el que desee, le recomiendo
+utilizar el formato [APA][APA] (*American Psychological Association*), que es el 
+formato comúnmente utilizado por los economistas.

@@ -1,0 +1,355 @@
+# El problema económico {#problema}
+
+En el capítulo \@ref(intro) vimos que los interrogantes básicos de cualquier 
+sistema económico son *qué* producir, *cómo* y *para quién* producirlo, y 
+observamos que esta de forma autoritaria o a través de una *economía de mercado*.
+En este capítulo y en el siguiente (capítulo \@ref(ofertademanda)) analizaremos
+a qué nos referimos cuando hablamos de una economía de mercado.
+
+## Mercado y precios
+
+### Mercado
+
+En un mercado no hay un sólo individuo que defina qué, cómo y para quién 
+producir, sino que hay muchos individuos que toman decisiones autónomas y 
+participan libremente en intercambios que les benefician. Es la forma en la que
+interactúan la que determina qué se producirá, cómo se producirá y para quién
+se producirá. ¿Pero qué información utilizan estos individuos para tomar esas
+decisiones?
+
+En primer lugar, necesitan un lugar en donde puedan hacer esos intercambios
+voluntarios. Por ejemplo, una plaza comercial en donde se reúnen tiendas que
+quieren vender productos y consumidores que quieren comprarlos; un parque que
+tiene alrededor muchos cafés y restaurantes que quieren ofrecer sus espacios
+para las personas que quieren disfrutar de ellos; un sitio de Internet en donde
+entran las personas a ver productos que venden otras... Cualquiera que sea el
+lugar en el que se encuentran los que quieren vender y comprar algo, habrá un
+espacio o una forma en que puedan encontrarse; a ese espacio lo llamaremos
+*mercado*.
+
+```{definition, name = 'Mercado'}
+Un **mercado** es un mecanismo mediante el cual los compradores y los vendedores
+interactúan para determinar precios e intercambiar bienes y servicios 
+[@samuelson, p. 26].
+```
+
+Estos *mecanismos* mediante los cuales interactúan los compradores y los 
+vendedores pueden tener muchas formas: pueden ser un espacio físico particular,
+una aplicación de celular o lo que sea.
+
+> Las instituciones de mercado tradiciones usualmente reunían a muchos 
+vendedores y compradores juntos en un lugar. Muchas de las grandes ciudades del
+mundo crecieron alrededor de mercados y bazares a lo largo de antiguas rutas 
+comerciales como la Ruta de la Seda entre China y el mediterráneo. (...) En los
+pueblos y ciudades medievales era común para los fabricantes y vendedores de 
+tipos de bienes específicos el establecer tiendas cercanas unas a otras, para
+que los consumidores supieran dónde encontrarlos. (...)
+>
+> Con las comunicaciones modernas, los vendedores pueden promocionar sus bienes
+y los compradores pueden encontrar fácilmente lo que hay disponible y en dónde
+comprarlo (...) [@economy, sec. 8.2, traducción libre].
+
+### Precios de mercado
+
+La principal función de los mercados es determinar el **precio** de cada
+mercancía. 
+
+```{definition, precio, name = "Precio"}
+El precio es el valor del bien en términos de *dinero*[^Dinero]. A un nivel más
+profundo, los precios representan los términos con base en los cuales se 
+intercambian distintas mercancías.[^Relativos]
+```
+La particularidad que tienen los mercados, a diferencia de otros sistemas para
+resolver los interrogantes básicos (que vimos en la sección
+\@ref(interrogantes)) es que no hay un sólo individuo que tome las decisiones,
+sino que estas emergen de la interacción de todos.^[NotaOferta] En ese sentido,
+los mercados son un **mecanismo descentralizado** de toma de decisiones.
+
+En los mercados interactúan muchos compradores y muchos vendedores que
+interactúan entre sí. Los compradores saben qué les gusta y cuánto dinero tienen
+para comprar lo que desean, entonces pueden saber cuánto sería lo máximo que
+estarían dispuestos a pagar; al mismo tiempo, los vendedores saben cuánto les
+cuesta producir cada cosa que venden y no estarían dispuestos a venderla por
+menos.[^industria] El precio que hay en el mercado hará que los consumidores que
+estén dispuestos a pagar más quieran comprar; y los vendedores a los que les
+cueste menos quieran vender. 
+
+```{block2, type = 'rmdimportant'}
+La particularidad del precio que prevalece en el mercado, al que llamamos
+*precio de equilibrio* es que hace que los compradores quieran comprar la misma
+cantidad de mercancías que los vendedores quierenn vender.[^Vaciado]
+```
+
+De este modo,  los mercados ayudan a responder a los tres interrogantes básicos
+de la economía (recuerde la sección \@ref(interrogantes)) sin que ninguna persona
+o institución, por si misma, los responda:
+
++ *Qué* producir está determinado por lo que los consumidores desean y están
+dispuestos a pagar (detalles en el capítulo \@ref(consumidor)); las empresas
+intentan producir lo que ellos quieren con el ánimo de ganar utilidades
+(detalles en el capítulo \@ref(firma)).
++ *Cómo* producir está determinado por las tecnologías de las que dispone la 
+sociedad; las empresas que pueden producir lo que los consumidores quieren de la
+forma más barata posible puede maximizar sus utilidades (detalles en la sección
+\@ref(fpp) y el capítulo \@ref(firma)).
++ *Para quién* producir está determinado por lo que los consumidores están 
+dispuestos a pagar por los bienes y servicios (detalles en el capítulo 
+\@ref(consumidor)).
+
+```{block2, type = 'rmdimportant'}
+Los *mercados* resuelven los tres interrogantes básicos de la economía (*qué*, 
+*cómo* y *para quién* producir) a través de la interacción entre compradores y
+vendedores, enviándoles señales a través de los *precios*.
+```
+
+### Precios como señales
+
+Además de hacer que, en cada momento, los compradores y los vendedores quieran
+intercambiar la misma cantidad de mercancías, los precios sirven para enviar
+**señales** para el futuro. Por ejemplo, si un precio es demasiado elevado el
+mercado envía la señal de que el bien es escaso, entonces los consumidores
+querrán prepararse para comprar menos en el futuro (vea el ejercicio
+\@ref(exr:petroleo)); y los vendedores para vender más o mejorar sus tecnologías
+(vea el ejercicio \@ref(exr:historia)). Ambas cosas, provocan que los precios en
+el futuro sean menores, como veremos en el capítulo \@ref(ofertademanda).
+
+```{block2, type = 'rmdimportant'}
+> "Los precios coordinan las decisiones de los productores y los consumidores en
+un mercado. Los precios más elevados tienden a reducir las compras de los
+consumidores y a fomentar la producción. Los menores precios fomentan en consumo
+y desalientan la producción. Los precios son la rueda que equilibra el
+mercanismo de mercado" [@samuelson].
+
+
+```
+
+## Frontera de posibilidades de producción {#fpp}
+
+### Eficiencia de los recursos
+
+### Crecimiento económico
+
+### Ganancias del comercio
+
+## Intervención del gobierno en el mercado {#estado}
+
+## Ejercicios
+
+```{exercise, petroleo, name = "Crisis del petróleo"}
+En los años setenta del siglo pasado el precio del petróleo subió 
+vertiginosamente (vea el gráfico siguiente), en lo que se conoce como las crisis
+del petróleo de [1973][Crisis73] y [1979][Crisis79], debido a decisiones tomadas 
+por la Organización de Países Exportadores de Petróleo (OPEP).
+
+![Precios del petróleo[^Reconocimiento]](images/preciopetroleo.png)
+
+Lea la reseña sobre @lauber publicada [aquí][lauber]. ¿Qué señales envió el 
+aumento del precio del petróleo? ¿Por qué repercutió esa situación en el 
+desarrollo de energías renovables?
+  
+> Government Ambivalence: Subsidies for Nuclear and Coal, R&D Funding for
+Renewable Energy
+>
+> The U.S. government was the first to react in big style to the oil crisis of
+1973/74 with the creation of a well-endowed new government department (which
+became the Department of Energy in 1977) and comprehensive R&D programs. Though
+the main emphasis was on coal and nuclear power, generous R&D funding for wind
+and solar power was expected to bring down their cost quickly. Several
+prototypes of wind turbines were developed and demonstration programs started.
+The cost of solar cells was also brought down substantially. In 1978, a federal
+law (the Public Utilities Regulatory Policies Act, PURPA) was passed which
+required utilities to purchase renewable electricity from qualifying facilities
+at the avoided cost of own power. Half a decade later – probably unexpected for
+the law's authors – this act unleashed remarkable business entrepreneurship in
+the field of wind energy during the California wind power boom in the early
+1980s which started under governor Jerry Brown, supported by favorable tax
+credit legislation, and led to the first mass market for (mostly Danish) wind
+turbines. But the big spending programs for R&D and RD&D programs were wound
+down again when Ronald Reagan replaced Jimmy Carter in the White House and
+turned the focus back to oil and gas; Republican governor Deukmejian in
+California brought a similar change (van Est, 1999).
+>
+> In Europe, no government undertook such a drastic step as PURPA in the 1970s
+or even the 1980s, but things changed there as well. Most governments stepped up
+R&D on renewable energy in the second half of the 1970s, to reach a peak in 1980
+followed by decline thereafter; as in the US this support remained tiny when
+compared to that given to nuclear power. Nevertheless, several governments
+funded the development of wind turbine prototypes (Belgium, Denmark, Germany,
+the Netherlands, Sweden, the UK), usually large machines full of technical
+problems. The idea prevailed that utilities would be the natural users of such
+turbines, even though utilities were quite ambivalent about new and
+decentralized renewables (in Germany a 3 MW turbine was even built with public
+money to prove that wind power was no viable alternative to nuclear). Only
+Denmark and Germany also supported small turbine development; these were the
+first viable machines. In the UK, wave power was also subsidized, particularly
+in a big project that literally sunk in a storm. Solar power research took place
+in fewer countries; Germany was leading as German firms had been producing PV
+for U.S. satellites for two decades. In the 1970s, some high-tech firms thought
+that a breakthrough to cheap solar power could be achieved quickly but lost
+interest when things turned out otherwise.
+>
+> By the 1980s, government R&D had produced a variety of prototypes still far
+removed from market readiness and with only few niche markets (there was one for
+small wind power among a community of believers in Denmark) and tiny specialty
+markets in which prices were not that important (e.g., off-grid applications for
+PV such as buoys, telecommunication towers, or pipelines). But on the whole,
+those prototypes could not generate electricity at prices competitive with
+fossil generation. Only Danish wind turbines – smaller and sturdier than most
+others, built on earlier experience and with state quality control – for some
+years found a sizable market in California until the boom ended in 1984 with the
+termination of PURPA standard offer contracts. Voluntary green electricity
+markets could not create sufficient demand. Change became more urgent with the
+Chernobyl accident in 1986 and the emergence of climate change as a major
+political challenge; both called for a reconsideration of fossil and nuclear
+(fission) electricity.
+>
+> Yet for adherents of neoclassical economic theory – the dominant economic
+theory of public management, reinforced by the new neoliberal ideal of lean
+government – the state had no legitimation to go beyond providing R&D and
+perhaps also RD&D support; for them, things were now up to the market. In
+practice, this attitude would have left the prototypes in a lurch, with market
+actors – and particularly utilities – shying away from costly adventures. In
+general the utilities – but also most governments and the IEA (International
+Energy Agency) – viewed renewables as simply too small to be taken seriously
+before the middle of the twenty-first century, their potential too marginal
+under the meteorological conditions of Europe and their price too high. This is
+precisely what happened with most prototypes. It took some ‘political accidents’
+to allow the necessary next step in renewables development in at least a few
+countries: systematic market creation for renewable power. This inspired
+considerable political controversy.
+
+
+```
+
+```{exercise, historia, name = 'El algodón durante la guerra civil estadounidense'}
+Lea la historia sobre el aumento del precio del algodón durante la guerra civil
+estadounidense y los efectos que tuvo en la producción algodonera en otros 
+países y la creación de nuevas tecnologías para el procesamiento del algodón.
+¿Alguien dió la orden para aumentar la producción en esos países y crear nuevas
+tecnologías? ¿Cómo relaciona esta información con la definición del mercado como
+un *mecanismo descentralizado* de toma de decisiones?
+
+> Students of American history learn that the defeat of the southern Confederate
+states in the American Civil War ended slavery in the production of cotton and
+other crops in that region. There is also an economics lesson in this story.
+>
+> At the war’s outbreak on 12 April 1861, President Abraham Lincoln ordered the
+US Navy to blockade the ports of the Confederate states. These states had
+declared themselves independent of the US to preserve the institution of
+slavery.
+>
+> As a result of the naval blockade, the export of US-grown raw cotton to the
+textile mills of Lancashire in England came to a virtual halt, eliminating
+three-quarters of the supply of this critical raw material. Sailing at night, a
+few blockade-running ships evaded Lincoln’s patrols, but 1,500 were destroyed or
+captured.
+>
+> We will see in this unit that the market price of a good, such as cotton, is
+determined by the interaction of supply and demand. In the case of raw cotton,
+the tiny quantities reaching England through the blockade were a dramatic
+reduction in supply. There was large excess demandexcess demand A situation in
+which the quantity of a good demanded is greater than the quantity supplied at
+the current price. See also: excess supply.close—that is to say, at the
+prevailing price, the quantity of raw cotton demanded exceeded the available
+supply. As a result, some sellers realized they could profit by raising the
+price. Eventually, cotton was sold at prices six times higher than before the
+war, keeping the lucky blockade-runners in business. Consumption of cotton fell
+to half the prewar level, throwing hundreds of thousands of people who worked in
+cotton mills out of work.
+>
+> Mill owners responded. For them, the price rise was an increase in their
+costs. Some firms failed and left the industry due to the reduction in their
+profits. Mill owners looked to India to find an alternative to US cotton,
+greatly increasing the demand for cotton there. The excess demand in the markets
+for Indian cotton gave some sellers an opportunity to profit by raising prices,
+resulting in increases in the prices of Indian cotton, which quickly rose almost
+to match the price of US cotton.
+>
+> Responding to the higher income now obtainable from growing cotton, Indian
+farmers abandoned other crops and grew cotton instead. The same occurred
+wherever cotton could be grown, including Brazil. In Egypt, farmers who rushed
+to expand the production of cotton in response to the higher prices began
+employing slaves, captured (like the American slaves that Lincoln was fighting
+to free) in sub-Saharan Africa.
+>
+> There was a problem. The only source of cotton that could come close to making
+up the shortfall from the US was in India. But Indian cotton differed from
+American cotton, and required an entirely different kind of processing. Within
+months of the shift to Indian cotton, new machinery was developed to process it.
+>
+> As the demand for this new equipment soared, firms like Dobson and Barlow, who
+made textile machinery, saw profits take-off. We know about this firm, because
+detailed sales records have survived. It responded by increasing production of
+these new machines and other equipment. No mill could afford to be left behind
+in the rush to retool, because if it didn’t, it could not use the new raw
+materials. The result was, in the words of Douglas Farnie, a historian who
+specialized in the history of cotton production, ‘such an extensive investment
+of capital that it amounted almost to the creation of a new industry.’
+>
+> The lesson for economists: Lincoln ordered the blockade, but in what followed,
+the farmers and sellers who increased the price of cotton were not responding to
+orders. Neither were the mill owners who cut back the output of textiles and
+laid off the mill workers, nor were the mill owners desperately searching for
+new sources of raw material. By ordering new machinery, the mill owners set off
+a boom in investment and new jobs.
+>
+> All of these decisions took place over a matter of months, by millions of
+people, most of whom were total strangers to one another, each seeking to make
+the best of a totally new economic situation. American cotton was now scarcer,
+and people responded, from the cotton fields of Maharashtra in India to the Nile
+delta, to Brazil, and the Lancashire mills.
+>
+> To understand how the change in the price of cotton transformed the world
+cotton and textile production system, think about the prices determined by
+markets as messages. The increase in the price of US cotton shouted: ‘find other
+sources, and find new technologies appropriate for their use.’ Similarly, when
+the price of petrol rises, the message to the car driver is: ‘take the train’,
+which is passed on to the railway operator: ‘there are profits to be made by
+running more train services’. When the price of electricity goes up, the firm or
+the family is being told: ‘think about installing photovoltaic cells on the
+roof.’
+
+
+```
+
+
+
+
+[lauber]: https://www.sciencedirect.com/topics/social-sciences/oil-crisis
+
+[Crisis73]: https://es.wikipedia.org/wiki/Crisis_del_petr%C3%B3leo_de_1973
+
+[Crisis79]: https://es.wikipedia.org/wiki/Crisis_del_petr%C3%B3leo_de_1979
+
+[^industria]: Llamaremos *industria* al conjunto de vendedores que operan en un
+mercado.
+
+[^NotaOferta]: En esta sección tomaremos cómo dado el *precio* y veremos qué
+información le da a los compradores y a los vendedores. No obstante, a lo largo
+de este curso veremos cómo se determina este precio en el mercado que hace que
+tanto los compradores como los vendedores estén satisfechos. En el capítulo
+\@ref(ofertademanda) aprenderemos a encontrar el precio de los 
+*mercados competitivos*, en el capítulo \@ref(consumidor) veremos cómo los
+gustos de las personas determinan cuánto están dispuestas a pagar y en el
+capítulo \@ref(firma) veremos cómo las tecnologías determinan a qué precios
+están dispuestas a vender las empresas.
+
+[^Dinero]: El dinero es un *medio de intercambio* de bienes y, usualmente, toma
+la forma de "monedas y cheques que se utiliza[n] para comprar cosas" 
+[@samuelson, p. 33]. Sin embargo, en el curso de **macroeconomía** verá que es
+cualquier objeto que sirva como (i) medio de pago, (ii) unidad de medida y 
+(iii) depósito de valor. Por ejemplo, podrían ser conchas, sal, cacao u otras;
+me pareció particularmente interesante el papel de dinero que tuvieron las 
+bebidas alcohólicas durante el periodo esclavista (una lectura muy agradable es
+el libro de @glasses).
+
+[^Relativos]: Por ejemplo, si una hamburguesa cuesta $100 y un libro cuesta 
+$500, entonces diríamos que el precio relativo de un libro son 5 hamburguesas.
+En el capítulo de \@ref(consumidor) comenzaremos a notar que los economistas nos
+interesamos más en los *precios relativos* (un bien en términos de otros) que en
+los numerarios (en términos de dinero).
+
+[^Vaciado]: Técnicamente, a esta característica se le conoce como 
+*condición de vaciado de mercados*.
+
+[^Reconocimiento]: De TomTheHand - Trabajo propio, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4040114

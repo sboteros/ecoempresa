@@ -1,5 +1,5 @@
-library(tinytex)
-tinytex::tlmgr_install(c("alegreya", "sourcecodepro"))
+#library(tinytex)
+#tinytex::tlmgr_install(c("alegreya", "sourcecodepro"))
 
 quiet = "--quiet" %in% commandArgs(FALSE)
 formats = commandArgs(TRUE)
@@ -42,6 +42,6 @@ for (f in list.files('_book', '[.]html$', full.names = TRUE)) {
   writeLines(x, f)
 }
 
-if (length(formats) > 1) bookdown::publish_book()
+#if (length(formats) > 1) bookdown::publish_book()
 
 setwd(owd)
