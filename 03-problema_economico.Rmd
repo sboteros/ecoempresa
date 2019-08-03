@@ -125,9 +125,425 @@ mercanismo de mercado" [@samuelson].
 
 ## Frontera de posibilidades de producción {#fpp}
 
+### Productos, insumos y tecnología
+
+En la sección anterior vimos que los mercados ayudan a responder *cómo* producir
+pues dan incentivos a las empresas para producir, de la forma más barata que sea
+posible, lo que los consumidores desean. Asimismo, en la sección \@ref(escasez),
+vimos el concepto de *eficiencia productiva*, que implica que las empresas hacen
+justamente eso. Pero, ¿cómo podemos saber que las empresas están produciendo
+justamente tan bien bien como pueden hacerlo?
+
+Cuando en una sociedad las empresas producen de forma eficiente, utilizan de la
+mejor manera posible los recursos a su disposición para transformarlos en cosas
+que les son útiles. En lo que acabamos de decir, nos referimos a tres cosas
+diferentes y necesitaremos contruir un lenguaje particular para ellas: estras
+tres cosas son los insumos, las tecnologías y los productos. @samuelson[p. 9]
+define:
+
++ Los **insumos** son las mercancías o productos que se utilizan para producir
+bienes o servicios.
++ Los **productos** son los distintos bienes o servicios resultantes del proceso
+de producción. Estos pueden ser productos para consumo final (es decir, lo que
+nosotros como consumidores queremos obtener) o pueden ser productos intermedios;
+en este segundo caso, son a su vez, insumos para otro proceso productivo.
++ La **tecnología** son todos los procesos que nos permiten convertir a los
+insumos en productos; por ejemplo: una máquina, un conocimiento, una forma de 
+organizarse para producir.
+
+```{block2, type = 'rmdimportant'}
+  La *tecnología* es el proceso que nos permite convertir los *insumos* en los
+  *productos* que deseamos.
+```
+
+Otro término que tenemos para referirnos a los insumos es el de 
+**factores de producción** (en el capítulo \@ref(factores) analizaremos en 
+detalle el mercado de estos). En general, los podemos agrupar en tres tipos
+de insumos: tierra, capital y trabajo.
+
+La **tierra** son los recursos naturales que tenemos a nuestra disposición y que
+utilizamos para obtener lo que necesitamos. Por ejemplo, es tierra y agua para
+cultivar nuestros alimentos, metales y materias primas para producir diversos 
+objetos, energía, etc. El **trabajo** es el esfuerzo humano que ponemos en la 
+producción y está limitado por la población en edad de trabajar y por el 
+conocimiento técnico y científico que tenemos en un momento determinado. Y el
+**capital** está conformado por los bienes durables que se utilizan para 
+producir (podría interpretarse como trabajo acumulado), tales como carreteras,
+edificios, máquinas, etcétera.
+
+```{block2, type = 'rmdnote'}
+  Podemos agrupar los **insumos** de una economía en tres categorías: *tierra*,
+  *capital* y *trabajo*.
+```
+
+Como sociedad, los *insumos* que tenemos son limitados, entonces no podemos
+obtener tantos *productos* como desearíamos: ante la limitación de recursos que
+tenemos, si queremos obtener más de un producto, esto implica que podríamos
+obtener menos de otros productos, dada la *tecnología* de producción que la
+sociedad tiene en un momento determinado.
+
+### Conjunto factible
+
+Supongamos, para simplificar, que usted desea obtener dos **productos**:
+*calificaciones* y *tiempo libre*. Para producir estos dos productos, usted
+cuenta con un único **insumo**: 24 horas al día, que puede utilizar para
+*estudiar* o para el *ocio*. Además, usted tiene una **tecnología** que es una
+forma de estudiar, que convierte su tiempo de estudio en calificaciones; esta
+tecnología tiene la característica de que entre más tiempo dedique a estudiar,
+mayores calificaciones tendrá, es decir, se obtiene un mayor producto cuando se
+invierten más insumos. ¿Qué tantas calificaciones y tiempo libre podría obtener
+usted como máximo?
+
+Note que los productos que usted quiere obtener son *valiosos*, pues usted 
+quisiera tanto de los dos como fuera posible: entre mejores calificaciones
+obtenga, usted estará mejor, al igual que entre más tiempo libre pueda 
+disfrutar. Sin embargo, como sólo tiene 24 horas al día, usted tiene que hacer
+una elección: si dedica mucho tiempo a estudiar, puede obtener calificaciones
+más altas, pero tendrá menos tiempo de ocio; al contrario, elegir más tiempo de
+ocio significará que obtendrá menores calificaciones.
+
+#### Calificaciones y horas de estudio
+
+Supongamos que su tecnología para producir calificaciones transforma las horas
+de estudio en calificaciones y está dada por la función $c(h) = 20 \sqrt{h}$, en
+donde $0 \leq h \leq 24$ son las horas que usted dedica a estudiar. En la tabla 
+\@ref(tab:tabcali) se observan algunas calificaciones que usted podría obtener 
+cuando dedica diversas horas a estudiar.
+
+```{r tabcali, echo = FALSE}
+  calificaciones <- function(horas) {20 * sqrt(horas)}
+  estudio <- c(0, 1, 4, 9, 16, 20, 24)
+  ejemplo <- data.frame(label = LETTERS[seq_along(estudio)],
+                        estudio = estudio, 
+                        calificacion = calificaciones(estudio),
+                        stringsAsFactors = FALSE)
+  knitr::kable(ejemplo, format.args = formato, row.names = FALSE,
+              col.names = c("", "Horas de estudio", "Calificaciones"),
+              caption = "Calificaciones máximas como función de las horas de estudio")
+    
+```
+
+Podemos graficar los datos de la tabla \@ref(tab:tabcali) para obtener la
+gráfica de cómo luce nuestra *función de producción*, cuyas características
+analizaremos en el capítulo \@ref(firma). En el gráfico \@ref(fig:grafcali) se
+muestra la función de producción, en donde están resaltados los datos de la
+tabla.
+
+```{r grafcali, echo = FALSE, fig.cap = "Calificaciones como función de las horas de estudio"}
+  graf1(ejemplo, "estudio", "calificacion", g = NULL, calificaciones, "label", 
+        "Función de producción de calificaciones", 
+        TeX("$c(h) = 20 \\sqrt{h}$."), 
+        "Horas de esudio", "Calificaciones") 
+```
+
+#### Ocio y horas de estudio
+
+Ahora, note que la producción de calificaciones tiene exactamente el mismo
+insumo que el ocio: su tiempo. En términos formales, las horas de ocio de las
+que usted puede disfrutar son $o(h) = 24 - h$. En la tabla \@ref(tab:tabocio) se
+observan algunas calificaciones que usted podría obtener cuando dedica diversas
+horas a estudiar.
+
+```{r tabocio, echo = FALSE}
+  ejemplo$ocio <- 24 - ejemplo$estudio
+  knitr::kable(ejemplo[, c(1, 2, 4)], format.args = formato, row.names = FALSE,
+                col.names = c("", "Horas de estudio", "Tiempo de ocio"),
+                caption = "Tiempo de ocio máximo como función de las horas de estudio")
+```
+
+Nuevamente, grafiquemos esta *función de producción*. Aquí tendríamos que la
+producción de ocio es inversa al tiempo de estudio: entre más tiempo dedique 
+usted a estudiar, tendrá menos tiempo de ocio para disfrutar. Esta relación se
+muestra en el gráfico \@ref(fig:grafocio).
+
+```{r grafocio, echo = FALSE, fig.cap = "Tiempo de ocio como función de las horas de estudio"}
+  graf1(ejemplo, x = "estudio", y = "ocio", NULL, function(h) {24 - h}, "label",
+        "Función de producción de ocio", TeX("$o(h) = 24 - h$."),
+        "Horas de estudio", "Ocio")
+```
+
+
+```{block2, type = 'rmdtip'}
+  **Gráfica de una línea recta**. Recuerde que para graficar una línea recta de 
+  la forma canónica $y = a + b x$ basta conocer dos puntos; y para 
+  caracterizarla (es decir, para escribir su ecuación), basta conocer dos puntos 
+  cualquiera o un punto y la pendiente.
+  
+  Cuando tenemos la ecuación, una forma muy sencilla de obtener dos puntos para
+  graficarla es obtener los interceptos (es decir, hacer $x = 0$ y despejar para
+  $y$ primero, y $y = 0$ y despejar para $x$ después). En este caso, haciendo 
+  $x$ = 0, obtenemos $y = a + b (0) = a$; por lo tanto, el primer punto es 
+  $(0, a)$ que se ubica en el punto $a$ sobre el eje vertical. El segundo punto 
+  se obtiene haciendo $y = 0$, entonces obtenemos 
+  $0 = a + b x \Rightarrow x = -\frac{a}{b}$, por lo que el segundo punto es
+  $(-\frac{a}{b}, 0)$, que se ubica en el punto $-\frac{a}{b}$ sobre el eje 
+  horizontal.
+  
+  En la gráfica del *ocio* tenemos la ecuación $o = 24 - h$, que tiene la forma
+  de una línea recta. Cuando $h = 0$, entonces $o = 24$ (note que es $a$ en la 
+  forma canónica), entonces esta recta pasa por el punto $(0, 24)$ . Cuando
+  $h = 0$, entonces $o = 24$ (note que es $-\frac{a}{b} = -\frac{24}{-1}$ en la
+  forma canónica), entonces pasa por el punto $(24, 0)$. Estos dos puntos son
+  suficientes para gráficar toda la recta, sin que sea necesario hacer una tabla
+  más detallada como la que hicimos.
+  
+  **Ecuación de una línea recta**. En otras ocasiones, querremos saber cuál es
+  la ecuación de una línea recta teniendo poca información. Podemos escribirla
+  si conocemos un punto y la pendiente o dos puntos.
+  
+  Si conocemos un punto $(x_0, y_0)$ y la pendiente $b$, basta que reemplacemos 
+  en la ecuación canónica esta información y despejemos para $a$. Así, 
+  $y_0 = a + b x_0 \Rightarrow a = y_0 - b x_0$; por lo tanto, cuando ya 
+  conocemos $a$ y $b$, simplemente escribimos la ecuación de la forma canónica
+  $y = a + b x$.
+  
+  Si conocemos dos puntos $(x_0, y_0)$ y $(x_1, y_1)$, debemos recordar que la
+  pendiente es $b = \frac{\Delta y}{\Delta x} = \frac{x_1 - x_0}{y_1 - y_0}$.
+  Después, utilizamos esta pendiente y cualquiera de los puntos para obtener el 
+  intercepto $a$ como se explicó en el párrafo anterior y, de esta manera, 
+  obtenemos la ecuación de la recta.
+
+```
+
+
+#### Calificaciones y horas de estudio máximas
+
+Lo que tenemos es un *trade-off* muy interesante: los dos productos que usted
+valora utilizan el mismo insumo, que es limitado a sólo 24 horas al día; 
+entonces, para tener más de uno usted debe sacrificar un poco del otro. Si 
+quiere más calificaciones, deberá sacrificar tiempo de ocio; si quiere más
+tiempo de ocio, deberá sacrificar calificaciones.
+
+```{block2, type = 'rmdnote'}
+  Los **contrafactuales** (comunmente llamados *trade-offs*) son las cosas que
+  tenemos que sacrificar para obtener un poco más de otras. Aquí aplica el 
+  refrán ["*there ain't no such thing as free lunch*"][FreeLunch], que significa 
+  que si queremos algo bueno, también deberemos sacrificar algo.
+```
+
+Observe que, de las tablas \@ref(tab:tabcali) y \@ref(tab:tabocio), podemos 
+saber cuánto es lo máximo de calificaciones y tiempo de ocio que podemos obtener
+simultáneamente. Por ejemplo, si queremos obtener 15 horas de ocio (punto D en
+la tabla \@ref(tab:tabocio) y el gráfico \@ref(fig:grafocio)), eso implica que
+estudiaremos 9 horas, entonces el máximo de calificaciones que podremos obtener
+es 60 (punto D en la tabla \@ref(tab:tabcali) y el gráfico \@ref(fig:grafcali)).
+En la tabla \@ref(tab:tabociocali) podemos ver las calificaciones y el tiempo
+de ocio para los puntos observados anteriormente.
+
+```{r tabociocali, echo = FALSE}
+  knitr::kable(ejemplo[, c(1, 3, 4)], format.args = formato, row.names = FALSE,
+                col.names = c("", "Calificación", "Tiempo de ocio"),
+                caption = "Calificaciones y tiempo de ocio máximos")
+```
+
+Podemos graficar los puntos que obtuvimos en la tabla \@ref(tab:tabociocali) 
+anterior y unirlos con una curva para ver las combinaciones máximas *productos*
+(tiempo de ocio y calificaciones) que podríamos obtener, dados nuestros *insumos* 
+disponibles (24 horas al día) y la *tecnología* con la que convertimos insumos
+en productos (que, en este caso, son las dos funciones $c(h)$ y $o(h)$ que 
+vimos). En el gráfico \@ref(fig:grafociocali) se encuentra disponible esta
+gráfica.
+
+```{r grafociocali, echo = FALSE, fig.cap = "Calificaciones como función del tiempo de ocio"}
+  graf1(ejemplo, "ocio", "calificacion", NULL, function(o) {20 * sqrt(24 - o)}, 
+        "label", "Calificaciones y tiempo máximo de ocio",
+        TeX("$c(o) = 20 \\sqrt{24 - o}$."), "Tiempo de ocio", "Calificaciones")
+```
+
+```{block2, type = 'rmdtip'}
+  **Funciones inversas**. Note que en las tablas y las gráficas anteriores, 
+  teníamos que tanto el ocio como las calificaciones son función de las horas de
+  estudio; en efecto, habíamos escrito dos funciones para ellas: $o(h) = 24 - h$
+  y $c(h) = 20 \sqrt{h}$. Sin embargo, en el último gráfico que hicimos, parece
+  que las calificaciones son una función del ocio; esto muestra claramente el
+  *trade-off* que usted debe hacer: a mayores calificaciones, menos tiempo de
+  ocio (porque ambas cosas utilizan el mismo insumo: su tiempo). ¿Cómo cambiamos
+  de una función de $h$ a una de $o$?
+    
+  Lo primero que podemos hacer es calcular la *función inversa* de $o(h)$, que
+  nos da una $h(o)$ y simplemente se obtiene despejando. Tenemos que
+  $o(h) = 24 - h \Rightarrow h(o) = 24 - o$. Después, simplemente reemplazamos
+  la $h$ en la función $c(h)$ por esta función que acabamos de hallar, que nos
+  quedaría como $c(h(o)) = c(o) = 20 \sqrt{h(o)} = 20 \sqrt{24 - o}$. Esta
+  última función es la que describe la curva que dibujamos en el último gráfico.
+```
+
+Esta gráfica que acabamos de obtener (descrita con la ecuación 
+$c(o) = 20 \sqrt{24 - o}$) se llama **frontera de posibilidades de producción** y
+muestra el máximo de cada uno de los bienes que podemos obtener, dados nuestros
+escasos recursos y la tecnología que tenemos disponible. La característica que
+tiene es que cualquier punto que hay sobre esta curva es alcanzable para 
+nosotros.
+
+```{definition, label = "fpp_def", name = "Frontera de Posibilidades de Producción"}
+  La **frontera de posibilidades de producción** (o **FPP**) muestra las 
+  cantidades máximas de producción que puede obtener una economía, dados sus 
+  conocimientos y la cantidad de insumos disponibles [@samuelson, p. 10].
+```
+
+Si bien en nuestro ejemplo nos referíamos únicamente a usted, en la práctica 
+esta curva se refiere a las cantidades máximas de todos los productos que puede
+alcanzar la economía (que no podríamos graficar en un plano de dos dimensiones
+como el de la gráfica \@ref(fig:grafociocali)).
+
+Algo importante que nos muestra esta gráfica son los puntos que no podemos 
+obtener, dados nuestros insumos y nuestra tecnología; estos puntos son deseables
+para la sociedad, pues siempre se prefieren más productos a menos productos; sin
+embargo, no están disponibles para ella. Nos referimos a todos los puntos que 
+están por encima (o a la derecha) de la FPP. Por ejemplo, usted podría querer
+disponer de 15 horas de ocio (es decir, estudiar 9 horas) y una calificación de
+90.
+
+En el gráfico \@ref(conjnofactible) se muestra, resaltado en color azul, el
+*conjunto no factible*, que muestra los puntos que no son alcanzables con el
+nivel de insumos y tecnología actual. En la sección \@ref(crecimiento)
+observaremos que este conjunto puede variar en el tiempo, así como entre países
+en un momento determinado, pues está determinado por la tecnología de la que
+dispone la sociedad en un momento determinado, así como por sus recursos.
+
+```{r conjnofactible, echo = FALSE, fig.cap = "Conjunto no factible"}
+  graf1(ejemplo %>% bind_rows(data.frame(label = "No factible", 
+                                         estudio = 15, calificacion = 90, 
+                                         ocio = 15, stringsAsFactors = FALSE)),
+        "ocio", "calificacion", NULL, function(o) {20 * sqrt(24 - o)}, "label", 
+        "Conjunto no factible",
+        TeX("$c(o) > 20 \\sqrt{24 - o}$."), "Tiempo de ocio", "Calificaciones") +
+  geom_ribbon(data = data.frame(x = seq(0, 24, 0.01)) %>%
+                mutate(y = 20 * sqrt(24 - x)), 
+              mapping = aes(x = x, ymin = y, ymax = Inf), inherit.aes = FALSE,
+              fill = "blue", alpha = 0.4)
+```
+
 ### Eficiencia de los recursos
 
-### Crecimiento económico
+Por otra parte, todos los puntos que están bajo la FPP son puntos que podemos
+obtener; por eso, a este conjunto de puntos se le llama *conjunto factible*.
+En el gráfico \@ref(fig:conjfactible) se encuentra resaltado en color azul este
+conjunto. Note que el conjunto factible incluye a la FPP misma, pues cualquier 
+punto sobre la FPP es alcanzable para usted.
+
+```{r conjfactible, echo = FALSE, fig.cap = "Conjunto factible"}
+  graf1(ejemplo %>% bind_rows(data.frame(label = as.character("Factible"), 
+                                         estudio = 15, calificacion = 40, 
+                                         ocio = 15, stringsAsFactors = FALSE)), 
+        "ocio", "calificacion", NULL, function(o) {20 * sqrt(24 - o)}, "label", 
+        "Conjunto factible",
+        TeX("$c(o) \\leq 20 \\sqrt{24 - o}$."), "Tiempo de ocio", "Calificaciones") +
+  geom_ribbon(data = data.frame(x = seq(0, 24, 0.01)) %>%
+                mutate(y = 20 * sqrt(24 - x)), 
+              mapping = aes(x = x, ymin = 0, ymax = y), inherit.aes = FALSE,
+              fill = "blue", alpha = 0.4)
+```
+
+Aunque todos los puntos resaltados en color azul en el gráfico 
+\@ref(fig:conjfactible) son alcanzables, muchos de ellos son *ineficientes*,
+pues podríamos obtener más de al menos uno de los productos si utilizamos bien
+nuestros recursos y nuestra tecnología. Por ejemplo, si usted tuviera 15 horas
+de tiempo de ocio (es decir, estudiara 9 horas) y una calificación de 40, 
+entonces estaría haciendo un uso ineficiente de su tiempo, pues podría mantener
+su mismo tiempo de ocio y obtener una calificación mayor (punto D del gráfico) o
+mantener su calificación y tener más tiempo de ocio (punto C del gráfico).
+
+Recuerde que en la sección \@ref(escasez) distinguimos varios conceptos de 
+eficiencia económica (vea la definición \@ref(def:eficiencia)), entre los que
+se encuentra la **eficiencia productiva**. En términos del gráfico 
+\@ref(fig:conjfactible), la eficiencia productiva implica que estamos *sobre* la
+curva de la FPP y no *debajo* de ella (es decir, en el resto del *conjunto 
+factible*), pues eso significa que estamos haciendo un buen uso de los insumos y
+la tecnología disponibles.
+
+```{definition, label = "efiprod", name = "Eficiencia productiva"}
+  La **eficiencia productiva** se da cuando una economía no puede producir más
+  de un bien sin producir menos de otro bien; esto implica que la economía se
+  encuentra en su frontera de posibilidades de producción [@samuelson, p. 13].
+```
+
+@samuelson[p. 14] dice que "[c]uando existen recursos sin utilizar, la economía
+no se encuentra en lo absoluto en su frontera de posibilidades de producción
+sino, más bien, en algún lugar *dentro* de ella". En el curso de *macroeconomía*
+usted verá que, en el *corto plazo*, existen *ciclos económicos* que hacen que
+no utilicemos todos los recursos de la economía; por eso existe el *desempleo* y
+eso hace que no estemos utilizando adecuadamente los recursos. El problema de
+un *macroeconomista* es cómo utilizar las políticas *fiscal* y *monetaria* para
+acercar a la sociedad a la FPP y, simultáneamente, evitar que la moneda pierda
+poder adquisitivo (es decir, evitar una alta *inflación*).
+
+Observe, de la definición \@ref(def:efiprod), que cuando estamos sobre la FPP
+(y, por lo tanto, estamos siendo eficientes en el sentido de la producción), no
+podemos obtener más de un producto sin sacrificar algo del otro. Por ejemplo, si
+obtienes una calificación de 80 y un tiempo de ocio de 8 horas (punto E), 
+entonces ya estás actuando de forma eficiente; por lo tanto, si quisieras 
+obtener una calificación mayor, necesariamente tendrías que renunciar a algo de 
+tiempo de ocio. Es decir, el *costo* de una calificación mayor es el tiempo de
+ocio al que debes renunciar por ella. @samuelson[p. 13] explica que "[e]n un
+mundo de escasez, elegir una cosa significa renunciar a alguna otra". A este 
+concepto lo llamamos *costo de oportunidad*.
+
+```{definition, label = "opcost", name = "Costo de oportunidad"}
+  El **costo de oportunidad** de una decisión es el valor del bien o servicio al 
+  que se renuncia [@samuelson, p. 13]
+```
+
+### Crecimiento económico {#crecimiento}
+
+Como vimos en la sección anterior, la FPP depende de los insumos y de las 
+tecnologías que la sociedad tiene a su disposición. La tecnología no es fija,
+sino que varía en el tiempo gracias a los adelantos científicos y a las mejoras
+en los procesos organizativos que tenemos en la sociedad. Esto hace que, con
+el paso del tiempo, podamos obtener más cosas con los mismos recursos; o acceder
+a nuevos recursos a los que antes no teníamos acceso. 
+
+Note que lo que decimos en el párrafo anterior, equivale a decir que, con el 
+paso del tiempo, podemos ampliar nuestro *conjunto factible* (es decir, 
+disminuir nuestro *conjunto no factible*) a través de los avances tecnológicos.
+
+Supongamos, por ejemplo, que usted aprendió a utilizar un nuevo programa de
+computador o que, con lo que usted ha aprendido, ahora puede hacer más 
+actividades académicas en menos tiempo; por lo tanto, usted puede obtener más
+calificaciones ahora que las que obtenía antes. Digamos que, armado con sus
+nuevos conocimientos, usted ahora obtiene unas calificaciones dadas por la 
+siguiente función:
+
+\begin{equation}
+  c(h) = \begin{cases}
+    100 & \text{si } h \geq 16 \\
+    25 \sqrt{h} & \text{si } 0 \leq h \leq 16.
+  \end{cases}
+\end{equation}
+
+En este caso, manteniendo la misma función de producción de ocio, $o(h) = 24 -h$,
+la curva de la FPP estaría dada por la siguiente función:
+
+\begin{equation}
+  c(o) = \begin{cases}
+    100 & \text{si } o \leq 8 \\
+    25 \sqrt{24 - o} & \text{si } 8 < o \leq 24.
+  \end{cases}
+\end{equation}
+
+En el gráfico \@ref(fig:cambiotec) se muestra cómo lucirían la antigua FPP
+(color negro) y la nueva FPP (color azul), después de su mejora en la tecnología
+de producción de calificaciones. Lo que observamos es que la nueva FPP se 
+encuentra por encima (a la derecha) de la antigua FPP, indicando que ahora usted
+puede obtener mayores calificaciones con las mismas horas de estudio.
+
+```{r cambiotec, echo = FALSE, fig.cap = "Desplazamiento de la FPP por una mejora tecnológica"}
+  calificaciones2 <- function(o) {ifelse(o <= 8, 100, 25 * sqrt(24 - o))}
+  ejemplo %>% select(label, calificacion, ocio) %>% 
+    rename(calificacion1 = calificacion) %>% 
+    mutate(calificacion2 = calificaciones2(ocio)) %>%
+    gather("tecnologia", "calificacion", -label, -ocio) %>%
+    mutate(label = ifelse(tecnologia == "calificacion1", 
+                          label, paste(label, "'", sep = ""))) %>%
+    graf1("ocio", "calificacion", "tecnologia", function(o) {20 * sqrt(24 - o)},
+          "label", "Cambio tecnológico", 
+          "Mejora en la tecnología de producción de calificaciones",
+          "Horas de estudio", "Calificación", c(1, 2), 
+          c("Antigua tecnología", "Nueva tecnología"), ylim = c(0, 110),
+          legpos = "bottom") + 
+    stat_function(fun = calificaciones2, colour = 2)
+```
+
 
 ### Ganancias del comercio
 
@@ -312,6 +728,55 @@ roof.’
 
 ```
 
+```{exercise, name = 'El trabajo vivo y el trabajo muerto en la crítica marxista'}
+Vimos que el *trabajo* y el *capital* son dos categorías **insumos** necesarios
+para producir bienes y servicios que deseamos; asimismo, como el capital son 
+bienes durables (edificio, carreteras, máquinas, etc.) que no provienen de la 
+naturaleza, podemos considerarlo como *trabajo acumulado*, es decir, como el
+producto de un trabajo del pasado que utilizamos hoy para producir. Ante esto,
+el marxismo ha llamado al capital *trabajo muerto*, que requiere del *trabajo
+vivo* de las personas para poder utilizarse en la producción. Mire el siguiente
+fragmento de una reseña de El Capital escrita por Engels 
+(disponible aquí)[Engels]
+
+> La Economía política al uso nos enseña que *el trabajo es la fuente de toda la
+riqueza y la medida de todos los valores*, de tal modo, que dos objetos cuya
+producción haya costado el mismo tiempo de trabajo encierran idéntico valor; y
+como, por término medio, sólo pueden cambiarse entre sí valores iguales, esos
+objetos deben poder ser cambiados el uno por el otro. Pero, al mismo tiempo, nos
+enseña que **existe una especie de trabajo acumulado, al que esa Economía da el
+nombre de capital, y que este capital, gracias a los recursos auxiliares que
+encierra, eleva cien y mil veces la capacidad productiva del trabajo vivo**, en
+gracia a lo cual exige una cierta remuneración, que se conoce con el nombre de
+beneficio o ganancia. Todos sabemos que lo que sucede en realidad es que,
+mientras las ganancias del trabajo muerto, acumulado, crecen en proporciones
+cada vez más asombrosas y los capitales de los capitalistas se hacen cada día
+más gigantescos, *el salario del trabajo vivo se reduce cada vez más, y la masa
+de los obreros*, que viven exclusivamente de un salario, se hace cada vez más
+numerosa y más pobre. ¿Cómo se resuelve esta contradicción? ¿Cómo es posible que
+el capitalista obtenga una ganancia, si al obrero se le retribuye el valor
+íntegro del trabajo que incorpora a su producto? Como el cambio supone siempre
+valores iguales, parece que tiene necesariamente que suceder así. Mas, por otra
+parte, ¿cómo pueden cambiarse valores iguales, y cómo puede retribuírsele al
+obrero el valor íntegro de su producto, si, como muchos economistas reconocen,
+este producto se distribuye entre él y el capitalista? Ante esta contradicción,
+la Economía al uso se queda perpleja y no sabe más que escribir o balbucir unas
+cuantas frases confusas, que no dicen nada. Tampoco los críticos socialistas de
+la Economía política, anteriores a nuestra época, pasaron de poner de manifiesto
+la contradicción; ninguno logró resolverla, hasta que Marx, por fin, analizó el
+proceso de formación de la ganancia, remontándose a su verdadera fuente y
+poniendo en claro, con ello, todo el problema.
+
+También puedes leer un poco más sobre el trabajo vivo y el trabajo muerto, y 
+la crítica marxista a quienes viven del *trabajo muerto* (a quienes llaman como
+una *clase ociosa*) (aquí)[marxferatu]. ¿Qué opina usted sobre la relación que
+tienen el capital y el trabajo para producir los objetos que deseamos en la 
+sociedad? ¿Usted considera que esta crítica es válida en la actualidad?
+
+
+```
+
+
 
 
 
@@ -320,6 +785,12 @@ roof.’
 [Crisis73]: https://es.wikipedia.org/wiki/Crisis_del_petr%C3%B3leo_de_1973
 
 [Crisis79]: https://es.wikipedia.org/wiki/Crisis_del_petr%C3%B3leo_de_1979
+
+[Engels]: https://www.marxists.org/espanol/m-e/1860s/resena.htm
+
+[marxferatu]: https://daily.jstor.org/marxferatu-teaching-marx-with-vampires/
+
+[FreeLunch]: https://en.wikipedia.org/wiki/There_ain%27t_no_such_thing_as_a_free_lunch
 
 [^industria]: Llamaremos *industria* al conjunto de vendedores que operan en un
 mercado.
@@ -352,4 +823,5 @@ los numerarios (en términos de dinero).
 [^Vaciado]: Técnicamente, a esta característica se le conoce como 
 *condición de vaciado de mercados*.
 
-[^Reconocimiento]: De TomTheHand - Trabajo propio, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4040114
+[^Reconocimiento]: De TomTheHand - Trabajo propio, CC BY-SA 3.0,
+https://commons.wikimedia.org/w/index.php?curid=4040114

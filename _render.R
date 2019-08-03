@@ -1,6 +1,3 @@
-#library(tinytex)
-#tinytex::tlmgr_install(c("alegreya", "sourcecodepro"))
-
 quiet = "--quiet" %in% commandArgs(FALSE)
 formats = commandArgs(TRUE)
 travis = !is.na(Sys.getenv('CI', NA))

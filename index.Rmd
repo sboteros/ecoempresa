@@ -24,7 +24,7 @@ cover-image: images/mercado_tlatelolco.jpg
   formato <- list(digits = 2, big.mark = ",", decimal.mark = ".")
   
   # Paquetes necesarios
-    paquetes <- c("tidyverse", "knitr", "bookdown")
+    paquetes <- c("tidyverse", "knitr", "bookdown", "latex2exp", "here")
     for (i in paquetes) {
       if (!require(i, character.only = TRUE)) {
         install.packages(i)
@@ -32,6 +32,9 @@ cover-image: images/mercado_tlatelolco.jpg
       library(i, character.only = TRUE)
     }
     rm(list = c("i", "paquetes"))
+    
+  # Paquetes propios
+    source(file.path("funciones", "graf1.R"))
 ```
 
 # Prefacio {-}
