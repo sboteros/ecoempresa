@@ -176,7 +176,7 @@ El caso extremo de una economía de mercado se denomina *laissez-faire* (que
 significa dejar pasar), en donde el Estado no interviene para nada en lo que
 hacen los individuos.
 
-```{block2, type = 'rmdtip', echo = TRUE}
+```{block2, type = 'rmdtip'}
 La corriente política que propone eliminar al Estado y dejar que los individuos
 hagan lo que quieran se llama *libertarianismo*. Puedes leer más en
 @sandel[cap. 3.].
@@ -245,6 +245,30 @@ la refinería de Dos Bocas describe lo que debería ser (quisiera que sea) o lo
 que es? ¿Es una estimación *normativa* o *positiva*?
 ```
 
+```{exercise, name = "Derecho como ciencia normativa"}
+A diferencia de la economía, que es una *ciencia positiva*, el derecho es una
+*ciencia normativa*. Al respecto, @torres señala que:
+
+> El derecho estudia la conducta humana, no como se desarrolla efectivamente en 
+el orden causal de la naturaleza, sino en relación con las normas que prescriben
+cómo deben desarrollarse. Es pues una ciencia normativa e imputativa.
+
+En oposición a esa definición del derecho como *ciencia normativa*, ¿cómo 
+estudia la economía a la conducta humana, siendo una *ciencia positiva*?
+
+```
+
+```{exercise, name = "Eficiencia en el sentido de Pareto"}
+La eficiencia en el sentido de Pareto significa que no se puede mejorar el
+bienestar económico de una persona sin afectar negativamente el de otra. Suponga
+que hay una persona que tiene un bien que no quiere (es decir, un mal) y hay
+otra que sí lo quiere pero no lo tiene; por ejemplo, uno puede tener *basura*
+que otro es capaz de reciclar o reutilizar. ¿Esta situación es eficiente en el
+sentido de Pareto? Justifique su respuesta.
+```
+
+
+                 
 [refdosbocas]: https://www.jornada.com.mx/ultimas/2019/05/09/decision-sobre-dos-bocas-nuevo-error-del-gobierno-citibanamex-7901.html
 
 [^Sobreexplotacion]: Un problema que tenemos actualmente es la capacidad de

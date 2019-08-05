@@ -1,12 +1,32 @@
 # El problema económico {#problema}
 
-En el capítulo \@ref(intro) vimos que los interrogantes básicos de cualquier 
-sistema económico son *qué* producir, *cómo* y *para quién* producirlo, y 
-observamos que esta de forma autoritaria o a través de una *economía de mercado*.
-En este capítulo y en el siguiente (capítulo \@ref(ofertademanda)) analizaremos
-a qué nos referimos cuando hablamos de una economía de mercado.
+En el capítulo \@ref(intro) vimos que los interrogantes básicos de cualquier
+sistema económico son *qué* producir, *cómo* y *para quién* producirlo, y
+observamos que estas preguntas se pueden responder de forma autoritaria o a
+través de una *economía de mercado*. En este capítulo y en el siguiente
+(capítulo \@ref(ofertademanda)) analizaremos a qué nos referimos cuando hablamos
+de una economía de mercado. 
 
-## Mercado y precios
+En la sección \@ref(mercado) se introducen los conceptos de mercado y precios y
+se señalan algunas características importante del precio de equilibrio en un
+mercado. Después, la sección \@ref(fpp) explica a qué nos referimos con
+*eficiencia productiva* (concepto introducido en el capítulo \@ref(intro)) y
+cómo puede interpretarse este concepto a través de la Frontera de Posibilidades
+de Producción (FPP). Posteriormente, la sección \@ref(comercio) utiliza los
+conceptos analizados en los dos primeras para mostrar cómo la *especialización*
+permite obtener mejores resultados que el autoabastecimiento. Finalmente, la
+sección \@ref(estado) muestra los racionales por los cuales se justifica la
+intervención del Estado en los mercados.
+
+La sección \@ref(mercado) está basada en @samuelson[sec. 2.A] y,
+complementariamente, @economy[sec. 8.2]; la sección \@ref(fpp) se basa
+fundamentalmente en @economy[sec. 3.3. y 3.4.] y, supletoriamente, en
+@samuelson[sec. 1.C]; la sección \@ref(comercio) se basa principalmente en
+@economy[sec. 1.8] y retoma elementos de @samuelson[sec. 2.B]; y la sección
+\@ref(estado) sigue la discusión de 
+@samuelson[sec. 2.C].
+
+## Mercado y precios {#mercado}
 
 ### Mercado
 
@@ -62,7 +82,7 @@ intercambian distintas mercancías.[^Relativos]
 La particularidad que tienen los mercados, a diferencia de otros sistemas para
 resolver los interrogantes básicos (que vimos en la sección
 \@ref(interrogantes)) es que no hay un sólo individuo que tome las decisiones,
-sino que estas emergen de la interacción de todos.^[NotaOferta] En ese sentido,
+sino que estas emergen de la interacción de todos.[^NotaOferta] En ese sentido,
 los mercados son un **mecanismo descentralizado** de toma de decisiones.
 
 En los mercados interactúan muchos compradores y muchos vendedores que
@@ -169,7 +189,7 @@ producción y está limitado por la población en edad de trabajar y por el
 conocimiento técnico y científico que tenemos en un momento determinado. Y el
 **capital** está conformado por los bienes durables que se utilizan para 
 producir (podría interpretarse como trabajo acumulado), tales como carreteras,
-edificios, máquinas, etcétera.
+edificios, máquinas, etc [@samuelson, p. 9].[^NotaCapital]
 
 ```{block2, type = 'rmdnote'}
   Podemos agrupar los **insumos** de una economía en tres categorías: *tierra*,
@@ -230,10 +250,10 @@ muestra la función de producción, en donde están resaltados los datos de la
 tabla.
 
 ```{r grafcali, echo = FALSE, fig.cap = "Calificaciones como función de las horas de estudio"}
-  graf1(ejemplo, "estudio", "calificacion", g = NULL, calificaciones, "label", 
-        "Función de producción de calificaciones", 
-        TeX("$c(h) = 20 \\sqrt{h}$."), 
-        "Horas de esudio", "Calificaciones") 
+  graf1(df = ejemplo, x = "estudio", y = "calificacion", fun1 =  calificaciones, 
+        label = "label", title = "Función de producción de calificaciones", 
+        subtitle = TeX("$c(h) = 20 \\sqrt{h}$."), 
+        xtit = "Horas de esudio", ytit = "Calificaciones") 
 ```
 
 #### Ocio y horas de estudio
@@ -257,9 +277,10 @@ usted a estudiar, tendrá menos tiempo de ocio para disfrutar. Esta relación se
 muestra en el gráfico \@ref(fig:grafocio).
 
 ```{r grafocio, echo = FALSE, fig.cap = "Tiempo de ocio como función de las horas de estudio"}
-  graf1(ejemplo, x = "estudio", y = "ocio", NULL, function(h) {24 - h}, "label",
-        "Función de producción de ocio", TeX("$o(h) = 24 - h$."),
-        "Horas de estudio", "Ocio")
+  graf1(df = ejemplo, x = "estudio", y = "ocio", fun1 = function(h) {24 - h}, 
+        label = "label", title = "Función de producción de ocio", 
+        subtitle = TeX("$o(h) = 24 - h$."), 
+        xtit = "Horas de estudio", ytit =  "Ocio")
 ```
 
 
@@ -345,9 +366,11 @@ vimos). En el gráfico \@ref(fig:grafociocali) se encuentra disponible esta
 gráfica.
 
 ```{r grafociocali, echo = FALSE, fig.cap = "Calificaciones como función del tiempo de ocio"}
-  graf1(ejemplo, "ocio", "calificacion", NULL, function(o) {20 * sqrt(24 - o)}, 
-        "label", "Calificaciones y tiempo máximo de ocio",
-        TeX("$c(o) = 20 \\sqrt{24 - o}$."), "Tiempo de ocio", "Calificaciones")
+  graf1(df = ejemplo, x = "ocio", y = "calificacion", 
+        fun1 = function(o) {20 * sqrt(24 - o)}, label = "label",
+        title = "Calificaciones y tiempo máximo de ocio",
+        subtitle = TeX("$c(o) = 20 \\sqrt{24 - o}$."), 
+        xtit = "Tiempo de ocio", ytit = "Calificaciones")
 ```
 
 ```{block2, type = 'rmdtip'}
@@ -375,7 +398,7 @@ escasos recursos y la tecnología que tenemos disponible. La característica que
 tiene es que cualquier punto que hay sobre esta curva es alcanzable para 
 nosotros.
 
-```{definition, label = "fpp_def", name = "Frontera de Posibilidades de Producción"}
+```{definition, label = "fppdef", name = "Frontera de Posibilidades de Producción"}
   La **frontera de posibilidades de producción** (o **FPP**) muestra las 
   cantidades máximas de producción que puede obtener una economía, dados sus 
   conocimientos y la cantidad de insumos disponibles [@samuelson, p. 10].
@@ -394,7 +417,7 @@ están por encima (o a la derecha) de la FPP. Por ejemplo, usted podría querer
 disponer de 15 horas de ocio (es decir, estudiar 9 horas) y una calificación de
 90.
 
-En el gráfico \@ref(conjnofactible) se muestra, resaltado en color azul, el
+En el gráfico \@ref(fig:conjnofactible) se muestra, resaltado en color azul, el
 *conjunto no factible*, que muestra los puntos que no son alcanzables con el
 nivel de insumos y tecnología actual. En la sección \@ref(crecimiento)
 observaremos que este conjunto puede variar en el tiempo, así como entre países
@@ -402,16 +425,18 @@ en un momento determinado, pues está determinado por la tecnología de la que
 dispone la sociedad en un momento determinado, así como por sus recursos.
 
 ```{r conjnofactible, echo = FALSE, fig.cap = "Conjunto no factible"}
-  graf1(ejemplo %>% bind_rows(data.frame(label = "No factible", 
-                                         estudio = 15, calificacion = 90, 
-                                         ocio = 15, stringsAsFactors = FALSE)),
-        "ocio", "calificacion", NULL, function(o) {20 * sqrt(24 - o)}, "label", 
-        "Conjunto no factible",
-        TeX("$c(o) > 20 \\sqrt{24 - o}$."), "Tiempo de ocio", "Calificaciones") +
-  geom_ribbon(data = data.frame(x = seq(0, 24, 0.01)) %>%
-                mutate(y = 20 * sqrt(24 - x)), 
-              mapping = aes(x = x, ymin = y, ymax = Inf), inherit.aes = FALSE,
-              fill = "blue", alpha = 0.4)
+  graf1(df = ejemplo %>% bind_rows(
+                data.frame(label = "No factible", estudio = 15, 
+                           calificacion = 90, ocio = 15, 
+                           stringsAsFactors = FALSE)),
+        x = "ocio", y = "calificacion", fun1 = function(o) {20 * sqrt(24 - o)},
+        label = "label", 
+        df_somy = data.frame(x = seq(0, 24, 0.01)) %>% 
+                              mutate(y = 20 * sqrt(24 - x)), 
+        x_somy = "x", y_somy_min = "y", y_somy_max = Inf,
+        title = "Conjunto no factible",
+        subtitle = TeX("$c(o) > 20 \\sqrt{24 - o}$."), 
+        xtit = "Tiempo de ocio", ytit = "Calificaciones")
 ```
 
 ### Eficiencia de los recursos
@@ -423,16 +448,18 @@ conjunto. Note que el conjunto factible incluye a la FPP misma, pues cualquier
 punto sobre la FPP es alcanzable para usted.
 
 ```{r conjfactible, echo = FALSE, fig.cap = "Conjunto factible"}
-  graf1(ejemplo %>% bind_rows(data.frame(label = as.character("Factible"), 
-                                         estudio = 15, calificacion = 40, 
-                                         ocio = 15, stringsAsFactors = FALSE)), 
-        "ocio", "calificacion", NULL, function(o) {20 * sqrt(24 - o)}, "label", 
-        "Conjunto factible",
-        TeX("$c(o) \\leq 20 \\sqrt{24 - o}$."), "Tiempo de ocio", "Calificaciones") +
-  geom_ribbon(data = data.frame(x = seq(0, 24, 0.01)) %>%
-                mutate(y = 20 * sqrt(24 - x)), 
-              mapping = aes(x = x, ymin = 0, ymax = y), inherit.aes = FALSE,
-              fill = "blue", alpha = 0.4)
+  graf1(df = ejemplo %>% bind_rows(
+              data.frame(label = as.character("Factible"), estudio = 15,
+                         calificacion = 40, ocio = 15, 
+                         stringsAsFactors = FALSE)), 
+        x = "ocio", y = "calificacion", fun1 = function(o) {20 * sqrt(24 - o)}, 
+        label = "label", 
+        df_somy = data.frame(x = seq(0, 24, 0.01)) %>% 
+                              mutate(y = 20 * sqrt(24 - x)), 
+        x_somy = "x", y_somy_min = 0, y_somy_max = "y",
+        title = "Conjunto factible",
+        subtitle = TeX("$c(o) \\leq 20 \\sqrt{24 - o}$."), 
+        xtit = "Tiempo de ocio", ytit = "Calificaciones")
 ```
 
 Aunque todos los puntos resaltados en color azul en el gráfico 
@@ -445,7 +472,7 @@ su mismo tiempo de ocio y obtener una calificación mayor (punto D del gráfico)
 mantener su calificación y tener más tiempo de ocio (punto C del gráfico).
 
 Recuerde que en la sección \@ref(escasez) distinguimos varios conceptos de 
-eficiencia económica (vea la definición \@ref(def:eficiencia)), entre los que
+eficiencia económica (vea la proposición \@ref(prp:eficiencia)), entre los que
 se encuentra la **eficiencia productiva**. En términos del gráfico 
 \@ref(fig:conjfactible), la eficiencia productiva implica que estamos *sobre* la
 curva de la FPP y no *debajo* de ella (es decir, en el resto del *conjunto 
@@ -468,6 +495,8 @@ un *macroeconomista* es cómo utilizar las políticas *fiscal* y *monetaria* par
 acercar a la sociedad a la FPP y, simultáneamente, evitar que la moneda pierda
 poder adquisitivo (es decir, evitar una alta *inflación*).
 
+### Costos de oportunidad
+
 Observe, de la definición \@ref(def:efiprod), que cuando estamos sobre la FPP
 (y, por lo tanto, estamos siendo eficientes en el sentido de la producción), no
 podemos obtener más de un producto sin sacrificar algo del otro. Por ejemplo, si
@@ -482,6 +511,148 @@ concepto lo llamamos *costo de oportunidad*.
 ```{definition, label = "opcost", name = "Costo de oportunidad"}
   El **costo de oportunidad** de una decisión es el valor del bien o servicio al 
   que se renuncia [@samuelson, p. 13]
+```
+
+Observe que la curva de la FPP tiene una pendiente negativa que indica que
+usted enfrenta este *trade-off* en el que, para ganar más de un producto debe
+sacrificar algo del otro. La pendiente de la FPP se llama *tasa marginal de 
+transformación* y, en este caso, representa la tasa a la que usted cambia ocio
+(eje horizontal) por calificaciones (eje vertical).
+
+```{definition, label = "TMT", name = "Tasa Marginal de Transformación - TMT"}
+  Cantidad de un bien que debe ser sacrificada para adquirir una unidad 
+  adicional de otro bien. En cualquier punto, es la pendiente de la FPP 
+  [@economy, sec. 3.4]. 
+```
+
+En el ejemplo que venimos trabajando, podemos aproximar la TMT en un punto como
+el cambio en las calificaciones que se da cuando incrementas una hora de tiempo
+de ocio; esto es, $TMT(o) = \frac{\Delta c}{\Delta o}, \, \Delta o = 1$. Por
+ejemplo, si tienes 15 horas de ocio, entonces tienes una calificación de 60; y
+si incrementas una hora de ocio, entonces tendrías una calificación de 56.57.
+Por lo tanto, la TMT en ese punto es $60 - 56.57 = `r 60 - 56.57`$. En el
+gráfico \@ref(fig:aproxTMT) se observan los puntos relevantes.
+
+```{r aproxTMT, fig.cap = "Aproximación discreta de la TMT", echo = FALSE}
+  graf1(df = ejemplo, x = "ocio", y = "calificacion",
+        fun1 = function(o) {20 * sqrt(24 - o)}, label = "label",
+        df_lab = data.frame(x = c(15, 16)) %>% 
+          mutate(y = 20 * sqrt(24 - x), label = LETTERS[1:2]), 
+        x_lab = "x", y_lab = "y", 
+        title = "Tasa marginal de transformación (aproximaxión discreta)",
+        subtitle = TeX("Pendiente cuando $h = 15$"), xtit = "Tiempo de ocio",
+        ytit = "Calificaciones") + 
+    geom_segment(mapping = aes(x = 15, xend = 16, y = 60, yend = 56.56854),
+                 colour = "red", size = 1.5) + 
+    geom_text(aes(x = 15.5, y = 55, label = "Delta~o"), parse = TRUE) + 
+    geom_text(aes(x = 14.5, y = 58, label = "Delta~c"), parse = TRUE)
+```
+
+```{block2, type = "rmdnote"}
+**Derivadas**. Sean $f(x), \, g(x)$ y $h(x)$ unas funciones diferenciables 
+de la variable  $x \in \mathbb{R}$ y $f^\prime(x), \, g^\prime(x)$ y 
+$h^\prime(x)$ sus  primeras derivadas, $a, \, b \in \mathbb{R}$ dos números 
+cualquiera con  $a \neq 0$. Recuerde de su curso de matemáticas algunas 
+derivadas de las funciones básicas:
+  
+\begin{align}
+  f(x) = a g(x) & \Rightarrow f^\prime(x) = a g^\prime(x) (\#eq:constante) \\
+  f(x) = x^a & \Rightarrow f^\prime(x) = a x^{a - 1} (\#eq:potencia) \\
+  f(x) = e^x & \Rightarrow f^\prime(x) = e^x (\#eq:exponencial) \\
+  f(x) = \ln(x) & \Rightarrow f^\prime(x) = \frac{1}{x} (\#eq:log).
+\end{align}
+
+La ecuación \@ref(eq:constante) indica que la derivada de una función 
+multiplicada por una constante es igual a la multiplicación de la derivada de
+dicha función por la misma constante. La ecuación \@ref(eq:potencia) señala que
+para derivar una potencia, basta con bajar el exponente y dejar la base elvada
+al exponente menos una unidad; note que esta ecuación también aplica para las 
+raíces, pues una raíz puede reescribirse como una potencia 
+($\sqrt[a]{x^b} = x^{\frac{b}{a}}$). La ecuación \@ref(eq:exponencial) indica
+que la derivada de la función exponencial es igual a sí misma. Y la ecuación
+\@ref(eq:log) muestra la derivada de la función logaritmo natural.
+
+Con base en estas derivadas sencillas se pueden obtener las derivadas de 
+funciones más complejas a partir de la derivada de una suma de funciones
+\@ref(eq:suma), la derivada de multiplicación de funciones 
+\@ref(eq:multiplicacion), la derivada de una razón entre funciones 
+\@ref(eq:razon) y la *regla de la cadena* \@ref(eq:cadena).
+
+\begin{align}
+  f(x) = g(x) + h(x) & \Rightarrow f^\prime(x) = g^\prime(x) + h^\prime(x)
+    (\#eq:suma) \\
+  f(x) = g(x) \cdot h(x) & \Rightarrow 
+    f^\prime(x) = g(x) \cdot h^\prime(x) + h(x) \cdot g^\prime(x) 
+    (\#eq:multiplicacion) \\
+  f(x) = \frac{g(x)}{h(x)} & \Rightarrow
+    f^\prime(x) = \frac{h(x) \cdot g^\prime(x) - g(x) \cdot h^\prime(x)}{h^2(x)}
+    (\#eq:razon) \\
+  f(x) = g(h(x)) & \Rightarrow f^\prime(x) = g^\prime(h(x)) \cdot h^\prime(x)
+    (\#eq:cadena)
+\end{align}
+
+La ecuacion \@ref(eq:suma) únicamente dice que si la función es una suma de 
+varias, entonces su derivada es la suma de las derivada de cada una de ellas.
+La ecuación \@ref(eq:multiplicacion) dice que la derivada de una multiplicación 
+de funciones es la primera por la derivada de la segunda, más la segunda por la
+derivada de la primera. La ecuación \@ref(eq:cadena) únicamente dice que si
+usted tiene una función dentro de otra, la derivada es la derivada de todo 
+(considerando como si lo que hubiera adentro fuera una simple $x$) multiplicada
+por la derivada de lo adentro. La ecuación \@ref(eq:razon) dice que la derivada 
+de una división de funciones es la de abajo por la derivada de la arriba, menos 
+la de  arriba por la derivada de la de abajo, todo eso entre la de abajo al 
+cuadrado; aunque suena un poco más compleja, observe que se obtiene trivialmente 
+de las anteriores (es decir, no hay que aprenderla de memoria), pues 
+$\frac{g(x)}{h(x)} = g(x)[h(x)]^{-1}$; la aparente complejidad únicamente se
+refiere a la suma de las fracciones que queda después de hacer las derivadas
+correspondientes.
+
+Si usted aprende bien a aplicar estas ocho ecuaciones, entonces no tendrá 
+problemas para desarrollar ninguna de las derivadas que pueden presentarse en
+este curso. Quizás la única diferencia con los cursos de matemáticas que usted
+ha tomado hasta el momento es cuando las funciones no dependen de una única
+variable sino de varias, $f(x, y)$; en ese caso, aplican exactamente las mismas 
+reglas, lo único que usted debe hacer es considerar como *constantes* a las 
+variables sobre las cuales usted no esté derivando.
+      
+```
+
+
+Observe que esta es una *aproximación* a la TMT porque utilizas dos puntos de la
+curva. Sin embargo, la TMT *precisa* es la pendiente en un único punto; esta
+pendiente es la derivada de la FPP evaluada en ese punto. Para nuestro caso, la
+TMT estaría dada por la siguiente ecuación, que es la derivada de la función 
+$c(o) = 20 \sqrt{24 - o}$, que describe a la FPP:
+
+\begin{equation}
+  \begin{split}
+    TMT(15) &= \left. \frac{\partial c(o)}{\partial o} \right\vert_{o = 15} \\
+            &= \left. 20 \frac{1}{2} (24 - o)^{-\frac{1}{2}} \right\vert_{o = 15} \\
+            &= \left. \frac{10}{\sqrt{24 - o}} \right\vert_{o = 15} \\
+            &= \frac{10}{\sqrt{24 - 15}} \\
+            &= `r round(10 / sqrt(24 - 15), 2)`.
+  \end{split}
+\end{equation}
+
+```{block2, type = 'rmdnote'}
+  Recuerde que una derivada representa la *pendiente de la recta tangente* a una
+  curva en un punto determinado; esto es, es la pendiente de la curva 
+  exactamente en ese punto. Observe que una pendiente entre dos puntos se define
+  como $\frac{\Delta y}{\Delta x}$. Sea $y = f(x)$, calculemos la pendiente en
+  dos valores de $x$ que están separados entre sí por una distancia $h>0$: 
+  $x_1$ y $x_2 = x_1 + h$; entonces tenemos a dos valores de
+  $y$: $y_1 = f(x_1)$ y $y_2 = f(x_2) = f(x_1 + h)$. Por lo tanto, la pendiente
+  entre estos dos puntos es: 
+  $\frac{Delta y}{Delta x} = \frac{y_2 - y_1}{x_2 - x_1} =$
+  $\frac{f(x_1 + h) - f(x_1)}{x_1 + h - x_1} = \frac{f(x_1 + h) - f(x_1)}{h}$.
+  Observe que esta fue la distancia que se mostró en el gráfico 
+  \@ref(fig:aproxTMT), en donde $h = 1$.
+  
+  Ahora, recuerde que en su clase de matemáticas se definió a la derivada como
+  $\frac{\partial f(x)}{x} = \lim_{h \to 0} \frac{f(x_1 + h) - f(x_1)}{h}$.
+  Es decir, una derivada es una pendiente entre dos puntos que están 
+  infinitamente cerca; por eso, decimos que es la pendiente de una curva en un
+  punto.
 ```
 
 ### Crecimiento económico {#crecimiento}
@@ -521,11 +692,11 @@ la curva de la FPP estaría dada por la siguiente función:
   \end{cases}
 \end{equation}
 
-En el gráfico \@ref(fig:cambiotec) se muestra cómo lucirían la antigua FPP
-(color negro) y la nueva FPP (color azul), después de su mejora en la tecnología
-de producción de calificaciones. Lo que observamos es que la nueva FPP se 
-encuentra por encima (a la derecha) de la antigua FPP, indicando que ahora usted
-puede obtener mayores calificaciones con las mismas horas de estudio.
+En el gráfico \@ref(fig:cambiotec) se muestra cómo lucirían la antigua y la
+nueva FPP, después de su mejora en la tecnología de producción de
+calificaciones. Lo que observamos es que la nueva FPP se encuentra por encima (a
+la derecha) de la antigua FPP, indicando que ahora usted puede obtener mayores
+calificaciones con las mismas horas de estudio.
 
 ```{r cambiotec, echo = FALSE, fig.cap = "Desplazamiento de la FPP por una mejora tecnológica"}
   calificaciones2 <- function(o) {ifelse(o <= 8, 100, 25 * sqrt(24 - o))}
@@ -535,19 +706,469 @@ puede obtener mayores calificaciones con las mismas horas de estudio.
     gather("tecnologia", "calificacion", -label, -ocio) %>%
     mutate(label = ifelse(tecnologia == "calificacion1", 
                           label, paste(label, "'", sep = ""))) %>%
-    graf1("ocio", "calificacion", "tecnologia", function(o) {20 * sqrt(24 - o)},
-          "label", "Cambio tecnológico", 
-          "Mejora en la tecnología de producción de calificaciones",
-          "Horas de estudio", "Calificación", c(1, 2), 
-          c("Antigua tecnología", "Nueva tecnología"), ylim = c(0, 110),
-          legpos = "bottom") + 
-    stat_function(fun = calificaciones2, colour = 2)
+    graf1(x = "ocio", y = "calificacion", gr = "tecnologia", 
+          fun1 = function(o) {20 * sqrt(24 - o)}, fun2 = calificaciones2,
+          label = "label", grid = FALSE,
+          title = "Cambio tecnológico", 
+          subtitle = "Mejora en la tecnología de producción de calificaciones",
+          xtit = "Horas de estudio", ytit = "Calificación", 
+          colours = c(1, 2), legpos = "bottom",
+          legtext = c("Antigua tecnología", "Nueva tecnología"), 
+          ylim = c(0, 110))
 ```
 
+```{block2, type = 'rmdnote'}
+  Una **mejora tecnológica** desplaza la curva de la FPP hacia la derecha.
+```
 
-### Ganancias del comercio
+## Ganancias del comercio {#comercio}
+
+Ahora que vimos qué son los mercados y qué es la FPP, podemos introducir un 
+nuevo concepto en nuestro estudio: la *especialización*. Recuerde que los 
+mercados son mecanismos descentralizados que permiten que muchas personas 
+interactúen entre sí para intercambiar bienes y servicios, como vimos en la 
+sección \@ref(mercado). Este intercambio hace que las personas puedan dedicarse
+a producir una única cosa en la que son eficientes para, desa forma, acercarse
+a la FPP y permitir que haya eficiencia productiva.
+
+@samuelson[p. 31] plantea que "[l]a *especialización* se logra cuando la gente y
+los países concentran sus esfuerzos en un conjunto particular de tareas; le
+permite a cada persona y a cada país aprovechar al máximo las habilidades y
+recursos específicos de que disponen" y que "[l]a enorme eficiencia de la
+especialización permite la intrincada red de intercambio entre personas y
+naciones que se observa en la actualidad".
+
+Suponga que hay dos granjeros que podrían, por sí mismos, producir todos los 
+productos que ellos desean para vivir: manzanas y trigo. Uno de los granjeros,
+Alberto, tiene mejores tierras que el otro, entonces puede producir más de cada
+uno de los productos que el otro, Bernardo. Suponga que las FPP de cada uno de
+ellos están dadas por $t_A = 100 - 2.5 m_A$ y $t_B = 70 - 2 m_B$, en donde
+$t$ representa kilogramos de trigo, $m$ número de manzanas, $A$ a Alberto y 
+$B$ a Bernardo. En la tabla \@ref(tab:tabfppmanzanas) se muestra cuántas manzanas 
+y trigo podría producir cada uno de estos granjeros.
+
+```{r tabfppmanzanas, echo = FALSE}
+  alberto  <- function(m) {ifelse(m <= 35, 70 - 2 * m, 0)}
+  bernardo <- function(m) {ifelse(m <= 40, 100 - 2.5 * m, 0)}
+  ejemplo2 <- data.frame(manzanas = seq(0, 40, 5)) %>% 
+    mutate(alberto = alberto(manzanas), bernardo = bernardo(manzanas),
+           label = LETTERS[seq_along(manzanas)])
+  knitr::kable(ejemplo2[, c(4, 1:3)], row.names = FALSE,
+               col.names = c("", "Producción de manzanas", 
+                             "Producción de trigo de Alberto",
+                             "Producción de trigo de Bernardo"),
+               caption = "Producción de manzanas y trigo de Alberto y Bernardo")
+```
+
+Si cada uno de estos granjeros lo produjera todo para su
+autoconsumo,[^Autarquia] entonces la FPP de esta economía estaría dada por la
+suma de las producciones de cada uno; por ejemplo, en el punto C de la tabla
+\@ref(tab:tabfppmanzanas), cada uno produce 10 manzanas; entonces habría 20
+manzanas en la economía; y 125 kilogramos de trigo (50 de Alberto y 75 de
+Bernardo). En el grafico \@ref(fig:fppmanzanas) se muestra la FPP de esta
+economía cuando cada uno de los granjeros consume únicamente lo que produce.
+
+```{r fppmanzanas, fig.cap = "FPP sin especialización", echo = FALSE}
+  graf1(df = ejemplo2 %>%
+              gather("granjero", "trigo", -manzanas, -label) %>%
+              group_by(label) %>%
+              summarise(manzanas = sum(manzanas), trigo = sum(trigo)), 
+        x = "manzanas", y = "trigo",
+        fun1 = function(m) {170 - 2.25 * m}, label = "label",
+        title = "Frontera de posibilidades de producción", 
+        subtitle = "Sin especialización de actividades",
+        xtit = "Manzanas", ytit = "Trigo")
+```
+
+Sin embargo, observe que si Alberto sólo produjera manzanas (tendría 35 manzanas 
+y 0 kilogramos de trigo, punto H en la tabla \@ref(tab:tabfppmanzanas)) y 
+Bernardo sólo produjera trijo (tendría 100 kilogramos de trigo y 0 manzanas, 
+punto A en la tabla \@ref(tab:tabfppmanzanas)), entonces habrían 35 manzanas y
+100 kilogramos de trigo. Estas cantidades están por fuera de la FPP cuando no
+hay comercio ni especialización, pero son alcanzables cuando cada uno de los
+granjeros se especializa. Es decir, esta economía podría estar mejor y acceder
+a puntos que hacían parte del *conjunto no factible* cuando los granjeros en 
+ella se especializan y comercian entre ellos, como se observa en la gráfica
+\@ref(fig:gancomer). ¿Pero en qué se debe especializar cada uno de ellos para
+que ambos estén mejor que antes?
+
+```{r gancomer, fig.cap = "Ganancias de la especialización", echo = FALSE}
+  graf1(df = ejemplo2 %>%
+              gather("granjero", "trigo", -manzanas, -label) %>%
+              group_by(label) %>%
+              summarise(manzanas = sum(manzanas), trigo = sum(trigo)), 
+        x = "manzanas", y = "trigo",
+        fun1 = function(m) {170 - 2.25 * m}, label = "label",
+        df_lab = data.frame(x = 35, y = 100, 
+                            label = "Punto factible con especialización"), 
+        x_lab = "x", y_lab = "y",
+        title = "Ganancias de la especialización", 
+        xtit = "Manzanas", ytit = "Trigo")
+```
+
+Los mercados permiten a las personas cooperar entre sí permitiendo que se 
+especialicen en las cosas en las que son buenos, de modo que mediante el 
+intercambio, cada uno pueda obtener más bienes y servicios de los que podría
+producir por sí mismo si tuviera que hacerlos todos. Los economistas 
+disntiguimos dos tipos de ventajas: absolutas y comparativas.
+
+```{definition, name = "Ventajas absolutas"}
+  Una persona o país tiene una ventaja absoluta en la producción de un bien si
+  los insumos que utiliza para su producción son menores a los que utiliza otra
+  persona o país [@economy, sec. 1.8].
+```
+
+En nuestro ejemplo, observe que Bernardo siempre puede producir más trigo e 
+igual número de manzanas que Alberto; por lo tanto, decimos que él tiene una
+ventaja absoluta en la producción de trigo, en comparación con Bernardo. No 
+obstante, Bernardo tiene una ventaja sobre Alberto que puede pasar desapercibida
+a primera vista.
+
+```{definition, name = "Ventajas comparativas"}
+  Una persona o país tiene una ventaja comparativa en la producción de un bien
+  particular si el costo de producir una unidad adicional de ese bien, relativo
+  al costo de producir otro bien, es menor que el costo de producir los mismos
+  dos bienes para otra persona o país.
+```
+
+Observe, de las FPP que acabamos de observar, que Alberto únicamente debe
+sacrificar 2 manzanas para producir un kilogramo de trigo adicional; mientras
+que Bernardo debe sacrificar 2.5 manzanas para obtener el mismo kilogramo de
+trigo adicional (note que estas son las TMT de cada una de las FPP de ellos). Es
+decir, el *costo* de un kilogramo de trigo es menor para Alberto que para
+Bernardo; por lo tanto, decimos que Alberto tiene una *ventaja comparativa* en
+la producción de manzanas, en comparación con Bernardo.
+
+Esta ventaja comparativa permite que, al existir un mercado en el cual Alberto y
+Bernardo puedan intercambiar bienes, la economía puede alcanzar un punto más
+deseable en el que hay más bienes y servicios que los que cada uno podría 
+producir por sí mismo, que era un *punto no factible* antes de la existencia de
+este mercado. Este punto se puede alcanzar cuando cada uno se especializa en 
+el producto en el cual tiene una *ventaja comparativa*: Alberto produciendo
+manzanas y Bernardo produciendo trigo.
+
+```{block2, type = "rmdtip"}
+  Cuando cada persona o país se especializa en la producción de los bienes en 
+  los que tiene una *ventaja comparativa*, se puede obtener una ventaja del 
+  comercio, pues hay mas bienes y servicios en la economía que los que se 
+  obtendrían en ausencia de la especialización.
+```
+
+Al respecto, @samuelson[p. 31] indica que:
+
+> La especialización y la divisuión del trabajo son claves para tener un elevado
+nivel de vida. Al especializarse, las personas pueden volverse muy productivas 
+en un campo muy limitado de habilidades. Luego las personas pueden intercambiar
+sus bienes especializados por los productos de los demás, con lo que se 
+incrementa muchísimo la diversidad y la calidad del consumo y se tiene el 
+potencial para elevar el nivel de vida de todo el mundo.
 
 ## Intervención del gobierno en el mercado {#estado}
+
+Aunque en la sección \@ref(mercado) observamos que los mercados pueden asignar
+de forma eficiente recursos en la economía para responder el qué, cómo y para
+quién producir, y en la sección \@ref(comercio) vimos que estos permiten la 
+especialización para obtener mejores resultados, es importante que existan
+instituciones que ayuden a que los mercados funcionen de forma eficiente, que
+provean bienes socialmente valorados que los mercados no pueden ofrecer 
+eficientemente por sí mismos y que ayuden a realizar los ideales de justicia 
+social cuando las soluciones del mercado no las alcanzan.
+
+En efecto, como veremos en el capítulo \@ref(ofertademanda), hay unas 
+condiciones que deben satisfacerse para que las asignaciones del mercado sean
+eficientes, entre las que se encuentran: la existencia de condiciones de 
+*competencia* en los mercados, la inexistencia de *externalidades*, que los 
+bienes no tengan características de *bienes públicos*, entre otras que iremos 
+analizando a lo largo del curso. Al respecto, @samuelson[p. 30] dice que:
+
+> (...) Los economistas teóricos han demostrado que **en condiciones
+limitadas**, una economía **perfectamente competitiva** [vea el capítulo
+\@ref(competencia)] es eficiente (recuerde que una economía produce
+eficientemente cuando no puede mejorar el bienestar económico de una persona sin
+empeorar el de alguna otra [concepto de eficiencia en el sentido de Pareto]).
+>
+> Sin embargo, tras dos siglos de experiencia y de reflexión, se hace evidente
+el alcance limitado de esta doctrina. Se sabe que existen **"fallas de
+mercado"**, que éste no siempre conduce al resultado más eficiente. Un conjunto
+de fallas de mercado se refiere a los **monopolios** [vea el capítulo
+\@ref(monopolio)] y otras formas de **competencia imperfecta** [vea el capítulo
+\@ref(oligopolio)]. Otra falla de la "mano invisible" son las **externalidades**
+o derrames fuera del mercado: externalidades positivas tales como los
+descubrimientos científicos y negativas tales como la contaminación.
+>
+> Una consideración final se da cuando la distribución de los ingresos es 
+política o éticamente inaceptable (...) [énfasis añadido].
+
+En todos estos casos, los economistas normalmente consideramos que es 
+justificada la intervención del Estado. También consideramos que se requiere la
+intervención del Estado cuando existen *fricciones* de corto plazo que impiden
+que la economía desarrolle su potencial y generan problemas como el desempleo o
+la inflación, que usted analizará detalladamente en su curso de *macroeconomía*.
+
+No obstante, el papel del Estado en la economía y la sociedad continúa siendo un
+asunto de debate entre diferentes corrientes de pensamiento en la actualidad:
+
+> El debate en torno a los éxitos y fracasos del Estado demuestra de nuevo que
+trazar una línea fronteriza entre el mercado y el gobierno es un problema
+persistente. Las herramientas de la economía son indispensables para ayudar a
+las sociedades a encontrar el justo medio entre los mecanismos del mercado
+eficiente y la regulación y la redistribución, debidas a decisiones del Estado.
+La buena economía mixta es, obligadamente, una economía mixta muy limitada. Pero
+quienes buscan reducir al Estado a un policía y a unos cuantos faros viven en un
+mundo irreal. Una sociedad eficiente y humana requiere las dos mitades del
+sistema mixta: el mercado y el gobierno. Funcionar en la economía moderna sin
+ambos es como intentar aplaudir con una sola mano [@samuelson, p. 41].
+
+### Intervención estatal para mejorar la eficiencia
+
+Hay casos en los que los mercados producen asignaciones ineficientes de los 
+recursos, es decir, en los que podría incrementarse el bienestar de un individuo
+sin perjudicar al de otros individuos. Estos casos se deben a la existencia de
+*monopolios* o *competencia imperfecta*, en la cual una o pocas empresas pueden
+determinar los precios que más les convienen, en perjuicio de los consumidores;
+a la existencia de *externalidades*, en donde hay individuos beneficiados o
+perjudicados por las acciones de otros, que no pagan o son recompensados por
+dichos beneficios o perjuicios; y a la existencia de bienes que son 
+*bienes públicos*.
+
+#### Competencia económica
+
+Como veremos en los capítulos \@ref(monopolio) y \@ref(oligopolio), la 
+existencia de una o pocas firmas en un mercado hace que ellas tengan la 
+capacidad para fijar precios de la forma que más les convenga y aleja a la 
+sociedad de los beneficios de un mercado competitivo, como el que veremos en el
+capítulo \@ref(competencia). En última estancia, lo que esto provoca es que haya
+estas empresas puedan extraer *rentas* de los consumidores que, de otra forma,
+serían disfrutadas por la sociedad en general. Por ello, hay dos campos de 
+estudio en la economía llamados **organización industrial** y **regulación** que
+estudian la forma en que podemos acercarnos a los beneficios de la competencia
+cuando hay *monopolios* u *oligopolios*.
+
+En primer lugar, el ideal que tenemos es incentivar mercados competitivos en los
+que muchas empresas puedan ofrecer sus productos y luchar entre ellas por el
+favor de los consumidores, ofreciéndoles productos de calidad y a buen precio. 
+Para ello, se incentiva a las empresas para que compitan, se evita que se unan
+entre ellas cuando esa unión (denominada *fusión*) puede generar efectos 
+anticompetitivos y se sanciona a las empresas que hacen acuerdos entre ellas 
+para evitar competir entre sí. En México, así como en muchos otros países, 
+existen **autoridades de competencia** encargadas de estas funciones; estas
+autoridades aplican la **política de competencia**[^PoliticaCompetencia]. En
+efecto, la @constitucion establece que:
+
+> **Artículo 28**. En los Estados Unidos Mexicanos **quedan prohibidos los
+monopolios**, las  prácticas monopólicas, los estancos y las exenciones de
+impuestos (...).
+>
+En consecuencia, **la ley castigará severamente, y las autoridades perseguirán
+con eficacia, toda concentración o acaparamiento en una o pocas manos** de
+artículos de consumo necesario y que tenga por objeto obtener el alza de los
+precios; **todo acuerdo (...) de los productores (...) para evitar la libre
+concurrencia o la competencia entre sí o para obligar a los consumidores a pagar
+precios exagerados** y, en general, todo lo que constituya una ventaja exclusiva
+indebida a favor de una o varias personas determinadas y con perjuicio del
+público en general o de alguna clase social.
+>
+(...)
+> El Estado contará con una **Comisión Federal de Competencia Económica**, que
+será un órgano autónomo, con personalidad jurídica y patrimonio propio, que
+**tendrá por objeto garantizar la libre competencia y concurrencia, así como
+prevenir, investigar y combatir los monopolios, las prácticas monopólicas, las
+concentraciones y demás restricciones al funcionamiento eficiente de los
+mercados**, en los términos que establecen esta Constitución y las leyes. La
+Comisión contará con las facultades necesarias para cumplir eficazmente con su
+objeto, entre ellas las de ordenar medidas para eliminar las barreras a la
+competencia y la libre concurrencia; regular el acceso a insumos esenciales, y
+ordenar la desincorporación de activos, derechos, partes sociales o acciones de
+los agentes económicos, en las proporciones necesarias para eliminar efectos
+anticompetitivos.
+> 
+**El Instituto Federal de Telecomunicaciones será también la autoridad en
+materia de competencia económica de los sectores de radiodifusión y
+telecomunicaciones**, por lo que en éstos ejercerá en forma exclusiva las
+facultades que este artículo y las leyes establecen para la Comisión Federal de
+Competencia Económica (...)
+>
+(...) [énfasis añadido]
+
+En otros casos, las características de los mercados hacen que no podamos esperar
+la emergencia de condiciones de competencia. Estos mercados tienen
+características de *monopolios naturales* y, por ello, requieren ser
+*regulados*.[^NotaRegulacion] En México existen diversos entes reguladores que
+se encargan de realizar esta tarea en mercados específicos, tales como la
+Comisión Nacional de Hidrocarburos (CNH), la Agencia Reguladora del Transporte
+Ferroviario (ARTF), el Centro Nacional de Control del Gas Natural (Cenagas), el
+Instituto Federal de Telecomunicaciones (IFT), entre otros.
+
+De acuerdo con @samuelson[p. 36]:
+
+> Durante la última década, la mayoría de los gobiernos han tomado medidas para
+frenar las formas más extremas de competencia imperfecta. A veces regulan el
+precio y las utilidades de monopolios tales como el del agua, los teléfonos y
+las instalaciones eléctricas [en el capítulo \@(monopolio) veremos por qué estos
+sectores tienen características de *monopolios naturales*]. Además, las leyes
+gubernamentales antimonopolio prohíben acciones tales como fijación de precios y
+acuerdos para dividir el mercado. El freno más importante a la competencia
+imperfecta, sin embargo, es la apertura de los mercados a la competencia, sea
+nacional o extranjera.
+
+#### Externalidades
+
+Otra causa que justifica la intervención del Estado en la economía es la
+existencia de *externalidades*, que se dan cuando en las transacciones que hay
+en el mercado no se incluyen todos los costos o los beneficios generados sobre
+terceros que no participan de ellas; esto hace que el mercado produzca muchos o
+muy pocos productos, en relación con lo *socialmente óptimo*. 
+
+```{definition, name = "Externalidades"}
+  Las externalidades (o **efectos de desbordamiento**) se presentan cuando las 
+  empresas o las personas imponen costos o beneficios sobre otros fuera del 
+  mercado.
+```
+
+Un ejemplo de una *externalidad positiva* es el de un apicultor que tiene abejas
+para producir miel en su propiedad. Como las abejas son polinizadores naturales
+de las plantas, estas ayudarán a propiedades aledañas que tienen cultivos; por
+ejemplo, una plantación de rosas vecina podría producir más rosas gracias a su
+cercanía al apiario. Sin embargo, como la plantación no le pagará al apicultor
+por el servicio que recibe de las avejas, que aumenta su producción, entonces
+este beneficio no está incluido dentro de la toma de decisiones del apicultor.
+Esto hace que haya menos abejas de las que sería socialmente óptima.
+
+Un ejemplo de una *externalidad negativa* es el de una planta eléctrica a base
+de carbón que no controla adecuadamente sus emisiones a la atmósfera. Estas 
+emisiones generan costos a los vecinos de la planta que no son pagados por la
+planta eléctrica; tales como problemas a la salud, malestar por un medio 
+ambiente contaminado, etc. Como la planta no paga esa externalidad a los 
+vecinos, entonces no considera esos costos a la hora de decidir sobre su 
+tecnología; si tuviera que pagarlos, podría elegir tecnologías más limpias que
+disminuyeran sus emisiones. Esto hace que haya más contaminación de la que sería
+socialmente óptima.
+
+En estos casos, la intervención del Estado se justifica para que ayude a las
+empresas a *internalizar* los beneficios o los costos que generan, haciéndoles
+pagar por sus externalidades negativas o pagándoles por sus externalidades
+positivas. Esta forma de intervención se denomina *impuestos pigouvianos* o
+*subsidios pigouvianos*[^Pigou]. Esta área de la economía se denomina **economía
+ambiental** y usted podría estudiarla, si lo desea, en un curso más avanzado.
+
+#### Bienes públicos
+
+Existen algunos bienes que tienen características especiales que impiden que
+sean provistos de forma eficiente por el mercado: son no excluyentes y no
+rivales; algunas veces se le adiciona la características de que los bienes son
+no divisibles. Los bienes que comparten estas características se denominan
+*bienes públicos* y, usualmente, son mejor provistos por el Estado que por los
+particulares.
+
+Un bien es no excluyente cuando no se puede impedir a alguien que consuma de él
+por razones técnicas. Por ejemplo, la función de un ejército es evitar las 
+amenazas externas en un territorio; si el ejército hace su trabajo, entonces 
+todos los habitantes de ese territorio se benefician, independientemente de su
+contribución. En ese caso, no es posible excluir a ningún ciudadano del servicio
+prestado por el ejército.
+
+Por su parte, un bien es no rival cuando el hecho de que una persona lo consuma
+no impide que otras personas puedan consumirlo. Por ejemplo, el hecho de que
+una persona escuche una señal de radio no impide a ninguna otra poder 
+beneficiarse de esa misma señal. En ese sentido, no hay rivalidad por el consumo
+entre ellas.
+
+De acuerdo con @economy[sec. 12.5], los bienes pueden clasificarse de acuerdo a
+la presencia de estas dos características, como se muestra en la tabla 
+\@ref(tab:tabbienes)
+
+```{r tabbienes, echo = FALSE}
+  bienes <- data.frame(
+             x = c("Bienes privados (comida, abrigo, vivienda, etc.)",
+                   paste("Bienes comunales (peces en un lago, tierras de",
+                         "pastoreo comunes, etc.")),
+             y = c(paste("Bienes públicos artificialmente escasos (televisión",
+                         "de paga, conocimiento protegido por propiedad",
+                         "intelectual, etc.)"),
+                   paste("Bienes públicos (vista de un eclipse, transmisiones",
+                         "abiertas, defensa nacional, etc.)")))
+  rownames(bienes) <- c("Excluyentes", "No excluyentes")
+  colnames(bienes) <- c("Rivales", "No rivales")
+  knitr::kable(bienes, caption = "Clasificación de los bienes")
+```
+
+Los bienes públicos no son provistos por los particulares de forma eficiente
+porque como no se puede excluir a nadie de disfrutarlos, entonces no es posible
+fijar un *precio* por ellos, ya que alguien podría disfrutarlos sin pagar el
+precio y, de esta forma, no sería costeable su producción (este problema es
+conocido como *free-rider* o *problema de los comunes*). Por ese motivo, el
+Estado los proporciona y los financia mediante los *impuestos*. @samuelson[p.
+38] señala que la diferencia principal entre los impuestos y cualquier otro
+precio es que estos no son voluntarios, sino que el Estado ejerce un poder
+coactivo para cobrarlos a quienes se encuentran obligados.
+
+#### Equidad
+
+Un aspecto importante por el que podemos querer al Estado es la concepción ética
+que tenemos de cómo debería funcionar la sociedad y cómo debería distribuirse el
+ingreso en ella. @samuelson[p. 38] señala que
+
+> Los mercados no necesariamente producen una distribución *justa* del ingreso. 
+Una economía de mercado puede producir desigualdades en el ingreso y en el 
+consumo que no son aceptables para el *electorado* [énfasis añadido].
+
+Esto no hace parte propiamente de la ciencia económica, como fue explicado en la
+sección \@(ecopositiva), pero la economía puede aportar ideas sobre cuáles son
+las mejores formas de satisfacer los ideales de justicia social sin que esto
+dañe los incentivos de los individuos para participar en los mercados.
+Al respecto, @samuelson[p. 38] dice que
+
+> (...) La economía, como ciencia, no puede responder preguntas *normativas*
+tales como qué parte de los ingresos debe gravarse, qué tando debe transferirse
+a las familiar pobres, o cuál es el tamaño adecuado para el sector público.
+Éstas son preguntas *políticas* que sólamente pueden responderse en las urnas de
+las sociedades democráticas.
+> 
+> Sin embargo, *la economía puede analizar los costos y los beneficios* de los
+distintos sistemas de redistribución (...) [énfasis añadido].
+
+Esta parte de la economía se denomina **economía política** y, en los
+desarrollos más modernos, se basa en **teoría de juegos** (veremos una 
+introducción a teoría de juegos en el capítulo \@ref(oligopolio)). Un par de
+libros muy interesantes para aprender más sobre este tema son @acemoglu1 y
+@acemoglu2; un análisis más filosófico sobre diferentes ideas de justicia se
+encuentra disponible en @sandel.
+
+### Intervención estatal para el crecimiento y la estabilidad
+
+Otra función importante del Estado es garantizar la estabilidad de la economía.
+En el análisis que veremos a lo largo de este curso, así como en el pensamiento
+de los *microeconomistas*, los mercados pueden ajustarse perfectamente a las
+condiciones cambiantes de la oferta y la demanda: los individuos reaccionan ante
+cambios en el precio ajustando sus patrones de consumo y producción; este tipo
+de enfoque es más adecuado cuando pensamos en el *largo plazo*.
+
+Sin embargo, en el *corto plazo* es posible que los individuos no puedan 
+ajustarse a condiciones cambiantes porque existen *fricciones* en la economía;
+por ejemplo, puede que algunos precios estén fijos o que no se puedan modificar
+los patrones de consumo en el corto plazo (porque ya hay máquinas que requieren
+un insumo particular o contratos que deben ser satisfechos). Estas fricciones
+dan lugar a los *ciclos económicos*, que generan periodos de auge y crisis 
+económicas en periodos cortos de tiempo.
+
+Los *macroeconomistas* tienden a pensar en estos periodos cortos de tiempo y en
+la forma de disminuir la intensidad de estos ciclos económicos; esto es
+importante porque un objetivo de política que perseguimos es evitar que haya
+recesiones profundas, en las que las personas pierdan sus empleos y propiedades.
+Para ello, se utiliza la *política fiscal* (el control de los impuestos y el
+gasto público) y la *política monetaria* (la emisión de moneda) como
+herramientas que permiten amortiguar los ciclos económicos, controlar la
+inflación y evitar el desempleo. La forma en que estas herramientas logran
+dichos objetivos se analiza en detalle en su curso de *macroeconomía*.
+
+Al respecto, @samuelson[p. 39] señala que
+
+> Las políticas macroeconómicas para la estabilización y el crecimiento 
+económico comprenden políticas fiscales (de impuestos y de gasto) y políticas
+monetarias (que influyen en las tasas de interés y en las condiciones de 
+crédito). A partir del desarrollo de la macroeconomía en la década de los 
+treinta [del siglo pasado], los gobiernos han conseguido contener los peores
+excesos de la inflación y el desempleo.
 
 ## Ejercicios
 
@@ -776,9 +1397,28 @@ sociedad? ¿Usted considera que esta crítica es válida en la actualidad?
 
 ```
 
+```{exercise, name = "Libertarianistas y Estado"}
+Los *libertarianistas* abogan por Estados mínimos que no intervengan para nada
+en la vida económica, porque consideran que cualquier cosa que pacten los
+individuos voluntariamente debe ser avalada y respectada. Por el contrario, en
+clase dijimos que puede haber una racionalidad para que el Estado intervena en
+determinadas circunstancias (p.e. eficiencia, equidad o estabilidad). ¿Qué opina
+usted? Si considera que el Estado no debería intervenir, explique; si considera
+que sí, dé algún ejemplo de cuándo debería hacerlo.
+```
 
+```{exercise, name = "Tecnologías"}
+La tecnología es el proceso que combina los insumos para obtener productos. Para
+producir muchos bienes pueden utilizarse métodos artesanales, donde una sola
+persona hace todo el bien; o de producción en cadena (*fordismo*) donde muchas
+personas hacen apenas una parte del bien. ¿Estos métodos para organizar el
+trabajo pueden considerarse como una 'tecnología'? Justifique su respuesta.
+```
 
-
+```{exercise, name = "Ciencia ficción"}
+Imagine una historia cualquiera de ciencia ficción. ¿Está en la FPP, en el 
+*conjunto no factible* o en el *conjunto factible*? Justifique su respuesta.
+```
 
 [lauber]: https://www.sciencedirect.com/topics/social-sciences/oil-crisis
 
@@ -825,3 +1465,42 @@ los numerarios (en términos de dinero).
 
 [^Reconocimiento]: De TomTheHand - Trabajo propio, CC BY-SA 3.0,
 https://commons.wikimedia.org/w/index.php?curid=4040114
+
+[^Autarquia]: La *autarquía* es una política de un estado que intenta basarse
+por sí mismo, limitando en la medida de lo posible el comercio internacional 
+[@rae].
+
+[^NotaCapital]: @samuelson[p. 34] plantea que "[l]a actividad económica requiere
+renunciar al consumo actual para aumentar el capital. Cada vez que se invierte
+(en la construcción de una fábrica o de una carretera, cada vez que amplía los
+años de estudio o la calidad de la educación, o que incrementa la cantidad de
+conocimientos técnicos útiles) aumenta la productividad y el consumo futuros de
+su economía."
+
+[^PoliticaCompetencia]: La **política de competencia** es un área de estudio 
+para abogados y economistas que busca evitar y desincentivar los monopolios y la
+competencia imperfecta. Esta política se aplica desde finales del siglo XIX, 
+cuando se expidió el *Sherman Act* en Estados Unidos, pues los monopolios 
+estaban asfixiando a la población [vease la serie @barons]. Actuamente, se puede
+estudiar en un curso avanzado de **organización industrial** y un excelente 
+libro para analizarla es @motta.
+
+[^NotaRegulacion]: La **teoría moderna de la regulación** es un área de estudio
+que ha tenido muchos desarrollos académicos desde finales del siglo pasado y se
+analiza en un curso avanzado de economía denominado usualmente 
+**teoría de contratos** o **información asimétrica**. Básicamente, la idea es 
+que, mediante un contrato, se le puede pedir a alguien que actúe en el mejor
+interés de quien lo contrata, aunque tiene mejor información que él y preferiría
+hacer alguna otra cosa. Un excelente libro para analizar este tema es @tirole.
+
+[^Pigou]: Un **impuesto pigouviano** es "un impuesto cargado sobre actividades
+que generan externalidades negativas para corregir un resultado de mercado
+ineficiente." Similarmente, un **subsidio pigouviano** es "un subsidio del
+gobierno para impulsar una actividad económica que tiene externalidades
+positivas" [@economy, Glosario].
+
+```{r elimcap3, echo = FALSE}
+  rm(list = c("bienes", "ejemplo", "ejemplo2", "estudio", "alberto", "bernardo",
+              "calificaciones", "calificaciones2"))
+```
+
