@@ -28,7 +28,7 @@ fundamentalmente en @economy[sec. 3.3. y 3.4.] y, supletoriamente, en
 
 ## Mercado y precios {#mercado}
 
-### Mercado
+### Mercado {#mercado2}
 
 En un mercado no hay un sólo individuo que defina qué, cómo y para quién 
 producir, sino que hay muchos individuos que toman decisiones autónomas y 
@@ -47,7 +47,7 @@ lugar en el que se encuentran los que quieren vender y comprar algo, habrá un
 espacio o una forma en que puedan encontrarse; a ese espacio lo llamaremos
 *mercado*.
 
-```{definition, name = 'Mercado'}
+```{definition, defmercado, name = 'Mercado'}
 Un **mercado** es un mecanismo mediante el cual los compradores y los vendedores
 interactúan para determinar precios e intercambiar bienes y servicios 
 [@samuelson, p. 26].
@@ -757,7 +757,8 @@ y trigo podría producir cada uno de estos granjeros.
                col.names = c("", "Producción de manzanas", 
                              "Producción de trigo de Alberto",
                              "Producción de trigo de Bernardo"),
-               caption = "Producción de manzanas y trigo de Alberto y Bernardo")
+               caption = "Producción de manzanas y trigo de Alberto y Bernardo") %>%
+    column_spec(2:4, width = "3cm")
 ```
 
 Si cada uno de estos granjeros lo produjera todo para su
@@ -1089,7 +1090,8 @@ la presencia de estas dos características, como se muestra en la tabla
                          "abiertas, defensa nacional, etc.)")))
   rownames(bienes) <- c("Excluyentes", "No excluyentes")
   colnames(bienes) <- c("Rivales", "No rivales")
-  knitr::kable(bienes, caption = "Clasificación de los bienes")
+  knitr::kable(bienes, caption = "Clasificación de los bienes") %>%
+    column_spec(1:3, width = "3cm") %>% column_spec(1, bold = TRUE)
 ```
 
 Los bienes públicos no son provistos por los particulares de forma eficiente

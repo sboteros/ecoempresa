@@ -117,12 +117,15 @@ aprendizaje tendrá una calificación entre 0 y 100.
   actividad <- c("Primer parcial", "Segundo parcial", "Examen final", 
                  "Trabajo final", "Actividades de aprendizaje", "Asistencia")
   calificacion <- c(20, 20, 25, 15, 10, 10)
-  fecha <- ""
+  fecha <- as.Date(c("2019-09-17", "2019-10-22", "2019-12-06", "2019-12-06", 
+                     NA, NA))
   tibble(numero = 1:6, actividad = actividad, calificacion = calificacion, 
          fecha = fecha) %>%
     knitr::kable(col.names = c("Número de actividad", "Actividad", "Porcentaje", 
                                "Fecha de entrega"),
-                 caption = "Ponderación de la calificación final del curso")
+                 caption = "Ponderación de la calificación final del curso") %>%
+    column_spec(c(1, 3), width = "1.5cm") %>%
+    column_spec(c(2, 4), width = "3.5cm")
   rm(list = c("actividad", "calificacion", "fecha"))
 ```
 
@@ -269,7 +272,7 @@ en el documento.
 
 Para conocer más sobre el compromiso con la integridad académica al que nos
 comprometemos todos en el Tec de Monterrey, te invito a visitar la página del
-[Programa para el Fortalecimiento de la Integridad Académica][intaca]
+[Programa para el Fortalecimiento de la Integridad Académica][intaca].
 
 [desc_ecoemp]: https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=EC1008&lang=ES
 

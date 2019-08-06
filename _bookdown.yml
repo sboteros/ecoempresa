@@ -1,0 +1,19 @@
+language:
+  label:
+    fig: 'Gráfico '
+    tab: 'Tabla '
+    eq: 'Ecuación '
+    thm: 'Teorema '
+    lem: 'Lema '
+    cor: 'Corolario '
+    prp: 'Proposición '
+    cnj: 'Conjetura '
+    def: 'Definición '
+    exm: 'Ejemplo '
+    exr: 'Problema '
+    proof: 'Demostración '
+    remark: 'Observación '
+    solution: 'Solución '
+  ui:
+    edit: Editar
+    chapter_name: ''

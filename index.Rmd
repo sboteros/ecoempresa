@@ -1,11 +1,10 @@
 ---
-title: "Economía de la empresa"
+title: "Apuntes de economía de la empresa"
 author: "Santiago Botero Sierra"
 date: "Segundo semestre de 2019"
 knit: "bookdown::render_book"
 documentclass: krantz
 bibliography: [book.bib, packages.bib]
-biblio-style: apalike
 link-citations: yes
 colorlinks: yes
 lot: yes
@@ -15,16 +14,12 @@ monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
 site: bookdown::bookdown_site
 cover-image: images/mercado_tlatelolco.jpg
+lang: es-MX
 ---
 
 ```{r paqueteria, include = FALSE}
-  # Configuración general de los códigos
-  knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = FALSE,
-                        message = FALSE)
-  formato <- list(digits = 2, big.mark = ",", decimal.mark = ".")
-  
   # Paquetes necesarios
-    paquetes <- c("tidyverse", "knitr", "bookdown", "latex2exp", "here")
+    paquetes <- c("tidyverse", "knitr", "bookdown", "latex2exp", "kableExtra")
     for (i in paquetes) {
       if (!require(i, character.only = TRUE)) {
         install.packages(i)
@@ -35,13 +30,105 @@ cover-image: images/mercado_tlatelolco.jpg
     
   # Paquetes propios
     source(file.path("funciones", "graf1.R"))
+    
+  # Configuración general de los códigos
+    knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = FALSE,
+                          message = FALSE)
+    formato <- list(digits = 2, big.mark = ",", decimal.mark = ".")
 ```
 
 # Prefacio {-}
 
+En la pintura de El Mercado de Tlatelolco de Diego Rivera, que se encuentra en
+el Palacio Nacional de México (gráfico \@ref(fig:tlatelolco)) se observa a 
+muchas personas comprando y vendiendo mercancías: telas, tepalcates, pescado, 
+etc. ¿Cómo decidían los vendedores qué mercancías llevar al mercado?, ¿cómo
+decidían los compradores qué mercancías comprar?, ¿qué precios cobraban por las
+diferentes mercancías? Este es el tipo de preguntas en el que pensamos los
+*microeconomistas* y a lo largo de este texto intentaremos desarrollar un modelo
+para explicarlas.
+
 (ref:tlat) Mercado de Tlatelolco (Diego Rivera, mural) en el Palacio Nacional.
 
-```{r, fig.cap = '(ref:tlat)', echo = FALSE, fig.width = 4}
+```{r tlatelolco, fig.cap = '(ref:tlat)', echo = FALSE, out.width = '\\textwidth'}
   knitr::include_graphics("images/mercado_tlatelolco.png")
 ```
 
+Asimismo, en el centro del cuadro aparece un *tlatoani* observando lo que pasa 
+en el mercado; él no está participando directamente de las transacciones que
+desarrollan los participantes, sino que está observando la generalidad y,
+se supone, manteniendo el orden. También, a lo largo de este curso, veremos
+cuáles son las características y los racionales que tiene la intervención del
+Estado en la actividad económica, desde una óptica microeconómica, y cómo afecta
+la presencia de este actor a las decisiones que toman los demás individuos en el
+mercado.
+
+## ¿Por qué leer estos apuntes?
+
+Aunque el texto guía de esta materia es @samuelson, me ha parecido un poco 
+decepcionante la ausencia casi total de ecuaciones y ejes en las gráficas que
+tiene el libro. Si bien cumple con su objetivo de presentar las ideas más 
+comúnmente aceptadas en el ámbito de un curso estándar de microeconomía, 
+considero que dejar de un lado las ecuaciones hace que se pierda una parte muy
+importante de la teoría económica moderna, no permite aprovechar los 
+conocimientos que los estudiantes han ganado en sus cursos de matemáticas y 
+puede limitar a los más interesados para leer desarrollos recientes que, 
+usualmente, están escritos en un lenguaje matemático muy formal.
+
+Al buscar otros libros de microeconomía que puedan suplir esta parte, uno 
+encuentra normalmente que los libros más sencillos tienen el mismo problema, 
+pero los más avanzados pecan en el otro extremos: hacen un desarrollo muy formal
+del contenido y descuidan un poco la intuición económica que se esconde tras 
+las ecuaciones. Entonces parece que los libros escritos están demasiado 
+sencillos o demasiado complicados. De allí surgió la idea de escribir unos
+apuntes que contengan el contenido que normalmente imparto en mis clases, que
+incluye tanto el enfoque más formal como el desarrollo de la intuición económica
+que se espera de los estudiantes.
+
+El libro de @economy, en el que también se basa buena parte de estos apuntes,
+hace un balance muy adecuado entre estos dos extremos. El desarrollo del 
+material es novedoso y lleva al lector directamente a los problemas más 
+interesantes que discutimos los economistas hoy en día; además, incluye unas
+secciones llamadas *Leibniz* que desarrollan los conceptos matemáticas más
+formales que subyacen a las respuestas a estos problemas. Sin embargo, el orden
+del material hace que sea difícil utilizarlo como texto guía en un curso 
+estándar de microeconomía.
+
+## Licencia
+
+Estos apuntes están licenciados bajo la licencia Creative Commons Atribución - 
+NoComercial - CompartirIgual 4.0 Internacional ([CC BY-NC-SA 4.0][Licencia]) 
+que, en le otorga a cualquier persona las libertades de compartir (copiar y
+redistribuir el material en cualquier formato o medio) y adaptar (remezclar,
+transformar y construir a partir del material) bajo los siguientes términos:
+
+```{r licencia, fig.cap = "Licencia de estos apuntes", echo = FALSE}
+  knitr::include_graphics("images/by-nc-sa.png")
+```
+
++ **Atribución**: Dar crédito de manera adecuada, brindar un enlace a la 
+licencia, e indicar si se han realizado cambios, de cualquier forma razonable,
+pero no de forma tal que sugiera que usted o su uso tienen el apoyo del 
+licenciante.
++ **NoComercial**: No se puede hacer uso del materia con propósitos comerciales.
++ **CompartirIgual**: Si remezcla, transforma o crea a partir del material, debe
+redistribuir su contribución bajo la misma licencia del original.
+
+## Software
+
+Este texto fue escrito utilizando el software estadístico `R` [@R], versión 
+3.5.2. Los gráficos fueron generados con el paquete `ggplot2` [@ggplot]. El
+texto está escrito utilizando `RMarkdown` con los paquetes `knitr` 
+[@knitr1; @knitr2; @knitr3], `bookdown` [@bookdown1; @bookdown2] y `kableExtra` 
+[@kable]. También se utilizaron los paquetes `tidyverse` [@tidyverse] y
+`latex2exp` [@latex2exp] para la limpieza de tablas y la escritura de 
+expresiones matemáticas en los gráficos. La tipografía matemática está escrita
+en \LaTeX [@latex]. El código que genera la apariencia del documento está tomado
+directamente de @bookdown1. El código mediante el cual se generó estos apuntes
+está disponible [aquí][CodigoApuntes].
+
+## Agradecimientos
+
+[Licencia]: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es
+
+[CodigoApuntes]: https://github.com/sboteros/ecoempresa/

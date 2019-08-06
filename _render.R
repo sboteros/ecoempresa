@@ -1,6 +1,9 @@
 #library(tinytex)
 #tinytex::tlmgr_install(c("alegreya", "sourcecodepro"))
 
+# Para cambiar "and" por "y" en la bibliografía, hay que buscar y editar un
+# archivo .bst.
+
 quiet = "--quiet" %in% commandArgs(FALSE)
 formats = commandArgs(TRUE)
 travis = !is.na(Sys.getenv('CI', NA))
@@ -25,7 +28,7 @@ for (fmt in formats) {
 }
 unlink('bookdown.log')
 
-r = '<body onload="window.location = \'https://bookdown.org/yihui\'+location.pathname">'
+r = '<body onload="window.location = \'https://sboteros.netlify.com/books/ecoempresa\'+location.pathname">'
 for (f in list.files('_book', '[.]html$', full.names = TRUE)) {
   x = readLines(f)
   if (length(i <- grep('^\\s*<body>\\s*$', x)) == 0) next
