@@ -1,15 +1,15 @@
-# Autor {#autor .unnumbered}
+# Autor {.unnumbered}
 
 Santiago Botero es ingeniero administrador de la 
 [Universidad Nacional de Colombia][unal] y maestro en economía del 
-[Centro de Investigación y Docencia Económicas][cide]. Tiene particular interés
-en el análisis de datos como herramienta para el análisis de la política
+[Centro de Investigación y Docencia Económicas][cide] (CIDE). Tiene particular
+interés en el análisis de datos como herramienta para el análisis de la política
 antimonopolio y actualmente se encuentra estudiando una especialización en
 ciencia de datos impartida en línea ([información aquí][coursera]).
 
 Nació y creció en Medellín, una ciudad de clima agradable sobre las montañas de
 los Andes. Llegó a México a mediados del 2012 para realizar sus estudios de
-maestría. Se ha enamorado de México y allí ha desarrollado su carrera en asuntos
+maestría; se ha enamorado del país y allí ha desarrollado su carrera en asuntos
 de competencia económica.
 
 Actualmente trabaja en la Autoridad Investigadora de la 
@@ -21,8 +21,8 @@ antimonopolios mexicana.
 
 Es profesor de cátedra en el [Tec de Monterrey][tec] desde el primer semestre
 de 2018, en donde ha impartido clases de macroeconomía intermedia y 
-economía de la empresa. Previamente, fue laboratorista en diversos cursos en
-el Cide.
+economía de la empresa. Previamente, fue laboratorista de diversos cursos en
+el CIDE.
 
 [unal]: http://unal.edu.co/
 [cide]: https://www.cide.edu/

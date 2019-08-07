@@ -37,7 +37,9 @@ lang: es-MX
     formato <- list(digits = 2, big.mark = ",", decimal.mark = ".")
 ```
 
-# Prefacio {-}
+# (PART) Preliminares {-}
+
+# Prefacio {.unnumbered}
 
 En la pintura de El Mercado de Tlatelolco de Diego Rivera, que se encuentra en
 el Palacio Nacional de México (gráfico \@ref(fig:tlatelolco)) se observa a 
@@ -65,54 +67,54 @@ mercado.
 
 ## ¿Por qué leer estos apuntes?
 
-Aunque el texto guía de esta materia es @samuelson, me ha parecido un poco 
-decepcionante la ausencia casi total de ecuaciones y ejes en las gráficas que
-tiene el libro. Si bien cumple con su objetivo de presentar las ideas más 
-comúnmente aceptadas en el ámbito de un curso estándar de microeconomía, 
-considero que dejar de un lado las ecuaciones hace que se pierda una parte muy
-importante de la teoría económica moderna, no permite aprovechar los 
-conocimientos que los estudiantes han ganado en sus cursos de matemáticas y 
-puede limitar a los más interesados para leer desarrollos recientes que, 
-usualmente, están escritos en un lenguaje matemático muy formal.
+Aunque el texto guía de esta materia es "Microeconomía con aplicaciones a
+Latinoamérica" [@samuelson], me ha parecido un poco decepcionante la ausencia
+casi total de ecuaciones y ejes en las gráficas que tiene el libro. Si bien
+cumple con su objetivo de presentar las ideas más comúnmente aceptadas en el
+ámbito de un curso estándar de microeconomía, considero que dejar de un lado las
+ecuaciones hace que se pierda una parte muy importante de la teoría económica
+moderna, no permite aprovechar los conocimientos que los estudiantes han ganado
+en sus cursos de matemáticas y puede limitar a los más interesados para leer
+desarrollos recientes que, usualmente, están escritos en un lenguaje matemático
+muy formal.
 
 Al buscar otros libros de microeconomía que puedan suplir esta parte, uno 
 encuentra normalmente que los libros más sencillos tienen el mismo problema, 
-pero los más avanzados pecan en el otro extremos: hacen un desarrollo muy formal
+pero los más avanzados pecan en el otro extremo: hacen un desarrollo muy formal
 del contenido y descuidan un poco la intuición económica que se esconde tras 
-las ecuaciones. Entonces parece que los libros escritos están demasiado 
+las ecuaciones; entonces, parece que los libros escritos están demasiado 
 sencillos o demasiado complicados. De allí surgió la idea de escribir unos
 apuntes que contengan el contenido que normalmente imparto en mis clases, que
 incluye tanto el enfoque más formal como el desarrollo de la intuición económica
 que se espera de los estudiantes.
 
-El libro de @economy, en el que también se basa buena parte de estos apuntes,
-hace un balance muy adecuado entre estos dos extremos. El desarrollo del 
-material es novedoso y lleva al lector directamente a los problemas más 
-interesantes que discutimos los economistas hoy en día; además, incluye unas
-secciones llamadas *Leibniz* que desarrollan los conceptos matemáticas más
-formales que subyacen a las respuestas a estos problemas. Sin embargo, el orden
-del material hace que sea difícil utilizarlo como texto guía en un curso 
-estándar de microeconomía.
+El libro "The Economy" [@economy], en el que también se basab buena parte de
+estos apuntes, hace un balance muy adecuado entre estos dos extremos. El
+desarrollo del material es novedoso y lleva al lector directamente a los
+problemas más interesantes que discutimos los economistas hoy en día; además,
+incluye unas secciones llamadas *Leibniz* que desarrollan los conceptos
+matemáticos más formales que subyacen en las respuestas a estos problemas. Sin
+embargo, el orden del material hace que sea difícil utilizarlo como texto guía
+en un curso estándar de microeconomía.
 
 ## Licencia
 
-Estos apuntes están licenciados bajo la licencia Creative Commons Atribución - 
-NoComercial - CompartirIgual 4.0 Internacional ([CC BY-NC-SA 4.0][Licencia]) 
-que, en le otorga a cualquier persona las libertades de compartir (copiar y
-redistribuir el material en cualquier formato o medio) y adaptar (remezclar,
-transformar y construir a partir del material) bajo los siguientes términos:
+Estos apuntes tienen la licencia Creative Commons Atribución - NoComercial -
+CompartirIgual 4.0 Internacional ([CC BY-NC-SA 4.0][Licencia]), que le otorga a
+cualquier persona las libertades de compartir (copiar y redistribuir el material
+en cualquier formato o medio) y adaptar (remezclar, transformar y construir a
+partir del material) bajo los siguientes términos:
+
++ **Atribución**: Dar crédito de manera adecuada, brindar un enlace a la 
+licencia, e indicar si se han realizado cambios, de cualquier forma razonable,
+pero no de forma tal que sugiera que se cuenta con el apoyo del licenciante.
++ **NoComercial**: No se puede hacer uso del materia con propósitos comerciales.
++ **CompartirIgual**: Si remezcla, transforma o crea a partir del material, debe
+redistribuir su contribución bajo la misma licencia del original.
 
 ```{r licencia, fig.cap = "Licencia de estos apuntes", echo = FALSE}
   knitr::include_graphics("images/by-nc-sa.png")
 ```
-
-+ **Atribución**: Dar crédito de manera adecuada, brindar un enlace a la 
-licencia, e indicar si se han realizado cambios, de cualquier forma razonable,
-pero no de forma tal que sugiera que usted o su uso tienen el apoyo del 
-licenciante.
-+ **NoComercial**: No se puede hacer uso del materia con propósitos comerciales.
-+ **CompartirIgual**: Si remezcla, transforma o crea a partir del material, debe
-redistribuir su contribución bajo la misma licencia del original.
 
 ## Software
 
@@ -122,12 +124,58 @@ texto está escrito utilizando `RMarkdown` con los paquetes `knitr`
 [@knitr1; @knitr2; @knitr3], `bookdown` [@bookdown1; @bookdown2] y `kableExtra` 
 [@kable]. También se utilizaron los paquetes `tidyverse` [@tidyverse] y
 `latex2exp` [@latex2exp] para la limpieza de tablas y la escritura de 
-expresiones matemáticas en los gráficos. La tipografía matemática está escrita
-en \LaTeX [@latex]. El código que genera la apariencia del documento está tomado
-directamente de @bookdown1. El código mediante el cual se generó estos apuntes
-está disponible [aquí][CodigoApuntes].
+expresiones matemáticas en los gráficos. El código mediante el cual se generaron
+estos apuntes está disponible [aquí][CodigoApuntes].
+
+## Tipografía
+
+La tipografía matemática está escrita en LaTeX - \LaTeX [@latex]. El código que
+genera la apariencia del documento está tomado directamente de @bookdown1. Las
+citas textuales a lo largo del documento se encuentran en dos formatos
+diferentes: cuando aparecen dentro de un párrafo tienen comillas al principio y
+al final de la cita, "así"; cuando son citas más largas no tienen comillas sino
+un formato especial como el siguiente:
+
+> Ejemplo de cita.
+
+Ocasionalmente, estas citas tienen cambios menores (de mayúsculas/minúsculas o
+adiciones) marcadas entre corchetes, supresiones de texto marcadas con la
+expresión "(...)", así como en el formato, para lo cual se indica la expresión
+"[énfasis añadido]" al final.
+
+Asimismo, existen recuadros a lo largo del documento para notas, tips, aspectos
+importantes, advertencias o mensajes de alerta. Estos tienen la siguiente 
+forma:
+
+```{block2, type = "rmdnote"}
+  Esto es una nota.
+```
+
+```{block2, type = "rmdtip"}
+  Esto es un tip.
+```
+
+```{block2, type = "rmdimportant"}
+  Esto es un aspecto importante.
+```
+
+```{block2, type = "rmdcaution"}
+  Esto es una advertencia.
+```
+
+```{block2, type = "rmdwarning"}
+  Esto es un mensaje de alerta.
+```
 
 ## Agradecimientos
+
+Agradezco a la Dra. Grisel Ayllón Aragón por la oportunidad de volver a 
+reencontrar esta vocación de dar clases que tanto me satisface, después de un
+par de años de haber estado alejado de las aulas. Igualmente, a mi equipo de
+trabajo en la Cofece, que no sólo me reta intelectualmente cada día, sino que
+me permite organizar mi tiempo para que esto sea posible; en especial a Octavio
+Gutiérrez-Engelmann, a quien no sólo considero un buen jefe sino también una
+buena persona y un excelente economista.
 
 [Licencia]: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es
 

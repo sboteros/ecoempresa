@@ -55,24 +55,24 @@ para ganar algo que queremos debemos renunciar a otra cosa: estudiar una carrera
 significa no recibir salarios durante un periodo de tiempo, estudiar para un
 examen significa no poder utilizar ese tiempo para el ocio, comer en un
 restaurante significa no poder comer en otro al mismo tiempo, etc. Esto nos
-llevará al concepto de *costos de oportunidad* que veremos más adelante en el
-curso.
+llevará al concepto de *costos de oportunidad* que veremos en la sección 
+\@ref(opcost).
 
-Como los recursos son escasos, es importante para la sociedad hacer el mejor
-uso posible de ellos. Esto nos lleva al concepto de la *eficiencia*, que 
-significa que la sociedad debe utilizar los recursos disponibles para lograr
-el mayor bienestar de la población. De acuerdo con @samuelson, la
-*eficiencia económica* es:
+Como los recursos son escasos, es importante para la sociedad hacer el mejor uso
+posible de ellos. Esto nos lleva al concepto de *eficiencia*, que significa que
+la sociedad debe utilizar los recursos disponibles para lograr el mayor
+bienestar de la población. De acuerdo con @samuelson, la *eficiencia económica*
+es:
 
-```{proposition, label = "eficiencia", name = "Eficiencia económica"}
-La **eficiencia económica** exige que una exonomía *produzca* la combinación
-más elevada de cantidad y calidad de productos y servicios dada su tecnología
-y sus escasos recursos. Una economía produce con eficiencia cuando *no puede
-mejorar el bienestar económico de una persona sin afectar negativamente el 
-de otra* [@samuelson, p. 4].
+```{proposition, "eficiencia", name = "Eficiencia económica"}
+"La **eficiencia económica** exige que una economía 
+*produzca* la combinación más elevada de cantidad y calidad de productos y 
+servicios dada su tecnología y sus escasos recursos. Una economía produce con
+eficiencia cuando *no puede mejorar el bienestar económico de una persona sin 
+afectar negativamente el de otra*" [@samuelson, p. 4, énfasis añadido].
 ```
 
-En ese texto que acabamos de ver de @samuelson, se esconden varios conceptos que
+En la proposición \@ref(prp:eficiencia) se esconden varios conceptos que
 intentaremos ver a detalle durante el curso:
 
 + La **eficiencia productiva** es la primera oración. Tiene que ver con qué
@@ -80,8 +80,8 @@ decide producir la sociedad, teniendo en cuenta su *tecnología* (concepto que
 analizaremos en la sección \@ref(fpp)) y los recursos productivos que tiene; 
 cuando una sociedad produce menos de lo que puede, entonces está utilizando de
 forma ineficiente sus recursos.
-+ La **eficiencia en el sentido de Paretto** es la segunda oración. Tiene que
-ver con la *asignación* de los recursos. Cuando una sociedad puede hacer más
++ La **eficiencia en el sentido de Pareto** es la segunda oración. Tiene que
+ver con la *asignación* de los recursos: cuando una sociedad puede hacer más
 feliz a alguien sin hacer más infeliz a otro, entonces no está asignando de 
 forma eficiente sus recursos.
 
@@ -95,12 +95,12 @@ permanecen frías para informar a los corazones ardientes, la ciencia económica
 puede hacer lo que le toca para asegurar una sociedad próspera y justa
 [@samuelson, p. 7].
 
-La **eficiencia en el sentido de Paretto** puede parecernos muy injusta; por
+La **eficiencia en el sentido de Pareto** puede parecernos muy injusta; por
 ejemplo, si repartimos $100 entre dos personas y le damos $99 a una y $1 a otra,
 no hay una manera de darle más a una sin quitarle a la otra, entonces tenemos
 una asignación eficiente; sin embargo, por algún motivo puede no gustarnos esa
-asignación y podríamos preferir otra que también fuera pareto eficiente (por 
-ejemplo, dale $50 a cada una). Sin embargo, esto requiere hacer un 
+asignación y podríamos preferir otra que también fuera pareto-eficiente (por 
+ejemplo, darle $50 a cada una). Sin embargo, esto requiere hacer un 
 *juicio de valor* sobre lo que debería ser, en lugar de describir detalladamente
 lo que es.
 
@@ -120,7 +120,7 @@ meramente económico (porque son preguntas políticas y éticas).
 ```{block2, type = 'rmdtip'}
 Puedes leer cosas sobre la justicia y cómo la interpretan diferentes 
 concepciones filosóficas en @sandel. Una forma que los economistas gustamos de
-evaluar la justicia es *situarse bajo el velo de la ignorancia* 
+evaluar la justicia es *situarnos bajo el velo de la ignorancia* 
 [@sandel, cap. 6]
 ```
 
@@ -132,7 +132,7 @@ sociedad), cómo producirlas (la *eficiencia productiva*) y para quién
 producirlas (la *eficiencia asignativa*). Estas son las tres preguntas básicas
 que debe responder toda sociedad.
 
-```{block2, type = 'rmdnote'}
+```{block2, type = 'rmdimportant'}
 Las tres preguntas básicas de cualquier sociedad son:
   
   - ¿Qué producir?
@@ -142,7 +142,7 @@ Las tres preguntas básicas de cualquier sociedad son:
   
 ```
 
-Para responder a estar preguntas pueden haber muchos sistemas posibles. Por 
+Para responder a estas preguntas pueden haber muchos sistemas posibles. Por 
 ejemplo, podría definirse el *qué* o  *para quién* mediante:
 
 + La suerte (una lotería determina qué cosas se le dan a cada quién).
@@ -164,10 +164,10 @@ de mercados, de pérdidas y ganancias, de incentivos y recompensas determina el
   
 + Las empresas producen las mercancías que generan las máximas utilidades 
 (el *qué*) con las técnicas de producción que resulten menos costosas (el
-*cómo*¨).
+*cómo*).
 + El consumo está determinado por las decisiones de los individuos respecto a 
-cómo gastar los salarios y los ingresos sobre la propiedad que generan su 
-trabajo y sus propiedades (el *para quién*).
+cómo gastar los salarios y las rentas que generan su trabajo y sus propiedades
+(el *para quién*).
 
 
 ```
@@ -179,33 +179,32 @@ hacen los individuos.
 ```{block2, type = 'rmdtip'}
 La corriente política que propone eliminar al Estado y dejar que los individuos
 hagan lo que quieran se llama *libertarianismo*. Puedes leer más en
-@sandel[cap. 3.].
+@sandel[cap. 3].
 ```
 
 En el otro extremo, se encuentra una economía autoritaria.
 
 ```{definition, name = 'Economía autoritaria'}
-Es aquella en la que el gobierno toma todas la decisiones importantes acerca
+"Es aquella en la que el gobierno toma todas la decisiones importantes acerca
 de la producción y la distribución, mediante la propiedad de recursos y su
 poder para imponer decisiones. Por ejemplo, los estados socialistas funcionaron
-como economías centralmente planificadas [@samuelson, p. 8].
+como economías centralmente planificadas" [@samuelson, p. 8].
 ```
 
 En algún punto intermedio se encuentran las economías modernas, en donde los
 individuos toman casi todas las decisiones importantes; pero el Estado vigila
-que no haya abusos por parte de los individuos y provee algunos bienes y 
-servicios a la sociedad.
+que no haya abusos y provee algunos bienes y servicios a la sociedad.
 
 ```{definition, name = 'Economía mixta'}
-La vida económica se organiza a través de una autoridad jerárquica o de mercados
+"La vida económica se organiza a través de una autoridad jerárquica o de mercados
 voluntarios descentralizados. La mayor parte de las decisiones se toman en el
 mercado; pero el gobierno desempeña un papel importante en la supervisión de su
 funcionamiento, aprueba las leyes que regulan la vida económica, produce 
-servicios educativos y controla la contaminación, entre otras cosas 
+servicios educativos y controla la contaminación, entre otras cosas" 
 [@samuelson, p. 8].[^Estado]
 ```
 
-## Ejercicios
+## Problemas
 
 ```{exercise, name = "Discurso sobre la edad de oro"}
 Don Quijote de la Mancha pronunció un discurso a unos cabreros, en los 
@@ -232,7 +231,7 @@ ser forzada ofrecía, por todas las partes de su fértil y espacioso seno, lo qu
 pudiese hartar, sustentar y deleitar a los hijos que entonces la poseían (...)
 [@quijote, cap. XI].
 
-¿Los bienes en la edad dorada de la que hablaba nuestro ingenioso hidalgo, ¿eran
+Los bienes en la edad dorada de la que hablaba nuestro ingenioso hidalgo, ¿eran
 *bienes económicos*?
 
 ```
@@ -285,5 +284,5 @@ inflación de los precios no se dé con demasiada rápidez? (la relación entre
 empleo e inflación se ve en la materia de *macroeconomía*).
 
 [^Estado]: En la sección \@ref(estado) veremos algunos de los elementos por los
-que los economistas veríamos justificada la intervención del Estado en la
+que los economistas generalmente justificamos la intervención del Estado en la
 economía.

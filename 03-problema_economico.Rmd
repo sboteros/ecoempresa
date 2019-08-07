@@ -8,7 +8,7 @@ través de una *economía de mercado*. En este capítulo y en el siguiente
 de una economía de mercado. 
 
 En la sección \@ref(mercado) se introducen los conceptos de mercado y precios y
-se señalan algunas características importante del precio de equilibrio en un
+se señalan algunas características importantes del precio de equilibrio en un
 mercado. Después, la sección \@ref(fpp) explica a qué nos referimos con
 *eficiencia productiva* (concepto introducido en el capítulo \@ref(intro)) y
 cómo puede interpretarse este concepto a través de la Frontera de Posibilidades
@@ -48,8 +48,8 @@ espacio o una forma en que puedan encontrarse; a ese espacio lo llamaremos
 *mercado*.
 
 ```{definition, defmercado, name = 'Mercado'}
-Un **mercado** es un mecanismo mediante el cual los compradores y los vendedores
-interactúan para determinar precios e intercambiar bienes y servicios 
+"Un **mercado** es un mecanismo mediante el cual los compradores y los vendedores
+interactúan para determinar precios e intercambiar bienes y servicios" 
 [@samuelson, p. 26].
 ```
 
@@ -57,7 +57,7 @@ Estos *mecanismos* mediante los cuales interactúan los compradores y los
 vendedores pueden tener muchas formas: pueden ser un espacio físico particular,
 una aplicación de celular o lo que sea.
 
-> Las instituciones de mercado tradiciones usualmente reunían a muchos 
+> Las instituciones de mercado tradicionales usualmente reunían a muchos 
 vendedores y compradores juntos en un lugar. Muchas de las grandes ciudades del
 mundo crecieron alrededor de mercados y bazares a lo largo de antiguas rutas 
 comerciales como la Ruta de la Seda entre China y el mediterráneo. (...) En los
@@ -75,9 +75,9 @@ La principal función de los mercados es determinar el **precio** de cada
 mercancía. 
 
 ```{definition, precio, name = "Precio"}
-El precio es el valor del bien en términos de *dinero*[^Dinero]. A un nivel más
+"El precio es el valor del bien en términos de *dinero*[^Dinero]. A un nivel más
 profundo, los precios representan los términos con base en los cuales se 
-intercambian distintas mercancías.[^Relativos]
+intercambian distintas mercancías."[^Relativos] [@samuelson, p. 27]
 ```
 La particularidad que tienen los mercados, a diferencia de otros sistemas para
 resolver los interrogantes básicos (que vimos en la sección
@@ -97,21 +97,21 @@ cueste menos quieran vender.
 ```{block2, type = 'rmdimportant'}
 La particularidad del precio que prevalece en el mercado, al que llamamos
 *precio de equilibrio* es que hace que los compradores quieran comprar la misma
-cantidad de mercancías que los vendedores quierenn vender.[^Vaciado]
+cantidad de mercancías que los vendedores quieren vender.
 ```
 
 De este modo,  los mercados ayudan a responder a los tres interrogantes básicos
 de la economía (recuerde la sección \@ref(interrogantes)) sin que ninguna persona
-o institución, por si misma, los responda:
+o institución, por sí misma, los responda:
 
 + *Qué* producir está determinado por lo que los consumidores desean y están
 dispuestos a pagar (detalles en el capítulo \@ref(consumidor)); las empresas
 intentan producir lo que ellos quieren con el ánimo de ganar utilidades
 (detalles en el capítulo \@ref(firma)).
-+ *Cómo* producir está determinado por las tecnologías de las que dispone la 
++ *Cómo* producir está determinado por las tecnologías de las que dispone la
 sociedad; las empresas que pueden producir lo que los consumidores quieren de la
-forma más barata posible puede maximizar sus utilidades (detalles en la sección
-\@ref(fpp) y el capítulo \@ref(firma)).
+forma más eficiente posible pueden maximizar sus utilidades (detalles en la
+sección \@ref(fpp) y el capítulo \@ref(firma)).
 + *Para quién* producir está determinado por lo que los consumidores están 
 dispuestos a pagar por los bienes y servicios (detalles en el capítulo 
 \@ref(consumidor)).
@@ -128,48 +128,44 @@ Además de hacer que, en cada momento, los compradores y los vendedores quieran
 intercambiar la misma cantidad de mercancías, los precios sirven para enviar
 **señales** para el futuro. Por ejemplo, si un precio es demasiado elevado el
 mercado envía la señal de que el bien es escaso, entonces los consumidores
-querrán prepararse para comprar menos en el futuro (vea el ejercicio
+querrán prepararse para comprar menos en el futuro (vea el problema
 \@ref(exr:petroleo)); y los vendedores para vender más o mejorar sus tecnologías
 (vea el ejercicio \@ref(exr:historia)). Ambas cosas, provocan que los precios en
-el futuro sean menores, como veremos en el capítulo \@ref(ofertademanda).
+el futuro sean menores, como veremos en el capítulo \@ref(ofertademanda). De 
+acuerdo con @samuelson[p. 27]
 
-```{block2, type = 'rmdimportant'}
-> "Los precios coordinan las decisiones de los productores y los consumidores en
+> Los precios coordinan las decisiones de los productores y los consumidores en
 un mercado. Los precios más elevados tienden a reducir las compras de los
-consumidores y a fomentar la producción. Los menores precios fomentan en consumo
+consumidores y a fomentar la producción. Los menores precios fomentan el consumo
 y desalientan la producción. Los precios son la rueda que equilibra el
-mercanismo de mercado" [@samuelson].
-
-
-```
+mercanismo de mercado
 
 ## Frontera de posibilidades de producción {#fpp}
 
 ### Productos, insumos y tecnología
 
-En la sección anterior vimos que los mercados ayudan a responder *cómo* producir
-pues dan incentivos a las empresas para producir, de la forma más barata que sea
+En la sección anterior vimos que los mercados ayudan a responder *cómo* producir,
+pues dan incentivos a las empresas para producir, de la forma más eficiente
 posible, lo que los consumidores desean. Asimismo, en la sección \@ref(escasez),
 vimos el concepto de *eficiencia productiva*, que implica que las empresas hacen
 justamente eso. Pero, ¿cómo podemos saber que las empresas están produciendo
-justamente tan bien bien como pueden hacerlo?
+justamente tan bien como pueden hacerlo?
 
 Cuando en una sociedad las empresas producen de forma eficiente, utilizan de la
 mejor manera posible los recursos a su disposición para transformarlos en cosas
-que les son útiles. En lo que acabamos de decir, nos referimos a tres cosas
-diferentes y necesitaremos contruir un lenguaje particular para ellas: estras
-tres cosas son los insumos, las tecnologías y los productos. @samuelson[p. 9]
-define:
+útiles. En lo que acabamos de decir, nos referimos a tres cosas diferentes y
+necesitaremos contruir un lenguaje particular para ellas: estras tres cosas son
+los insumos, las tecnologías y los productos. @samuelson[p. 9] define:
 
 + Los **insumos** son las mercancías o productos que se utilizan para producir
 bienes o servicios.
 + Los **productos** son los distintos bienes o servicios resultantes del proceso
 de producción. Estos pueden ser productos para consumo final (es decir, lo que
 nosotros como consumidores queremos obtener) o pueden ser productos intermedios;
-en este segundo caso, son a su vez, insumos para otro proceso productivo.
+en este segundo caso son, a su vez, insumos para otro proceso productivo.
 + La **tecnología** son todos los procesos que nos permiten convertir a los
 insumos en productos; por ejemplo: una máquina, un conocimiento, una forma de 
-organizarse para producir.
+organizarse para producir, etc.
 
 ```{block2, type = 'rmdimportant'}
   La *tecnología* es el proceso que nos permite convertir los *insumos* en los
@@ -182,25 +178,25 @@ detalle el mercado de estos). En general, los podemos agrupar en tres tipos
 de insumos: tierra, capital y trabajo.
 
 La **tierra** son los recursos naturales que tenemos a nuestra disposición y que
-utilizamos para obtener lo que necesitamos. Por ejemplo, es tierra y agua para
+utilizamos para obtener lo que necesitamos; por ejemplo, tierra y agua para
 cultivar nuestros alimentos, metales y materias primas para producir diversos 
 objetos, energía, etc. El **trabajo** es el esfuerzo humano que ponemos en la 
 producción y está limitado por la población en edad de trabajar y por el 
 conocimiento técnico y científico que tenemos en un momento determinado. Y el
 **capital** está conformado por los bienes durables que se utilizan para 
 producir (podría interpretarse como trabajo acumulado), tales como carreteras,
-edificios, máquinas, etc [@samuelson, p. 9].[^NotaCapital]
+edificios, máquinas, etc. [@samuelson, p. 9].[^NotaCapital]
 
-```{block2, type = 'rmdnote'}
+```{block2, type = 'rmdimportant'}
   Podemos agrupar los **insumos** de una economía en tres categorías: *tierra*,
   *capital* y *trabajo*.
 ```
 
 Como sociedad, los *insumos* que tenemos son limitados, entonces no podemos
 obtener tantos *productos* como desearíamos: ante la limitación de recursos que
-tenemos, si queremos obtener más de un producto, esto implica que podríamos
-obtener menos de otros productos, dada la *tecnología* de producción que la
-sociedad tiene en un momento determinado.
+tenemos, obtener más de un producto implica que podríamos obtener menos de otros
+productos, dada la *tecnología* de producción que la sociedad tiene en un
+momento determinado.
 
 ### Conjunto factible
 
@@ -244,10 +240,10 @@ cuando dedica diversas horas a estudiar.
 ```
 
 Podemos graficar los datos de la tabla \@ref(tab:tabcali) para obtener la
-gráfica de cómo luce nuestra *función de producción*, cuyas características
-analizaremos en el capítulo \@ref(firma). En el gráfico \@ref(fig:grafcali) se
-muestra la función de producción, en donde están resaltados los datos de la
-tabla.
+gráfica de cómo luce nuestra *función de producción* de calificaciones, cuyas
+características analizaremos en el capítulo \@ref(firma). En el gráfico
+\@ref(fig:grafcali) se muestra la función de producción, en donde están
+resaltados los datos de la tabla \@ref(tab:tabcali).
 
 ```{r grafcali, echo = FALSE, fig.cap = "Calificaciones como función de las horas de estudio"}
   graf1(df = ejemplo, x = "estudio", y = "calificacion", fun1 =  calificaciones, 
@@ -261,7 +257,7 @@ tabla.
 Ahora, note que la producción de calificaciones tiene exactamente el mismo
 insumo que el ocio: su tiempo. En términos formales, las horas de ocio de las
 que usted puede disfrutar son $o(h) = 24 - h$. En la tabla \@ref(tab:tabocio) se
-observan algunas calificaciones que usted podría obtener cuando dedica diversas
+observan algunas horas de ocio que usted podría obtener cuando dedica diversas
 horas a estudiar.
 
 ```{r tabocio, echo = FALSE}
@@ -271,10 +267,10 @@ horas a estudiar.
                 caption = "Tiempo de ocio máximo como función de las horas de estudio")
 ```
 
-Nuevamente, grafiquemos esta *función de producción*. Aquí tendríamos que la
-producción de ocio es inversa al tiempo de estudio: entre más tiempo dedique 
-usted a estudiar, tendrá menos tiempo de ocio para disfrutar. Esta relación se
-muestra en el gráfico \@ref(fig:grafocio).
+Nuevamente, grafiquemos esta *función de producción* del ocio. Aquí tendríamos
+que la producción de ocio es inversa al tiempo de estudio: entre más tiempo
+dedique usted a estudiar, tendrá menos tiempo de ocio para disfrutar. Esta
+relación se muestra en el gráfico \@ref(fig:grafocio).
 
 ```{r grafocio, echo = FALSE, fig.cap = "Tiempo de ocio como función de las horas de estudio"}
   graf1(df = ejemplo, x = "estudio", y = "ocio", fun1 = function(h) {24 - h}, 
@@ -283,8 +279,7 @@ muestra en el gráfico \@ref(fig:grafocio).
         xtit = "Horas de estudio", ytit =  "Ocio")
 ```
 
-
-```{block2, type = 'rmdtip'}
+```{block2, type = 'rmdnote'}
   **Gráfica de una línea recta**. Recuerde que para graficar una línea recta de 
   la forma canónica $y = a + b x$ basta conocer dos puntos; y para 
   caracterizarla (es decir, para escribir su ecuación), basta conocer dos puntos 
@@ -300,15 +295,15 @@ muestra en el gráfico \@ref(fig:grafocio).
   $(-\frac{a}{b}, 0)$, que se ubica en el punto $-\frac{a}{b}$ sobre el eje 
   horizontal.
   
-  En la gráfica del *ocio* tenemos la ecuación $o = 24 - h$, que tiene la forma
-  de una línea recta. Cuando $h = 0$, entonces $o = 24$ (note que es $a$ en la 
-  forma canónica), entonces esta recta pasa por el punto $(0, 24)$ . Cuando
-  $h = 0$, entonces $o = 24$ (note que es $-\frac{a}{b} = -\frac{24}{-1}$ en la
-  forma canónica), entonces pasa por el punto $(24, 0)$. Estos dos puntos son
-  suficientes para gráficar toda la recta, sin que sea necesario hacer una tabla
-  más detallada como la que hicimos.
+  En el gráfico \@ref(fig:grafocio) tenemos la ecuación $o = 24 - h$, que tiene
+  la forma de una línea recta. Cuando $h = 0$, entonces $o = 24$ (note que es
+  $a$ en la forma canónica), entonces esta recta pasa por el punto $(0, 24)$ .
+  Cuando $h = 0$, entonces $o = 24$ (note que es $-\frac{a}{b} = -\frac{24}{-1}$
+  en la forma canónica), entonces pasa por el punto $(24, 0)$. Estos dos puntos
+  son suficientes para gráficar toda la recta, sin que sea necesario hacer una
+  tabla más detallada como la que hicimos en la tabla \@ref(tab:tabocio).
   
-  **Ecuación de una línea recta**. En otras ocasiones, querremos saber cuál es
+  **Ecuación de una línea recta**. En otras ocasiones, queremos saber cuál es
   la ecuación de una línea recta teniendo poca información. Podemos escribirla
   si conocemos un punto y la pendiente o dos puntos.
   
@@ -335,11 +330,11 @@ entonces, para tener más de uno usted debe sacrificar un poco del otro. Si
 quiere más calificaciones, deberá sacrificar tiempo de ocio; si quiere más
 tiempo de ocio, deberá sacrificar calificaciones.
 
-```{block2, type = 'rmdnote'}
+```{block2, type = 'rmdimportant'}
   Los **contrafactuales** (comunmente llamados *trade-offs*) son las cosas que
   tenemos que sacrificar para obtener un poco más de otras. Aquí aplica el 
-  refrán ["*there ain't no such thing as free lunch*"][FreeLunch], que significa 
-  que si queremos algo bueno, también deberemos sacrificar algo.
+  refrán "*there ain't no such thing as free lunch*", que significa que si 
+  queremos algo bueno, también deberemos sacrificar algo.
 ```
 
 Observe que, de las tablas \@ref(tab:tabcali) y \@ref(tab:tabocio), podemos 
@@ -357,13 +352,13 @@ de ocio para los puntos observados anteriormente.
                 caption = "Calificaciones y tiempo de ocio máximos")
 ```
 
-Podemos graficar los puntos que obtuvimos en la tabla \@ref(tab:tabociocali) 
-anterior y unirlos con una curva para ver las combinaciones máximas *productos*
-(tiempo de ocio y calificaciones) que podríamos obtener, dados nuestros *insumos* 
+Podemos graficar los puntos que obtuvimos en la tabla \@ref(tab:tabociocali) y
+unirlos con una curva para ver las combinaciones máximas de *productos* (tiempo
+de ocio y calificaciones) que podríamos obtener, dados nuestros *insumos*
 disponibles (24 horas al día) y la *tecnología* con la que convertimos insumos
-en productos (que, en este caso, son las dos funciones $c(h)$ y $o(h)$ que 
-vimos). En el gráfico \@ref(fig:grafociocali) se encuentra disponible esta
-gráfica.
+en productos (que, en este caso, son las dos funciones $c(h)$ y $o(h)$ que vimos
+anteriormente). En el gráfico \@ref(fig:grafociocali) se muestran estas 
+combinaciones.
 
 ```{r grafociocali, echo = FALSE, fig.cap = "Calificaciones como función del tiempo de ocio"}
   graf1(df = ejemplo, x = "ocio", y = "calificacion", 
@@ -373,25 +368,25 @@ gráfica.
         xtit = "Tiempo de ocio", ytit = "Calificaciones")
 ```
 
-```{block2, type = 'rmdtip'}
+```{block2, type = 'rmdnote'}
   **Funciones inversas**. Note que en las tablas y las gráficas anteriores, 
   teníamos que tanto el ocio como las calificaciones son función de las horas de
   estudio; en efecto, habíamos escrito dos funciones para ellas: $o(h) = 24 - h$
-  y $c(h) = 20 \sqrt{h}$. Sin embargo, en el último gráfico que hicimos, parece
-  que las calificaciones son una función del ocio; esto muestra claramente el
-  *trade-off* que usted debe hacer: a mayores calificaciones, menos tiempo de
-  ocio (porque ambas cosas utilizan el mismo insumo: su tiempo). ¿Cómo cambiamos
-  de una función de $h$ a una de $o$?
+  y $c(h) = 20 \sqrt{h}$. Sin embargo, en el gráfico \@ref(fig:grafociocali), 
+  parece que las calificaciones son una función del ocio; esto muestra 
+  claramente el *trade-off* que usted debe hacer: a mayores calificaciones, 
+  menos tiempo de ocio (porque ambas cosas utilizan el mismo insumo: su tiempo). 
+  ¿Cómo cambiamos de una función de $h$ a una de $o$?
     
   Lo primero que podemos hacer es calcular la *función inversa* de $o(h)$, que
   nos da una $h(o)$ y simplemente se obtiene despejando. Tenemos que
   $o(h) = 24 - h \Rightarrow h(o) = 24 - o$. Después, simplemente reemplazamos
   la $h$ en la función $c(h)$ por esta función que acabamos de hallar, que nos
   quedaría como $c(h(o)) = c(o) = 20 \sqrt{h(o)} = 20 \sqrt{24 - o}$. Esta
-  última función es la que describe la curva que dibujamos en el último gráfico.
+  última función es la que describe la curva del gráfico \@ref(fig:grafociocali).
 ```
 
-Esta gráfica que acabamos de obtener (descrita con la ecuación 
+Este gráfico que acabamos de obtener (descrito con la ecuación 
 $c(o) = 20 \sqrt{24 - o}$) se llama **frontera de posibilidades de producción** y
 muestra el máximo de cada uno de los bienes que podemos obtener, dados nuestros
 escasos recursos y la tecnología que tenemos disponible. La característica que
@@ -399,27 +394,27 @@ tiene es que cualquier punto que hay sobre esta curva es alcanzable para
 nosotros.
 
 ```{definition, label = "fppdef", name = "Frontera de Posibilidades de Producción"}
-  La **frontera de posibilidades de producción** (o **FPP**) muestra las 
+  "La **frontera de posibilidades de producción** (o **FPP**) muestra las 
   cantidades máximas de producción que puede obtener una economía, dados sus 
-  conocimientos y la cantidad de insumos disponibles [@samuelson, p. 10].
+  conocimientos y la cantidad de insumos disponibles" [@samuelson, p. 10].
 ```
 
 Si bien en nuestro ejemplo nos referíamos únicamente a usted, en la práctica 
 esta curva se refiere a las cantidades máximas de todos los productos que puede
 alcanzar la economía (que no podríamos graficar en un plano de dos dimensiones
-como el de la gráfica \@ref(fig:grafociocali)).
+como el del gráfico \@ref(fig:grafociocali)).
 
-Algo importante que nos muestra esta gráfica son los puntos que no podemos 
+Algo importante que nos muestra este gráfico son los puntos que no podemos 
 obtener, dados nuestros insumos y nuestra tecnología; estos puntos son deseables
 para la sociedad, pues siempre se prefieren más productos a menos productos; sin
 embargo, no están disponibles para ella. Nos referimos a todos los puntos que 
 están por encima (o a la derecha) de la FPP. Por ejemplo, usted podría querer
 disponer de 15 horas de ocio (es decir, estudiar 9 horas) y una calificación de
-90.
+90, pero esto no es posible con su tecnología de producción de calificaciones.
 
 En el gráfico \@ref(fig:conjnofactible) se muestra, resaltado en color azul, el
 *conjunto no factible*, que muestra los puntos que no son alcanzables con el
-nivel de insumos y tecnología actual. En la sección \@ref(crecimiento)
+nivel de insumos y la tecnología actual. En la sección \@ref(crecimiento)
 observaremos que este conjunto puede variar en el tiempo, así como entre países
 en un momento determinado, pues está determinado por la tecnología de la que
 dispone la sociedad en un momento determinado, así como por sus recursos.
@@ -441,11 +436,11 @@ dispone la sociedad en un momento determinado, así como por sus recursos.
 
 ### Eficiencia de los recursos
 
-Por otra parte, todos los puntos que están bajo la FPP son puntos que podemos
-obtener; por eso, a este conjunto de puntos se le llama *conjunto factible*.
-En el gráfico \@ref(fig:conjfactible) se encuentra resaltado en color azul este
-conjunto. Note que el conjunto factible incluye a la FPP misma, pues cualquier 
-punto sobre la FPP es alcanzable para usted.
+Por otra parte, todos los puntos que están bajo o sobre la FPP son puntos que
+podemos obtener; por eso, a este conjunto de puntos se le llama *conjunto
+factible*. En el gráfico \@ref(fig:conjfactible) se encuentra resaltado en color
+azul este conjunto. Note que el conjunto factible incluye a la FPP misma, pues
+cualquier punto sobre la FPP es alcanzable para usted.
 
 ```{r conjfactible, echo = FALSE, fig.cap = "Conjunto factible"}
   graf1(df = ejemplo %>% bind_rows(
@@ -480,9 +475,9 @@ factible*), pues eso significa que estamos haciendo un buen uso de los insumos y
 la tecnología disponibles.
 
 ```{definition, label = "efiprod", name = "Eficiencia productiva"}
-  La **eficiencia productiva** se da cuando una economía no puede producir más
+  "La **eficiencia productiva** se da cuando una economía no puede producir más
   de un bien sin producir menos de otro bien; esto implica que la economía se
-  encuentra en su frontera de posibilidades de producción [@samuelson, p. 13].
+  encuentra en su frontera de posibilidades de producción" [@samuelson, p. 13].
 ```
 
 @samuelson[p. 14] dice que "[c]uando existen recursos sin utilizar, la economía
@@ -493,24 +488,25 @@ no utilicemos todos los recursos de la economía; por eso existe el *desempleo* 
 eso hace que no estemos utilizando adecuadamente los recursos. El problema de
 un *macroeconomista* es cómo utilizar las políticas *fiscal* y *monetaria* para
 acercar a la sociedad a la FPP y, simultáneamente, evitar que la moneda pierda
-poder adquisitivo (es decir, evitar una alta *inflación*).
+poder adquisitivo (es decir, evitar una alta *inflación*), como veremos en la
+sección \@ref(estcrecim).
 
-### Costos de oportunidad
+### Costos de oportunidad {#opcost}
 
 Observe, de la definición \@ref(def:efiprod), que cuando estamos sobre la FPP
 (y, por lo tanto, estamos siendo eficientes en el sentido de la producción), no
 podemos obtener más de un producto sin sacrificar algo del otro. Por ejemplo, si
-obtienes una calificación de 80 y un tiempo de ocio de 8 horas (punto E), 
-entonces ya estás actuando de forma eficiente; por lo tanto, si quisieras 
-obtener una calificación mayor, necesariamente tendrías que renunciar a algo de 
-tiempo de ocio. Es decir, el *costo* de una calificación mayor es el tiempo de
-ocio al que debes renunciar por ella. @samuelson[p. 13] explica que "[e]n un
-mundo de escasez, elegir una cosa significa renunciar a alguna otra". A este 
-concepto lo llamamos *costo de oportunidad*.
+usted obtiene una calificación de 80 y un tiempo de ocio de 8 horas (punto E),
+entonces ya está actuando de forma eficiente; por lo tanto, si quisiera obtener
+una calificación mayor, necesariamente tendría que renunciar a algo de tiempo de
+ocio. Es decir, el *costo* de una calificación mayor es el tiempo de ocio al que
+usted debe renunciar por ella. @samuelson[p. 13] explica que "[e]n un mundo de
+escasez, elegir una cosa significa renunciar a alguna otra". A este concepto lo
+llamamos *costo de oportunidad*.
 
 ```{definition, label = "opcost", name = "Costo de oportunidad"}
-  El **costo de oportunidad** de una decisión es el valor del bien o servicio al 
-  que se renuncia [@samuelson, p. 13]
+  "El **costo de oportunidad** de una decisión es el valor del bien o servicio al 
+  que se renuncia" [@samuelson, p. 13].
 ```
 
 Observe que la curva de la FPP tiene una pendiente negativa que indica que
@@ -526,11 +522,12 @@ transformación* y, en este caso, representa la tasa a la que usted cambia ocio
 ```
 
 En el ejemplo que venimos trabajando, podemos aproximar la TMT en un punto como
-el cambio en las calificaciones que se da cuando incrementas una hora de tiempo
+el cambio en las calificaciones que se da cuando se incrementa una hora de tiempo
 de ocio; esto es, $TMT(o) = \frac{\Delta c}{\Delta o}, \, \Delta o = 1$. Por
-ejemplo, si tienes 15 horas de ocio, entonces tienes una calificación de 60; y
-si incrementas una hora de ocio, entonces tendrías una calificación de 56.57.
-Por lo tanto, la TMT en ese punto es $60 - 56.57 = `r 60 - 56.57`$. En el
+ejemplo, si usted tiene 15 horas de ocio, entonces tiene una calificación de 60; y
+si incrementa una hora de ocio, entonces tendría una calificación de 56.57.
+Por lo tanto, la TMT en ese punto es $TMT(15) = \frac{\Delta c}{\Delta o} =$ 
+$\frac{c(16) - c(15)}{16 - 15} = \frac{56.57 - 60}{1} = `r 56.57 - 60`$. En el
 gráfico \@ref(fig:aproxTMT) se observan los puntos relevantes.
 
 ```{r aproxTMT, fig.cap = "Aproximación discreta de la TMT", echo = FALSE}
@@ -540,7 +537,7 @@ gráfico \@ref(fig:aproxTMT) se observan los puntos relevantes.
           mutate(y = 20 * sqrt(24 - x), label = LETTERS[1:2]), 
         x_lab = "x", y_lab = "y", 
         title = "Tasa marginal de transformación (aproximaxión discreta)",
-        subtitle = TeX("Pendiente cuando $h = 15$"), xtit = "Tiempo de ocio",
+        subtitle = TeX("Pendiente cuando $o = 15$"), xtit = "Tiempo de ocio",
         ytit = "Calificaciones") + 
     geom_segment(mapping = aes(x = 15, xend = 16, y = 60, yend = 56.56854),
                  colour = "red", size = 1.5) + 
@@ -573,9 +570,9 @@ que la derivada de la función exponencial es igual a sí misma. Y la ecuación
 \@ref(eq:log) muestra la derivada de la función logaritmo natural.
 
 Con base en estas derivadas sencillas se pueden obtener las derivadas de 
-funciones más complejas a partir de la derivada de una suma de funciones
-\@ref(eq:suma), la derivada de multiplicación de funciones 
-\@ref(eq:multiplicacion), la derivada de una razón entre funciones 
+funciones más complejas a partir de la derivada de la suma de funciones
+\@ref(eq:suma), la derivada de la multiplicación de funciones 
+\@ref(eq:multiplicacion), la derivada de la razón entre funciones 
 \@ref(eq:razon) y la *regla de la cadena* \@ref(eq:cadena).
 
 \begin{align}
@@ -585,29 +582,29 @@ funciones más complejas a partir de la derivada de una suma de funciones
     f^\prime(x) = g(x) \cdot h^\prime(x) + h(x) \cdot g^\prime(x) 
     (\#eq:multiplicacion) \\
   f(x) = \frac{g(x)}{h(x)} & \Rightarrow
-    f^\prime(x) = \frac{h(x) \cdot g^\prime(x) - g(x) \cdot h^\prime(x)}{h^2(x)}
-    (\#eq:razon) \\
+    f^\prime(x) = \frac{h(x) \cdot g^\prime(x) - g(x) \cdot 
+      h^\prime(x)}{[h(x)]^2} (\#eq:razon) \\
   f(x) = g(h(x)) & \Rightarrow f^\prime(x) = g^\prime(h(x)) \cdot h^\prime(x)
     (\#eq:cadena)
 \end{align}
 
-La ecuacion \@ref(eq:suma) únicamente dice que si la función es una suma de 
-varias, entonces su derivada es la suma de las derivada de cada una de ellas.
-La ecuación \@ref(eq:multiplicacion) dice que la derivada de una multiplicación 
-de funciones es la primera por la derivada de la segunda, más la segunda por la
-derivada de la primera. La ecuación \@ref(eq:cadena) únicamente dice que si
-usted tiene una función dentro de otra, la derivada es la derivada de todo 
-(considerando como si lo que hubiera adentro fuera una simple $x$) multiplicada
-por la derivada de lo adentro. La ecuación \@ref(eq:razon) dice que la derivada 
-de una división de funciones es la de abajo por la derivada de la arriba, menos 
-la de  arriba por la derivada de la de abajo, todo eso entre la de abajo al 
-cuadrado; aunque suena un poco más compleja, observe que se obtiene trivialmente 
-de las anteriores (es decir, no hay que aprenderla de memoria), pues 
-$\frac{g(x)}{h(x)} = g(x)[h(x)]^{-1}$; la aparente complejidad únicamente se
-refiere a la suma de las fracciones que queda después de hacer las derivadas
-correspondientes.
+La ecuacion \@ref(eq:suma) únicamente dice que si la función es una suma de
+varias, entonces su derivada es la suma de las derivadas de cada una de ellas.
+La ecuación \@ref(eq:multiplicacion) implica que la derivada de una
+multiplicación de funciones es la primera por la derivada de la segunda, más la
+segunda por la derivada de la primera. La ecuación \@ref(eq:cadena) únicamente
+significa que si usted tiene una función dentro de otra, la derivada es la
+derivada de todo (considerando como si lo que hubiera adentro fuera una simple
+$x$) multiplicada por la derivada de lo adentro. La ecuación \@ref(eq:razon)
+plantea que la derivada de una división de funciones es la de abajo por la
+derivada de la arriba, menos la de arriba por la derivada de la de abajo, todo
+eso entre la de abajo al cuadrado; aunque suena un poco más compleja, observe
+que se obtiene trivialmente de las anteriores (es decir, no hay que aprenderla
+de memoria), pues $\frac{g(x)}{h(x)} = g(x)[h(x)]^{-1}$; la aparente complejidad
+únicamente se refiere a la suma de las fracciones que queda después de hacer las
+derivadas correspondientes.
 
-Si usted aprende bien a aplicar estas ocho ecuaciones, entonces no tendrá 
+Si usted aprende a aplicar bien estas ocho ecuaciones, entonces no tendrá 
 problemas para desarrollar ninguna de las derivadas que pueden presentarse en
 este curso. Quizás la única diferencia con los cursos de matemáticas que usted
 ha tomado hasta el momento es cuando las funciones no dependen de una única
@@ -618,7 +615,7 @@ variables sobre las cuales usted no esté derivando.
 ```
 
 
-Observe que esta es una *aproximación* a la TMT porque utilizas dos puntos de la
+Observe que esta es una *aproximación* a la TMT porque utiliza dos puntos de la
 curva. Sin embargo, la TMT *precisa* es la pendiente en un único punto; esta
 pendiente es la derivada de la FPP evaluada en ese punto. Para nuestro caso, la
 TMT estaría dada por la siguiente ecuación, que es la derivada de la función 
@@ -627,10 +624,11 @@ $c(o) = 20 \sqrt{24 - o}$, que describe a la FPP:
 \begin{equation}
   \begin{split}
     TMT(15) &= \left. \frac{\partial c(o)}{\partial o} \right\vert_{o = 15} \\
-            &= \left. 20 \frac{1}{2} (24 - o)^{-\frac{1}{2}} \right\vert_{o = 15} \\
-            &= \left. \frac{10}{\sqrt{24 - o}} \right\vert_{o = 15} \\
-            &= \frac{10}{\sqrt{24 - 15}} \\
-            &= `r round(10 / sqrt(24 - 15), 2)`.
+            &= \left. 20 \frac{1}{2} (24 - o)^{-\frac{1}{2}} (-1) 
+                  \right\vert_{o = 15} \\
+            &= \left. -\frac{10}{\sqrt{24 - o}} \right\vert_{o = 15} \\
+            &= -\frac{10}{\sqrt{24 - 15}} \\
+            &= `r round(-10 / sqrt(24 - 15), 2)`.
   \end{split}
 \end{equation}
 
@@ -643,16 +641,16 @@ $c(o) = 20 \sqrt{24 - o}$, que describe a la FPP:
   $x_1$ y $x_2 = x_1 + h$; entonces tenemos a dos valores de
   $y$: $y_1 = f(x_1)$ y $y_2 = f(x_2) = f(x_1 + h)$. Por lo tanto, la pendiente
   entre estos dos puntos es: 
-  $\frac{Delta y}{Delta x} = \frac{y_2 - y_1}{x_2 - x_1} =$
+  $\frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1} =$
   $\frac{f(x_1 + h) - f(x_1)}{x_1 + h - x_1} = \frac{f(x_1 + h) - f(x_1)}{h}$.
   Observe que esta fue la distancia que se mostró en el gráfico 
   \@ref(fig:aproxTMT), en donde $h = 1$.
   
   Ahora, recuerde que en su clase de matemáticas se definió a la derivada como
-  $\frac{\partial f(x)}{x} = \lim_{h \to 0} \frac{f(x_1 + h) - f(x_1)}{h}$.
-  Es decir, una derivada es una pendiente entre dos puntos que están 
-  infinitamente cerca; por eso, decimos que es la pendiente de una curva en un
-  punto.
+  $\frac{\partial f(x)}{\partial x} =$ 
+  $\lim_{h \to 0} \frac{f(x_1 + h) - f(x_1)}{h}$. Es decir, una derivada es una 
+  pendiente entre dos puntos que están infinitamente cerca; por eso, decimos que
+  es la pendiente de una curva en un punto.
 ```
 
 ### Crecimiento económico {#crecimiento}
@@ -678,7 +676,7 @@ siguiente función:
 \begin{equation}
   c(h) = \begin{cases}
     100 & \text{si } h \geq 16 \\
-    25 \sqrt{h} & \text{si } 0 \leq h \leq 16.
+    25 \sqrt{h} & \text{si } 0 \leq h < 16.
   \end{cases}
 \end{equation}
 
@@ -717,7 +715,7 @@ calificaciones con las mismas horas de estudio.
           ylim = c(0, 110))
 ```
 
-```{block2, type = 'rmdnote'}
+```{block2, type = 'rmdimportant'}
   Una **mejora tecnológica** desplaza la curva de la FPP hacia la derecha.
 ```
 
@@ -728,7 +726,7 @@ nuevo concepto en nuestro estudio: la *especialización*. Recuerde que los
 mercados son mecanismos descentralizados que permiten que muchas personas 
 interactúen entre sí para intercambiar bienes y servicios, como vimos en la 
 sección \@ref(mercado). Este intercambio hace que las personas puedan dedicarse
-a producir una única cosa en la que son eficientes para, desa forma, acercarse
+a producir una única cosa en la que son eficientes para, de esa forma, acercarse
 a la FPP y permitir que haya eficiencia productiva.
 
 @samuelson[p. 31] plantea que "[l]a *especialización* se logra cuando la gente y
@@ -738,14 +736,14 @@ recursos específicos de que disponen" y que "[l]a enorme eficiencia de la
 especialización permite la intrincada red de intercambio entre personas y
 naciones que se observa en la actualidad".
 
-Suponga que hay dos granjeros que podrían, por sí mismos, producir todos los 
+Suponga que hay dos granjeros que podrían, por sí mismos, producir todos los
 productos que ellos desean para vivir: manzanas y trigo. Uno de los granjeros,
-Alberto, tiene mejores tierras que el otro, entonces puede producir más de cada
-uno de los productos que el otro, Bernardo. Suponga que las FPP de cada uno de
-ellos están dadas por $t_A = 100 - 2.5 m_A$ y $t_B = 70 - 2 m_B$, en donde
-$t$ representa kilogramos de trigo, $m$ número de manzanas, $A$ a Alberto y 
-$B$ a Bernardo. En la tabla \@ref(tab:tabfppmanzanas) se muestra cuántas manzanas 
-y trigo podría producir cada uno de estos granjeros.
+Alberto, tiene mejores tierras, entonces puede producir más de cada uno de los
+productos que el otro, Bernardo. Suponga que las FPP de cada uno de ellos están
+dadas por $t_A = 100 - 2.5 m_A$ y $t_B = 70 - 2 m_B$, en donde $t$ representa
+kilogramos de trigo, $m$ número de manzanas, $A$ a Alberto y $B$ a Bernardo. En
+la tabla \@ref(tab:tabfppmanzanas) se muestra cuántas manzanas y trigo podría
+producir cada uno de estos granjeros.
 
 ```{r tabfppmanzanas, echo = FALSE}
   alberto  <- function(m) {ifelse(m <= 35, 70 - 2 * m, 0)}
@@ -758,15 +756,15 @@ y trigo podría producir cada uno de estos granjeros.
                              "Producción de trigo de Alberto",
                              "Producción de trigo de Bernardo"),
                caption = "Producción de manzanas y trigo de Alberto y Bernardo") %>%
-    column_spec(2:4, width = "3cm")
+    column_spec(1:4, width = "2.7cm")
 ```
 
 Si cada uno de estos granjeros lo produjera todo para su
 autoconsumo,[^Autarquia] entonces la FPP de esta economía estaría dada por la
 suma de las producciones de cada uno; por ejemplo, en el punto C de la tabla
 \@ref(tab:tabfppmanzanas), cada uno produce 10 manzanas; entonces habría 20
-manzanas en la economía; y 125 kilogramos de trigo (50 de Alberto y 75 de
-Bernardo). En el grafico \@ref(fig:fppmanzanas) se muestra la FPP de esta
+manzanas en la economía y 125 kilogramos de trigo (50 de Alberto y 75 de
+Bernardo). En el gráfico \@ref(fig:fppmanzanas) se muestra la FPP de esta
 economía cuando cada uno de los granjeros consume únicamente lo que produce.
 
 ```{r fppmanzanas, fig.cap = "FPP sin especialización", echo = FALSE}
@@ -781,17 +779,17 @@ economía cuando cada uno de los granjeros consume únicamente lo que produce.
         xtit = "Manzanas", ytit = "Trigo")
 ```
 
-Sin embargo, observe que si Alberto sólo produjera manzanas (tendría 35 manzanas 
-y 0 kilogramos de trigo, punto H en la tabla \@ref(tab:tabfppmanzanas)) y 
-Bernardo sólo produjera trijo (tendría 100 kilogramos de trigo y 0 manzanas, 
+Sin embargo, observe que si Alberto sólo produjera manzanas (tendría 35 manzanas
+y 0 kilogramos de trigo, punto H en la tabla \@ref(tab:tabfppmanzanas)) y
+Bernardo sólo produjera trigo (tendría 100 kilogramos de trigo y 0 manzanas,
 punto A en la tabla \@ref(tab:tabfppmanzanas)), entonces habrían 35 manzanas y
-100 kilogramos de trigo. Estas cantidades están por fuera de la FPP cuando no
-hay comercio ni especialización, pero son alcanzables cuando cada uno de los
-granjeros se especializa. Es decir, esta economía podría estar mejor y acceder
-a puntos que hacían parte del *conjunto no factible* cuando los granjeros en 
-ella se especializan y comercian entre ellos, como se observa en la gráfica
-\@ref(fig:gancomer). ¿Pero en qué se debe especializar cada uno de ellos para
-que ambos estén mejor que antes?
+100 kilogramos de trigo en la economía. Estas cantidades están por fuera de la
+FPP cuando no hay comercio ni especialización, pero son alcanzables cuando cada
+uno de los granjeros se especializa. Es decir, esta economía podría estar mejor
+y acceder a puntos que hacían parte del *conjunto no factible* cuando los
+granjeros en ella se especializan y comercian entre ellos, como se observa en la
+gráfica \@ref(fig:gancomer). ¿Pero en qué se debe especializar cada uno de ellos
+para que ambos estén mejor que antes?
 
 ```{r gancomer, fig.cap = "Ganancias de la especialización", echo = FALSE}
   graf1(df = ejemplo2 %>%
@@ -807,8 +805,8 @@ que ambos estén mejor que antes?
         xtit = "Manzanas", ytit = "Trigo")
 ```
 
-Los mercados permiten a las personas cooperar entre sí permitiendo que se 
-especialicen en las cosas en las que son buenos, de modo que mediante el 
+Los mercados permiten a las personas cooperar entre sí posibilitando que se 
+especialicen en las cosas en las que son buenos de modo que, mediante el 
 intercambio, cada uno pueda obtener más bienes y servicios de los que podría
 producir por sí mismo si tuviera que hacerlos todos. Los economistas 
 disntiguimos dos tipos de ventajas: absolutas y comparativas.
@@ -832,13 +830,13 @@ a primera vista.
   dos bienes para otra persona o país.
 ```
 
-Observe, de las FPP que acabamos de observar, que Alberto únicamente debe
+Observe, de las FPP que acabamos de analizar, que Alberto únicamente debe
 sacrificar 2 manzanas para producir un kilogramo de trigo adicional; mientras
 que Bernardo debe sacrificar 2.5 manzanas para obtener el mismo kilogramo de
-trigo adicional (note que estas son las TMT de cada una de las FPP de ellos). Es
-decir, el *costo* de un kilogramo de trigo es menor para Alberto que para
-Bernardo; por lo tanto, decimos que Alberto tiene una *ventaja comparativa* en
-la producción de manzanas, en comparación con Bernardo.
+trigo adicional (note que estas son las TMT de cada una de las FPP). Es decir,
+el *costo* de un kilogramo de trigo es menor para Alberto que para Bernardo; por
+lo tanto, decimos que Alberto tiene una *ventaja comparativa* en la producción
+de manzanas, en comparación con Bernardo.
 
 Esta ventaja comparativa permite que, al existir un mercado en el cual Alberto y
 Bernardo puedan intercambiar bienes, la economía puede alcanzar un punto más
@@ -848,7 +846,7 @@ este mercado. Este punto se puede alcanzar cuando cada uno se especializa en
 el producto en el cual tiene una *ventaja comparativa*: Alberto produciendo
 manzanas y Bernardo produciendo trigo.
 
-```{block2, type = "rmdtip"}
+```{block2, type = "rmdimportant"}
   Cuando cada persona o país se especializa en la producción de los bienes en 
   los que tiene una *ventaja comparativa*, se puede obtener una ventaja del 
   comercio, pues hay mas bienes y servicios en la economía que los que se 
@@ -857,7 +855,7 @@ manzanas y Bernardo produciendo trigo.
 
 Al respecto, @samuelson[p. 31] indica que:
 
-> La especialización y la divisuión del trabajo son claves para tener un elevado
+> La especialización y la división del trabajo son claves para tener un elevado
 nivel de vida. Al especializarse, las personas pueden volverse muy productivas 
 en un campo muy limitado de habilidades. Luego las personas pueden intercambiar
 sus bienes especializados por los productos de los demás, con lo que se 
@@ -867,7 +865,7 @@ potencial para elevar el nivel de vida de todo el mundo.
 ## Intervención del gobierno en el mercado {#estado}
 
 Aunque en la sección \@ref(mercado) observamos que los mercados pueden asignar
-de forma eficiente recursos en la economía para responder el qué, cómo y para
+eficientemente recursos en la economía para responder el qué, cómo y para
 quién producir, y en la sección \@ref(comercio) vimos que estos permiten la 
 especialización para obtener mejores resultados, es importante que existan
 instituciones que ayuden a que los mercados funcionen de forma eficiente, que
@@ -914,16 +912,17 @@ trazar una línea fronteriza entre el mercado y el gobierno es un problema
 persistente. Las herramientas de la economía son indispensables para ayudar a
 las sociedades a encontrar el justo medio entre los mecanismos del mercado
 eficiente y la regulación y la redistribución, debidas a decisiones del Estado.
-La buena economía mixta es, obligadamente, una economía mixta muy limitada. Pero
-quienes buscan reducir al Estado a un policía y a unos cuantos faros viven en un
-mundo irreal. Una sociedad eficiente y humana requiere las dos mitades del
-sistema mixta: el mercado y el gobierno. Funcionar en la economía moderna sin
-ambos es como intentar aplaudir con una sola mano [@samuelson, p. 41].
+La buena economía mixta es, obligadamente, una economía mixta muy limitada.
+**Pero quienes buscan reducir al Estado a un policía y a unos cuantos faros
+viven en un mundo irreal**. Una sociedad eficiente y humana requiere las dos
+mitades del sistema mixta: el mercado y el gobierno. Funcionar en la economía
+moderna sin ambos es como intentar aplaudir con una sola mano [@samuelson, p.
+41, énfasis añadido].
 
 ### Intervención estatal para mejorar la eficiencia
 
 Hay casos en los que los mercados producen asignaciones ineficientes de los 
-recursos, es decir, en los que podría incrementarse el bienestar de un individuo
+recursos; es decir, en los que podría incrementarse el bienestar de un individuo
 sin perjudicar al de otros individuos. Estos casos se deben a la existencia de
 *monopolios* o *competencia imperfecta*, en la cual una o pocas empresas pueden
 determinar los precios que más les convienen, en perjuicio de los consumidores;
@@ -934,13 +933,13 @@ dichos beneficios o perjuicios; y a la existencia de bienes que son
 
 #### Competencia económica
 
-Como veremos en los capítulos \@ref(monopolio) y \@ref(oligopolio), la 
-existencia de una o pocas firmas en un mercado hace que ellas tengan la 
-capacidad para fijar precios de la forma que más les convenga y aleja a la 
+Como veremos en los capítulos \@ref(monopolio) y \@ref(oligopolio), la
+existencia de una o pocas firmas en un mercado hace que ellas tengan la
+capacidad para fijar precios de la forma que más les convenga y aleja a la
 sociedad de los beneficios de un mercado competitivo, como el que veremos en el
-capítulo \@ref(competencia). En última estancia, lo que esto provoca es que haya
+capítulo \@ref(competencia). En última estancia, lo que esto provoca es que
 estas empresas puedan extraer *rentas* de los consumidores que, de otra forma,
-serían disfrutadas por la sociedad en general. Por ello, hay dos campos de 
+serían disfrutadas por la sociedad en general. Por ello, hay dos campos de
 estudio en la economía llamados **organización industrial** y **regulación** que
 estudian la forma en que podemos acercarnos a los beneficios de la competencia
 cuando hay *monopolios* u *oligopolios*.
@@ -949,7 +948,7 @@ En primer lugar, el ideal que tenemos es incentivar mercados competitivos en los
 que muchas empresas puedan ofrecer sus productos y luchar entre ellas por el
 favor de los consumidores, ofreciéndoles productos de calidad y a buen precio. 
 Para ello, se incentiva a las empresas para que compitan, se evita que se unan
-entre ellas cuando esa unión (denominada *fusión*) puede generar efectos 
+entre ellas cuando esa unión (denominada *concentración*) puede generar efectos 
 anticompetitivos y se sanciona a las empresas que hacen acuerdos entre ellas 
 para evitar competir entre sí. En México, así como en muchos otros países, 
 existen **autoridades de competencia** encargadas de estas funciones; estas
@@ -970,6 +969,7 @@ indebida a favor de una o varias personas determinadas y con perjuicio del
 público en general o de alguna clase social.
 >
 (...)
+>
 > El Estado contará con una **Comisión Federal de Competencia Económica**, que
 será un órgano autónomo, con personalidad jurídica y patrimonio propio, que
 **tendrá por objeto garantizar la libre competencia y concurrencia, así como
@@ -994,7 +994,7 @@ Competencia Económica (...)
 En otros casos, las características de los mercados hacen que no podamos esperar
 la emergencia de condiciones de competencia. Estos mercados tienen
 características de *monopolios naturales* y, por ello, requieren ser
-*regulados*.[^NotaRegulacion] En México existen diversos entes reguladores que
+**regulados**.[^NotaRegulacion] En México existen diversos entes reguladores que
 se encargan de realizar esta tarea en mercados específicos, tales como la
 Comisión Nacional de Hidrocarburos (CNH), la Agencia Reguladora del Transporte
 Ferroviario (ARTF), el Centro Nacional de Control del Gas Natural (Cenagas), el
@@ -1005,12 +1005,12 @@ De acuerdo con @samuelson[p. 36]:
 > Durante la última década, la mayoría de los gobiernos han tomado medidas para
 frenar las formas más extremas de competencia imperfecta. A veces regulan el
 precio y las utilidades de monopolios tales como el del agua, los teléfonos y
-las instalaciones eléctricas [en el capítulo \@(monopolio) veremos por qué estos
-sectores tienen características de *monopolios naturales*]. Además, las leyes
-gubernamentales antimonopolio prohíben acciones tales como fijación de precios y
-acuerdos para dividir el mercado. El freno más importante a la competencia
-imperfecta, sin embargo, es la apertura de los mercados a la competencia, sea
-nacional o extranjera.
+las instalaciones eléctricas [en el capítulo \@ref(monopolio) veremos por qué
+estos sectores tienen características de *monopolios naturales*]. Además, las
+leyes gubernamentales antimonopolio prohíben acciones tales como fijación de
+precios y acuerdos para dividir el mercado. El freno más importante a la
+competencia imperfecta, sin embargo, es la apertura de los mercados a la
+competencia, sea nacional o extranjera.
 
 #### Externalidades
 
@@ -1021,9 +1021,9 @@ terceros que no participan de ellas; esto hace que el mercado produzca muchos o
 muy pocos productos, en relación con lo *socialmente óptimo*. 
 
 ```{definition, name = "Externalidades"}
-  Las externalidades (o **efectos de desbordamiento**) se presentan cuando las 
+  "Las externalidades (o **efectos de desbordamiento**) se presentan cuando las 
   empresas o las personas imponen costos o beneficios sobre otros fuera del 
-  mercado.
+  mercado" [@samuelson, p. 36].
 ```
 
 Un ejemplo de una *externalidad positiva* es el de un apicultor que tiene abejas
@@ -1036,14 +1036,14 @@ este beneficio no está incluido dentro de la toma de decisiones del apicultor.
 Esto hace que haya menos abejas de las que sería socialmente óptima.
 
 Un ejemplo de una *externalidad negativa* es el de una planta eléctrica a base
-de carbón que no controla adecuadamente sus emisiones a la atmósfera. Estas 
+de carbón que no controla adecuadamente sus emisiones a la atmósfera. Estas
 emisiones generan costos a los vecinos de la planta que no son pagados por la
-planta eléctrica; tales como problemas a la salud, malestar por un medio 
-ambiente contaminado, etc. Como la planta no paga esa externalidad a los 
-vecinos, entonces no considera esos costos a la hora de decidir sobre su 
+planta eléctrica; tales como problemas a la salud, malestar por un medio
+ambiente contaminado, etc. Como la planta no paga esa externalidad a los
+vecinos, entonces no considera esos costos a la hora de decidir sobre su
 tecnología; si tuviera que pagarlos, podría elegir tecnologías más limpias que
-disminuyeran sus emisiones. Esto hace que haya más contaminación de la que sería
-socialmente óptima.
+disminuyeran sus emisiones. Esto hace que haya más contaminación de la que
+serían socialmente óptimas.
 
 En estos casos, la intervención del Estado se justifica para que ayude a las
 empresas a *internalizar* los beneficios o los costos que generan, haciéndoles
@@ -1056,9 +1056,9 @@ ambiental** y usted podría estudiarla, si lo desea, en un curso más avanzado.
 
 Existen algunos bienes que tienen características especiales que impiden que
 sean provistos de forma eficiente por el mercado: son no excluyentes y no
-rivales; algunas veces se le adiciona la características de que los bienes son
-no divisibles. Los bienes que comparten estas características se denominan
-*bienes públicos* y, usualmente, son mejor provistos por el Estado que por los
+rivales; algunas veces se adiciona la característica de que los bienes son no
+divisibles. Los bienes que comparten estas características se denominan *bienes
+públicos* y, usualmente, son mejor provistos por el Estado que por los
 particulares.
 
 Un bien es no excluyente cuando no se puede impedir a alguien que consuma de él
@@ -1076,13 +1076,13 @@ entre ellas.
 
 De acuerdo con @economy[sec. 12.5], los bienes pueden clasificarse de acuerdo a
 la presencia de estas dos características, como se muestra en la tabla 
-\@ref(tab:tabbienes)
+\@ref(tab:tabbienes).
 
 ```{r tabbienes, echo = FALSE}
   bienes <- data.frame(
              x = c("Bienes privados (comida, abrigo, vivienda, etc.)",
                    paste("Bienes comunales (peces en un lago, tierras de",
-                         "pastoreo comunes, etc.")),
+                         "pastoreo comunes, etc.)")),
              y = c(paste("Bienes públicos artificialmente escasos (televisión",
                          "de paga, conocimiento protegido por propiedad",
                          "intelectual, etc.)"),
@@ -1115,10 +1115,10 @@ Una economía de mercado puede producir desigualdades en el ingreso y en el
 consumo que no son aceptables para el *electorado* [énfasis añadido].
 
 Esto no hace parte propiamente de la ciencia económica, como fue explicado en la
-sección \@(ecopositiva), pero la economía puede aportar ideas sobre cuáles son
-las mejores formas de satisfacer los ideales de justicia social sin que esto
-dañe los incentivos de los individuos para participar en los mercados.
-Al respecto, @samuelson[p. 38] dice que
+sección \@ref(ecopositiva), pero la economía puede aportar ideas sobre cuáles
+son las mejores formas de satisfacer los ideales de justicia social sin que esto
+dañe los incentivos de los individuos para participar en los mercados. Al
+respecto, @samuelson[p. 38] dice que
 
 > (...) La economía, como ciencia, no puede responder preguntas *normativas*
 tales como qué parte de los ingresos debe gravarse, qué tando debe transferirse
@@ -1136,7 +1136,7 @@ libros muy interesantes para aprender más sobre este tema son @acemoglu1 y
 @acemoglu2; un análisis más filosófico sobre diferentes ideas de justicia se
 encuentra disponible en @sandel.
 
-### Intervención estatal para el crecimiento y la estabilidad
+### Intervención estatal para el crecimiento y la estabilidad {#estcrecim}
 
 Otra función importante del Estado es garantizar la estabilidad de la economía.
 En el análisis que veremos a lo largo de este curso, así como en el pensamiento
@@ -1150,7 +1150,7 @@ ajustarse a condiciones cambiantes porque existen *fricciones* en la economía;
 por ejemplo, puede que algunos precios estén fijos o que no se puedan modificar
 los patrones de consumo en el corto plazo (porque ya hay máquinas que requieren
 un insumo particular o contratos que deben ser satisfechos). Estas fricciones
-dan lugar a los *ciclos económicos*, que generan periodos de auge y crisis 
+dan lugar a los *ciclos económicos*, que generan momentos de auge y crisis 
 económicas en periodos cortos de tiempo.
 
 Los *macroeconomistas* tienden a pensar en estos periodos cortos de tiempo y en
@@ -1172,7 +1172,7 @@ crédito). A partir del desarrollo de la macroeconomía en la década de los
 treinta [del siglo pasado], los gobiernos han conseguido contener los peores
 excesos de la inflación y el desempleo.
 
-## Ejercicios
+## Problemas
 
 ```{exercise, petroleo, name = "Crisis del petróleo"}
 En los años setenta del siglo pasado el precio del petróleo subió 
@@ -1265,8 +1265,9 @@ Lea la historia sobre el aumento del precio del algodón durante la guerra civil
 estadounidense y los efectos que tuvo en la producción algodonera en otros 
 países y la creación de nuevas tecnologías para el procesamiento del algodón.
 ¿Alguien dió la orden para aumentar la producción en esos países y crear nuevas
-tecnologías? ¿Cómo relaciona esta información con la definición del mercado como
-un *mecanismo descentralizado* de toma de decisiones?
+tecnologías?, ¿cómo relaciona esta información con la definición del mercado como
+un *mecanismo descentralizado* de toma de decisiones? y ¿cómo se relaciona esta
+información con la interpretación de los precios como señales?
 
 > Students of American history learn that the defeat of the southern Confederate
 states in the American Civil War ended slavery in the production of cotton and
@@ -1284,12 +1285,10 @@ few blockade-running ships evaded Lincoln’s patrols, but 1,500 were destroyed 
 captured.
 >
 > We will see in this unit that the market price of a good, such as cotton, is
-determined by the interaction of supply and demand. In the case of raw cotton,
-the tiny quantities reaching England through the blockade were a dramatic
-reduction in supply. There was large excess demandexcess demand A situation in
-which the quantity of a good demanded is greater than the quantity supplied at
-the current price. See also: excess supply.close—that is to say, at the
-prevailing price, the quantity of raw cotton demanded exceeded the available
+determined by the interaction of supply and demand.[^NotaCita] In the case of
+raw cotton, the tiny quantities reaching England through the blockade were a
+dramatic reduction in supply. There was large excess demand —that is to say, at
+the prevailing price, the quantity of raw cotton demanded exceeded the available
 supply. As a result, some sellers realized they could profit by raising the
 price. Eventually, cotton was sold at prices six times higher than before the
 war, keeping the lucky blockade-runners in business. Consumption of cotton fell
@@ -1352,15 +1351,15 @@ roof.’
 ```
 
 ```{exercise, name = 'El trabajo vivo y el trabajo muerto en la crítica marxista'}
-Vimos que el *trabajo* y el *capital* son dos categorías **insumos** necesarios
-para producir bienes y servicios que deseamos; asimismo, como el capital son 
-bienes durables (edificio, carreteras, máquinas, etc.) que no provienen de la 
-naturaleza, podemos considerarlo como *trabajo acumulado*, es decir, como el
-producto de un trabajo del pasado que utilizamos hoy para producir. Ante esto,
-el marxismo ha llamado al capital *trabajo muerto*, que requiere del *trabajo
-vivo* de las personas para poder utilizarse en la producción. Mire el siguiente
-fragmento de una reseña de El Capital escrita por Engels 
-(disponible aquí)[Engels]
+Vimos que el *trabajo* y el *capital* son dos categorías de **insumos**
+necesarios para producir bienes y servicios que deseamos; asimismo, como el
+capital son bienes durables (edificios, carreteras, máquinas, etc.) que no
+provienen de la naturaleza, podemos considerarlo como *trabajo acumulado*; es
+decir, como el producto de un trabajo del pasado que utilizamos hoy para
+producir. Ante esto, el marxismo ha llamado al capital *trabajo muerto*, que
+requiere del *trabajo vivo* de las personas para poder utilizarse en la
+producción. Lea el siguiente fragmento de una reseña de El Capital escrita por
+Engels [(disponible aquí)][Engels].
 
 > La Economía política al uso nos enseña que *el trabajo es la fuente de toda la
 riqueza y la medida de todos los valores*, de tal modo, que dos objetos cuya
@@ -1390,9 +1389,9 @@ la contradicción; ninguno logró resolverla, hasta que Marx, por fin, analizó 
 proceso de formación de la ganancia, remontándose a su verdadera fuente y
 poniendo en claro, con ello, todo el problema.
 
-También puedes leer un poco más sobre el trabajo vivo y el trabajo muerto, y 
+También puede leer un poco más sobre el trabajo vivo y el trabajo muerto, y 
 la crítica marxista a quienes viven del *trabajo muerto* (a quienes llaman como
-una *clase ociosa*) (aquí)[marxferatu]. ¿Qué opina usted sobre la relación que
+una *clase ociosa*) [(aquí)][marxferatu]. ¿Qué opina usted sobre la relación que
 tienen el capital y el trabajo para producir los objetos que deseamos en la 
 sociedad? ¿Usted considera que esta crítica es válida en la actualidad?
 
@@ -1402,11 +1401,12 @@ sociedad? ¿Usted considera que esta crítica es válida en la actualidad?
 ```{exercise, name = "Libertarianistas y Estado"}
 Los *libertarianistas* abogan por Estados mínimos que no intervengan para nada
 en la vida económica, porque consideran que cualquier cosa que pacten los
-individuos voluntariamente debe ser avalada y respectada. Por el contrario, en
-clase dijimos que puede haber una racionalidad para que el Estado intervena en
-determinadas circunstancias (p.e. eficiencia, equidad o estabilidad). ¿Qué opina
-usted? Si considera que el Estado no debería intervenir, explique; si considera
-que sí, dé algún ejemplo de cuándo debería hacerlo.
+individuos voluntariamente debe ser avalada y respetada. Por el contrario, en
+este texto dijimos que puede haber una racionalidad para que el Estado
+intervenga en determinadas circunstancias (p.e. eficiencia, equidad o
+estabilidad). ¿Qué opina usted? Si considera que el Estado no debería
+intervenir, explique; si considera que sí, dé algún ejemplo de cuándo debería
+hacerlo.
 ```
 
 ```{exercise, name = "Tecnologías"}
@@ -1414,7 +1414,7 @@ La tecnología es el proceso que combina los insumos para obtener productos. Par
 producir muchos bienes pueden utilizarse métodos artesanales, donde una sola
 persona hace todo el bien; o de producción en cadena (*fordismo*) donde muchas
 personas hacen apenas una parte del bien. ¿Estos métodos para organizar el
-trabajo pueden considerarse como una 'tecnología'? Justifique su respuesta.
+trabajo pueden considerarse como una *tecnología*? Justifique su respuesta.
 ```
 
 ```{exercise, name = "Ciencia ficción"}
@@ -1437,15 +1437,16 @@ Imagine una historia cualquiera de ciencia ficción. ¿Está en la FPP, en el
 [^industria]: Llamaremos *industria* al conjunto de vendedores que operan en un
 mercado.
 
-[^NotaOferta]: En esta sección tomaremos cómo dado el *precio* y veremos qué
+[^NotaOferta]: En esta sección tomaremos como dado el *precio* y veremos qué
 información le da a los compradores y a los vendedores. No obstante, a lo largo
 de este curso veremos cómo se determina este precio en el mercado que hace que
-tanto los compradores como los vendedores estén satisfechos. En el capítulo
-\@ref(ofertademanda) aprenderemos a encontrar el precio de los 
-*mercados competitivos*, en el capítulo \@ref(consumidor) veremos cómo los
-gustos de las personas determinan cuánto están dispuestas a pagar y en el
-capítulo \@ref(firma) veremos cómo las tecnologías determinan a qué precios
-están dispuestas a vender las empresas.
+tanto los compradores como los vendedores estén satisfechos. En los capítulos
+\@ref(ofertademanda) y \@ref(competencia) aprenderemos a encontrar el precio de
+los *mercados competitivos*, en el capítulo \@ref(consumidor) veremos cómo los
+gustos de las personas determinan cuánto están dispuestas a pagar y en los
+capítulos \@ref(firma), \@ref(monopolio) y \@ref(oligopolio) veremos cómo las
+tecnologías y otros factores determinan a qué precios están dispuestas a vender
+las empresas.
 
 [^Dinero]: El dinero es un *medio de intercambio* de bienes y, usualmente, toma
 la forma de "monedas y cheques que se utiliza[n] para comprar cosas" 
@@ -1462,13 +1463,10 @@ En el capítulo de \@ref(consumidor) comenzaremos a notar que los economistas no
 interesamos más en los *precios relativos* (un bien en términos de otros) que en
 los numerarios (en términos de dinero).
 
-[^Vaciado]: Técnicamente, a esta característica se le conoce como 
-*condición de vaciado de mercados*.
-
 [^Reconocimiento]: De TomTheHand - Trabajo propio, CC BY-SA 3.0,
 https://commons.wikimedia.org/w/index.php?curid=4040114
 
-[^Autarquia]: La *autarquía* es una política de un estado que intenta basarse
+[^Autarquia]: La *autarquía* es una política de un Estado que intenta basarse
 por sí mismo, limitando en la medida de lo posible el comercio internacional 
 [@rae].
 
@@ -1500,6 +1498,8 @@ que generan externalidades negativas para corregir un resultado de mercado
 ineficiente." Similarmente, un **subsidio pigouviano** es "un subsidio del
 gobierno para impulsar una actividad económica que tiene externalidades
 positivas" [@economy, Glosario].
+
+[^NotaCita]: Nosotros lo veremos en el capítulo \@ref(ofertademanda).
 
 ```{r elimcap3, echo = FALSE}
   rm(list = c("bienes", "ejemplo", "ejemplo2", "estudio", "alberto", "bernardo",
